@@ -10,7 +10,8 @@
 
 /* General Specs */
 body {
-  font-family: 'Droid Sans', sans-serif;
+  /*font-family: 'Droid Sans', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
 }
 a {
   text-decoration: none;
@@ -135,4 +136,70 @@ ul li a {
 
 .main-nav .active a{
   color: black;
+}
+
+/* Login section */
+.login-section {
+  height: 394px;
+  background: -webkit-linear-gradient(-70deg, #497892 0%,#002341 50%,#284257 50%,#002341 100%);
+  background: -moz-linear-gradient(-70deg, #497892 0%,#284257 50%,#002341 50%,#002341 100%);
+  background: -ms-linear-gradient(-70deg, #497892 0%,#284257 50%,#002341 50%,#002341 100%);
+  background: linear-gradient(-70deg, #497892 0%,#002341 50%,#284257 50%,#002341 100%);
+}
+
+.login-section-links {
+  color: white;
+  margin: 60px 0px;
+}
+
+.login-section-links a{
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.login-section-links a:hover{
+  color: yellow;
+}
+
+.login-section-links-items{
+  padding: 0px 0px;
+}
+
+.login-section-links-items li{
+  list-style:none;
+  background-image:none;
+  background-repeat:none;
+  background-position:0;
+}
+
+/*
+  The following code is copied from the site need to understand & refine
+*/
+
+.login-section-links-items li:before{
+  position: absolute;
+  display: block;
+  content: '\2022';
+  text-indent: -99999px;
+  left: -.75em;
+  width: .3428571429em;
+  height: 1em;
+  background: url('https://www.ato.gov.au/misc/images/chevron-white.svg') no-repeat;
+  background-size: .3428571429em .6em;
+  background-position: 0 0.4em;
+}
+
+.login-section-links-items li:hover:before{
+  position: absolute;
+  display: block;
+  content: '\2022';
+  text-indent: -99999px;
+  left: -.75em;
+  width: .3428571429em;
+  height: 1em;
+  background: url('https://www.ato.gov.au/misc/images/chevron-hover.svg') no-repeat;
+  background-size: .3428571429em .6em;
+  background-position: 0 0.4em;
 }

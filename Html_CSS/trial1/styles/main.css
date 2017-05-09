@@ -5,7 +5,7 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 /* General Specs */
@@ -301,6 +301,13 @@ select:-moz-focusring {
 }
 .content-portlet.col-md-2{
   padding: 0px 0px 0px 0px ;
+}
+
+.main-content-portlets .col-md-1 {
+  margin: 0px 0px 0px 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 0px;
 }
 
 .main-content-portlets h3 a{

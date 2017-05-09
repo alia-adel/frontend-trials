@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./styles/bootstrap-reboot.css">
     <link rel="stylesheet" href="./styles/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
   <!-- Header Menu -->
@@ -89,14 +89,16 @@
       </div>
       <div class="col-md-2"></div>
       <div class="col-md-3 login-form">
-        <p>Login as</p>
-        <select class="login-select">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
-        </select>
-        <button type="button" class="login-btn">Login</button>
+        <form name="loginform" method="post">
+          <p>Login as</p>
+          <select class="login-select">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+          <input type="button" value="Login" class="login-btn"/>
+        </form>
         <p>
           <a href="#">Register <i class="fa fa-caret-up fa-rotate-90" aria-hidden="true"></i></a>
         </p>

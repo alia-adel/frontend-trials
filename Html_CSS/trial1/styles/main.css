@@ -14,7 +14,7 @@ body {
 }
 a {
   text-decoration: none;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
 }
 
 a:hover {
@@ -195,6 +195,45 @@ ul li a {
 }
 
 .login-section-links-items li a:hover:before{
+  content: '\2022';
+  display: block;
+  position: absolute;
+  text-indent: -99999px;
+  left: -.1em;
+  width: .7em;
+  height: 1.5em;
+  background: url('../assets/images/chevron-hover.svg') no-repeat;
+  background-size: .5em .7em;
+  background-position: 0 0.4em;
+}
+/* Main container portlets */
+
+.main-content-portlets {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-content-portlets .col-md-1{
+  /*width: 0px;
+  height: 0px;
+  max-width: 0%;
+  padding-left: 0px;
+  padding-right: 0px;*/
+}
+.main-content-portlets .col-md-2{
+  align-items: stretch;
+}
+
+.main-content-portlets h3 a{
+  display: block;
+  color: #002341;
+  font-weight:bold;
+}
+.main-content-portlets h3 a:hover{
+  color: #0f979b;
+}
+
+.main-content-portlets h3:after{
   content: '\2022';
   display: block;
   position: absolute;

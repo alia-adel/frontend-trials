@@ -177,6 +177,36 @@ ul li a {
   background-position:0;
 }
 
+/*
+  The following code is copied from the site with some refinement from my end
+*/
+
+.login-section-links-items li a:before{
+  content: '\2022';
+  display: block;
+  position: absolute;
+  text-indent: -99999px;
+  left: -.1em;
+  width: .7em;
+  height: 1.5em;
+  background: url('../assets/images/chevron_white.svg') no-repeat;
+  background-size: .5em .7em;
+  background-position: 0 0.4em;
+}
+
+.login-section-links-items li a:hover:before{
+  content: '\2022';
+  display: block;
+  position: absolute;
+  text-indent: -99999px;
+  left: -.1em;
+  width: .7em;
+  height: 1.5em;
+  background: url('../assets/images/chevron-hover.svg') no-repeat;
+  background-size: .5em .7em;
+  background-position: 0 0.4em;
+}
+
 .login-form {
   color: white;
   padding: 70px 0px;
@@ -257,43 +287,16 @@ select.login-select:focus {
   outline: 0;
 }
 
-
 select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
+.fa-caret-up {
+  padding-bottom: 3px;
+}
+
 /**/
-
-/*
-  The following code is copied from the site with some refinement from my end
-*/
-
-.login-section-links-items li a:before{
-  content: '\2022';
-  display: block;
-  position: absolute;
-  text-indent: -99999px;
-  left: -.1em;
-  width: .7em;
-  height: 1.5em;
-  background: url('../assets/images/chevron_white.svg') no-repeat;
-  background-size: .5em .7em;
-  background-position: 0 0.4em;
-}
-
-.login-section-links-items li a:hover:before{
-  content: '\2022';
-  display: block;
-  position: absolute;
-  text-indent: -99999px;
-  left: -.1em;
-  width: .7em;
-  height: 1.5em;
-  background: url('../assets/images/chevron-hover.svg') no-repeat;
-  background-size: .5em .7em;
-  background-position: 0 0.4em;
-}
 /* Main container portlets */
 
 .first-row {
@@ -345,6 +348,10 @@ select:-moz-focusring {
   border: 1px solid red;
 }*/
 
+.main-content-portlets .col-md-3 {
+    padding-right: 5px;
+    padding-left: 0px;
+}
 /* Sitemap footer */
 .sitemap-footer {
   background: #333;

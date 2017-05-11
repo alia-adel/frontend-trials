@@ -93,7 +93,7 @@ ul li a {
 }
 
 /* Main Navigation */
-.col-md-8 {
+.col-md-8{
   -webkit-padding-right: 0px;
   -webkit-padding-left: 0px;
   -webkit-margin-left: 0px;
@@ -107,13 +107,14 @@ ul li a {
   align-items: stretch;
   border-bottom: 0px;
 }
-.main-nav li {
+.main-nav li{
   width: 130px;
   flex-wrap: wrap;
   display: block;
   align-items: center;
   border-top: thick solid white; /* This border was added to prevent the naviagtion from changing its position when link is hovering*/
   margin: 0px 3px;
+  cursor: pointer;
 }
 .main-nav li a{
   color: #666;
@@ -127,10 +128,6 @@ ul li a {
 
 .main-nav li:hover {
   border-top: thick solid #0f979b;
-}
-
-.main-nav li a:hover {
-  color: black;
 }
 
 .main-nav .active{
@@ -173,7 +170,6 @@ ul li a {
 .login-section-links-items li{
   list-style:none;
   background-image:none;
-  background-repeat:none;
   background-position:0;
 }
 
@@ -234,7 +230,7 @@ input[type="button"].login-btn {
     background-color: #f5d815;
     margin: 20px 0px;
     border: none;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .login-btn input[type="button"]:hover{
@@ -242,7 +238,7 @@ input[type="button"].login-btn {
     height: 50px;
     background-color: #edc337;
     border: none;
-    cursor: grab;
+    cursor: pointer;
 }
 
 /*Test*/
@@ -299,18 +295,16 @@ select:-moz-focusring {
 /**/
 /* Main container portlets */
 
-.first-row {
+.first-row{
   padding-top: 50px;
 }
-.content-portlet.col-md-2{
-  padding: 0px 0px 0px 0px ;
+
+.last-row {
+  padding-bottom: 50px;
 }
 
-.main-content-portlets .col-md-1 {
-  margin: 0px 0px 0px 0px;
-  padding-right: 0px;
-  padding-left: 0px;
-  width: 0px;
+.content-portlet.col-md-2{
+  padding: 0px 0px 0px 0px ;
 }
 
 .main-content-portlets h3 a{
@@ -334,24 +328,81 @@ select:-moz-focusring {
   font-size: 18px;
 }
 
-/*.main-content-portlets a:after{
-  content: '\2022';
-  display: block;
-  position: absolute;
-  text-indent: -99999px;
-  left: 6em;
-  width: .7em;
-  height: 1.5em;
-  background: url('../assets/images/chevron-hover.svg') no-repeat;
-  background-size: .5em .7em;
-  background-position: 0 0em;
-  border: 1px solid red;
-}*/
 
 .main-content-portlets .col-md-3 {
     padding-right: 5px;
     padding-left: 0px;
 }
+
+/* Media Section*/
+
+.media-col-3{
+    background-color: #f0f0f0;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.media-col-5{
+    background-color: #f0f0f0;
+    padding-right: 30px;
+    padding-bottom: 25px;
+}
+
+.atotv {
+  padding-bottom: 25px;
+}
+
+/*.atotv-link {
+  padding-bottom: 0px;
+}*/
+.atotv-link a{
+  color: #002341;
+  text-decoration: underline;
+}
+
+.atotv-link h3 {
+  font-size: 18px;
+  /*padding-left: 20px;*/
+  font-weight: bolder;
+}
+
+.atotv-video {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 25px;
+}
+
+.media-col-3 .small-font {
+  font-size: 13px;
+}
+
+
+/* Main Content Media Ads Area */
+
+
+.ads-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.media-ads{
+  flex-direction: column;
+}
+
+.media-ads a{
+  color: #002341;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
 /* Sitemap footer */
 .sitemap-footer {
   background: #333;

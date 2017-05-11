@@ -29,6 +29,10 @@ ul li a {
   align-items: center;
   align-content: center;
 }
+
+.small-font {
+  font-size: 13px;
+}
 /* End of general */
 /* Main Header */
 .main-header {
@@ -353,9 +357,6 @@ select:-moz-focusring {
   padding-bottom: 25px;
 }
 
-/*.atotv-link {
-  padding-bottom: 0px;
-}*/
 .atotv-link a{
   color: #002341;
   text-decoration: underline;
@@ -363,7 +364,6 @@ select:-moz-focusring {
 
 .atotv-link h3 {
   font-size: 18px;
-  /*padding-left: 20px;*/
   font-weight: bolder;
 }
 
@@ -379,6 +379,45 @@ select:-moz-focusring {
 
 
 /* Main Content Media Ads Area */
+
+/*  Media Ads & Watch TV seperator */
+
+.watch-atotv-hr{
+  background-color: #f0f0f0;
+}
+.watch-atotv-hr hr{
+  display: block;
+  border-style: solid;
+  border-color: #ccc;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+/* Main Content Watch atoTV */
+
+.watch-atotv {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px 30px 50px;
+}
+
+.watch-atotv a{
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px 20px;
+}
+
+.watch-atotv a:hover{
+  background-color: #f0f0f0;
+  color: #aaa;
+  border: 1px solid #aaa;
+}
+/* end of Main Content Watch atoTV */
 
 
 .ads-section{

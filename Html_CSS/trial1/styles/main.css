@@ -299,6 +299,11 @@ select:-moz-focusring {
 /**/
 /* Main container portlets */
 
+
+.col-md-3.content-portlet{
+  max-width: 23%;
+}
+
 .first-row{
   padding-top: 50px;
 }
@@ -307,9 +312,9 @@ select:-moz-focusring {
   padding-bottom: 50px;
 }
 
-.content-portlet.col-md-2{
+/*.content-portlet.col-md-2{
   padding: 0px 0px 0px 0px ;
-}
+}*/
 
 .main-content-portlets h3 a{
   display: block;
@@ -439,6 +444,41 @@ select:-moz-focusring {
   text-decoration: underline;
   font-size: 14px;
   font-weight: bold;
+}
+
+/*end of banner Budget*/
+.banner-budget{
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px;
+}
+
+.banner-budget img{
+  width: inherit;
+}
+
+/*Charges & fines section*/
+
+.col-md-3.fines-portlet {
+  max-width: 23%;
+}
+
+.fines-portlet{
+  display: flex;
+  margin: 25px 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.fines-portlet a{
+  font-weight: bold;
+  font-size: 18px;
+  color: #002341;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+.fines-portlet{
+  /*margin-right: 5px;*/
 }
 
 

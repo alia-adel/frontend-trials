@@ -625,7 +625,7 @@ select:-moz-focusring {
 .tweet-footer{
   display: flex;
   justify-content: space-between;
-  padding: 15px 15px;
+  padding: 15px 0px;
   color: #ddd;
 }
 

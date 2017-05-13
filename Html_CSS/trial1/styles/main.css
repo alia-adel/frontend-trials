@@ -512,7 +512,136 @@ select:-moz-focusring {
   /*margin-right: 5px;*/
 }
 
+/*Twitter section */
+.tweet-section {
+  background-color: #f0f0f0;
+  padding: 25px 25px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.social-media{
+  padding-right: 40px;
+  flex: 1 70%;
+}
+.social-media h2{
+  color: #002341;
+  font-family: "Swiss721BT-Light",Arial,Helvetica,sans-serif;
+  font-size: 33px;
+  font-weight: normal;
+  line-height: 38px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.social-media-icons2 a{
+  text-decoration: none;
+}
+
+.social-media-icons2 i:hover{
+  color: #666;
+}
+
+.social-media-icons2 i{
+  padding: 5px;
+  padding-right: 10px;
+}
+.social-media-icons2 .fa-facebook{
+  color: #3b5998;
+}
+
+.social-media-icons2 .fa-youtube-play{
+  color: #bb0000;
+}
+
+.social-media-icons2 .fa-twitter{
+  color: #55acee;
+}
+
+.social-media-icons2 .fa-linkedin{
+  color: #007bb5;
+}
+.social-media-icons2 .fa-rss{
+  color: #ff6600;
+}
+
+.single-tweet{
+  display: flex;
+}
+
+.single-tweet div:hover{
+  background-color: rgba(160,200,220,.12);
+}
+
+.tweet-auth{
+  color: black;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.auth-hidden{
+  color: grey;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tweet-twitter-icon{
+  color: #ddd;
+}
+
+.tweet-twitter-icon:hover{
+  color: #55acee;
+  cursor: pointer;
+}
+
+.tweet-info{
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.tweet-auth {
+  display: flex;
+}
+.tweet-body img{
+  width: 200px;
+}
+
+.tweet-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.hashtag{
+  color: #3b94d9;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tweet-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px;
+  color: #ddd;
+}
+
+
+.tweet-footer .fa-heart:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.tweet-footer .fa-share-square-o:hover{
+  color: #55acee;
+  cursor: pointer;
+}
+
+.tweet-footer .tweet-footer-date{
+  color: grey;
+  font-size: 14px;
+}
+
+/*end of Twitter section */
 /* Sitemap footer */
 .sitemap-footer {
   background: #333;

@@ -568,13 +568,16 @@ select:-moz-focusring {
 
 .single-tweet{
   display: flex;
+  padding: 15px;
+  cursor: pointer;
 }
 
-.single-tweet div:hover{
+.single-tweet:hover{
   background-color: rgba(160,200,220,.12);
 }
 
 .tweet-auth{
+  display: flex;
   color: black;
   font-weight: bolder;
   font-size: 14px;
@@ -588,8 +591,12 @@ select:-moz-focusring {
 
 .tweet-twitter-icon{
   color: #ddd;
+  float: right;
 }
 
+.tweet-twitter-icon i{
+  padding: 0px;
+}
 .tweet-twitter-icon:hover{
   color: #55acee;
   cursor: pointer;
@@ -600,16 +607,13 @@ select:-moz-focusring {
   padding-left: 20px;
 }
 
-.tweet-auth {
-  display: flex;
-}
 .tweet-body img{
-  width: 200px;
+  padding-top: 15px;
+  width: 450px;
 }
 
 .tweet-body {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 .hashtag{

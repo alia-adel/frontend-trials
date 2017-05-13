@@ -602,6 +602,10 @@ select:-moz-focusring {
   cursor: pointer;
 }
 
+.tweet-twitter-icon-div{
+  position: relative;
+  left: 270px;
+}
 .tweet-info{
   padding-bottom: 20px;
   padding-left: 20px;
@@ -624,7 +628,6 @@ select:-moz-focusring {
 
 .tweet-footer{
   display: flex;
-  justify-content: space-between;
   padding: 15px 0px;
   color: #ddd;
 }
@@ -635,12 +638,18 @@ select:-moz-focusring {
   cursor: pointer;
 }
 
+.tweet-footer .fa-share-square-o{
+    padding-left: 20px;
+}
+
 .tweet-footer .fa-share-square-o:hover{
-  color: #55acee;
+  color: #3b94d9;
   cursor: pointer;
 }
 
 .tweet-footer .tweet-footer-date{
+  position: relative;
+  left: 350px;
   color: grey;
   font-size: 14px;
 }

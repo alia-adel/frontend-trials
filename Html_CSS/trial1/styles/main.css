@@ -82,19 +82,50 @@ ul li a {
 .col-md-5{
   padding: 0px 12px 0px 15px;
 }
-.search-box {
-  width: 550px; /* The search box size was increased because I couldn't align it right with col-md-5 borders it was 539*/
-  padding: 10px;
-  margin: 30px 0px 20px 0px;
-  border-radius: 1px;
-  border-color: #002341;
-  border-style: solid;
-  text-align: justify;
+
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
 }
 
+.search input[type=text]{
+  border-radius: 0px;
+  border: 0.5px solid #002341;
+  border-right: none;
+  padding: 15px 10px;
+}
+
+/* It should be on click not hover but JS not added yet*/
+.search input[type=text]:hover {
+  border: 2px solid #0f979b;
+  border-right: none;
+}
+
+.input-group-addon {
+  background-color: white;
+  border-radius: 0px;
+  border: 0.5px solid #002341;
+  border-left: none;
+  color: #002341;
+  cursor: pointer;
+}
+
+/* Not working need to know why*/
+.input-group span:hover{
+  border: 1px solid #002341;
+  border-left: none;
+}
+
+.input-group-addon i:hover {
+  border: none;
+  color: #0f979b;
+}
+/*
 .search-box:placeholder-shown {
   padding: 10px;
-}
+}*/
 
 /* Main Navigation */
 .col-md-8{

@@ -655,7 +655,8 @@ select:-moz-focusring {
 
 .tweet-twitter-icon{
   color: #ddd;
-  float: right;
+  position: relative;
+  left: 270px;
 }
 
 .tweet-twitter-icon i{

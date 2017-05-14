@@ -189,7 +189,7 @@ ul li a {
   height: 0;
   color: black;
   font-size: 14px;
-  transition: .5s ease;
+  transition: 1s ease;
   z-index:1;
 }
 
@@ -206,11 +206,15 @@ ul li a {
   border: 0px;
 }
 .individual-head:hover + .individual-overlay {
-  height: 1000%;
+  overflow:visible;
+  height: 1000% !important;
+  min-height: 100% !important;
 }
 
 .individual-overlay:hover {
-  height: 1000%;
+  overflow:visible;
+  height: 1000% !important;
+  min-height: 100% !important;
 }
 
 .individual-overlay .nav-list a {
@@ -230,7 +234,7 @@ ul li a {
 
 .individual-overlay .nav-col {
   width: 33.33%;
-  padding: 15px;
+  padding: 25px;
 }
 
 

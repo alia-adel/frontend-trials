@@ -100,11 +100,12 @@ ul li a {
   padding: 15px 10px;
 }
 
-/* It should be on click not hover but JS not added yet*/
-/*.search input[type=text]:hover {
+
+.search input[type=text]:focus {
   border: 2px solid #0f979b;
   border-right: none;
-}*/
+}
+
 
 .input-group-addon {
   background-color: white;
@@ -115,11 +116,16 @@ ul li a {
   cursor: pointer;
 }
 
-/* Not working need to know why*/
-.input-group span:hover{
-  border: 1px solid #002341;
+.search-box:focus + .input-group-addon{
+  border: 2px solid #0f979b;
   border-left: none;
 }
+
+/* Not working need to know why*/
+/*.input-group span:hover{
+  border: 1px solid #002341;
+  border-left: none;
+}*/
 
 .input-group-addon i:hover {
   border: none;

@@ -139,26 +139,20 @@ ul li a {
   margin-right: 0px;
 }
 .main-nav {
-  align-items: stretch;
+  display: flex;
+  justify-content: center;
   border-bottom: 0px;
 }
 .main-nav li{
-  width: 130px;
-  flex-wrap: wrap;
-  display: block;
-  align-items: center;
   border-top: thick solid white; /* This border was added to prevent the naviagtion from changing its position when link is hovering*/
-  margin: 0px 3px;
+  /*margin: 0px 3px;*/
   cursor: pointer;
 }
 .main-nav li a{
   color: #666;
   font-weight: bold;
-  /*padding: 10px;
-  margin: 10px;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+  /*margin-top: 20px;
+  margin-bottom: 20px;*/
 }
 
 .main-nav li:hover {
@@ -172,12 +166,30 @@ ul li a {
 
 .main-nav .active a{
   color: black;
+  text-decoration: none;
+}
+
+.nav-tabs {
+  width: 100%;
+}
+
+.main-nav .nav-tabs{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 3 100%;
+  padding: 0px;
+}
+
+.main-nav .nav-tabs li{
+  text-align: center;
+  padding: 20px 25px;
 }
 
 /*Overlaying nav*/
 .individual-overlay {
   border: 0px;
   display: flex;
+  justify-content: space-around;
   position: absolute;
   bottom: 0px;
   top: 69px;
@@ -191,11 +203,25 @@ ul li a {
   font-size: 14px;
   transition: 1s ease;
   z-index:1;
+  text-align: left;
 }
 
-.individual-overlay .nav-header{
-  text-decoration: underline;
+.main-nav .nav-tabs .individual-overlay ul{
+  padding: 10px 10px;
+}
+
+.main-nav .nav-tabs .individual-overlay .nav-header a{
+  color: #002341;
+  font-size: 18px;
+  text-decoration: none;
   font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  border-bottom: 1px solid  #aaa;
+}
+
+.main-nav .nav-tabs .individual-overlay .nav-header a:hover{
+  border-bottom: 0px;
 }
 
 .individual-overlay li{
@@ -207,12 +233,14 @@ ul li a {
 }
 .individual-head:hover + .individual-overlay {
   overflow:visible;
+  background-color: #f5f5f5;
   height: 1000% !important;
   min-height: 100% !important;
 }
 
 .individual-overlay:hover {
   overflow:visible;
+  background-color: #f5f5f5;
   height: 1000% !important;
   min-height: 100% !important;
 }
@@ -225,16 +253,22 @@ ul li a {
   text-align: left;
 }
 
+.individual-overlay .nav-list a:hover{
+    text-decoration: underline;
+}
+
 .individual-overlay .nav-col .nav-list{
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+    /*width: 33.33%;*/
+    padding: 25px 20px;
 
 }
 
-.individual-overlay .nav-col {
-  width: 33.33%;
-  padding: 25px;
+.individual-overlay .nav-col .nav-list li{
+  padding: 0px;
+  width: 100%;
 }
 
 
@@ -280,7 +314,7 @@ ul li a {
   The following code is copied from the site with some refinement from my end
 */
 
-.login-section-links-items li a:before{
+/*.login-section-links-items li a:before{
   content: '\2022';
   display: block;
   position: absolute;
@@ -291,9 +325,10 @@ ul li a {
   background: url('../assets/images/chevron_white.svg') no-repeat;
   background-size: .5em .7em;
   background-position: 0 0.4em;
-}
+}*/
 
-.login-section-links-items li a:hover:before{
+
+/*.login-section-links-items li a:hover:before{
   content: '\2022';
   display: block;
   position: absolute;
@@ -304,7 +339,7 @@ ul li a {
   background: url('../assets/images/chevron-hover.svg') no-repeat;
   background-size: .5em .7em;
   background-position: 0 0.4em;
-}
+}*/
 
 .login-form {
   color: white;

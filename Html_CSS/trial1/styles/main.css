@@ -41,6 +41,9 @@ ul li a {
   font-weight: normal;
 }
 
+.main-header .col-md-3{
+  padding-right: 0px;
+}
 .main-header-nav {
   border-bottom: none;
 }

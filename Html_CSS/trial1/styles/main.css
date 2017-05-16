@@ -701,10 +701,15 @@ select:-moz-focusring {
   padding-right: 10px;
 }
 
+.auth-hidden::before{
+  content: "\00a0\00a0\00a0\00a0";
+  background: url("../assets/images/twitter-ver.png") right no-repeat;
+  background-size: cover;
+}
 .tweet-twitter-icon{
   color: #ddd;
   position: relative;
-  left: 270px;
+  left: 257px;
 }
 
 .tweet-twitter-icon i{

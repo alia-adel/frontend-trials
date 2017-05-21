@@ -10,7 +10,7 @@
 
 /* General Specs */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial;
 }
 a {
   text-decoration: none;
@@ -121,11 +121,6 @@ ul li a {
   border-left: none;
 }
 
-/* Not working need to know why*/
-/*.input-group span:hover{
-  border: 1px solid #002341;
-  border-left: none;
-}*/
 
 .input-group-addon i:hover {
   border: none;
@@ -430,10 +425,6 @@ select.login-select:focus {
   outline: 0;
 }
 
-select:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
 
 .fa-caret-up {
   padding-bottom: 3px;
@@ -639,7 +630,6 @@ select:-moz-focusring {
 }
 .social-media h2{
   color: #002341;
-  font-family: "Swiss721BT-Light",Arial,Helvetica,sans-serif;
   font-size: 33px;
   font-weight: normal;
   line-height: 38px;

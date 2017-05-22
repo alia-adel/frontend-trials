@@ -7,15 +7,17 @@ img { width: 100%; }
 a { color: #34AC98; cursor: pointer; text-decoration: none; }
 a:hover { color: #ec6635; text-decoration: none; }
 
-.font-xsmall-size { font-size: 11px; line-height: 19px; }
+.font-xsmall-size, .latest-tweet a { font-size: 11px; line-height: 19px; }
 
-.font-small-size { font-size: 12px; line-height: 17px; }
+.font-small-size, .latest-tweet p { font-size: 12px; line-height: 17px; }
 
 .font-medium-size, figure .carousel .carousel-inner .item .carousel-caption a h2 { font-size: 14px; line-height: 20px; }
 
 .font-large-size, figure .carousel .carousel-inner .item .carousel-caption a h1 { font-size: 36px; line-height: 45px; }
 
-.underlined-href { border-bottom: 1px dashed #E5E5E5; }
+.underlined-href, .latest-tweet p { border-bottom: 1px dashed #E5E5E5; }
+
+.text-uppercase, .latest-tweet p { text-transform: uppercase; }
 
 /* Home Page Left Navigation Section */
 Header { width: 122px; height: 121px; margin: 0px 10px 0px 25px; background: url("../assets/images/food-sense.png") no-repeat 0 0; }
@@ -32,5 +34,14 @@ figure .carousel .carousel-inner .item .carousel-caption { left: 0%; text-shadow
 figure .carousel .carousel-inner .item .carousel-caption a { display: flex; flex-direction: column; font-style: italic; }
 figure .carousel .carousel-inner .item .carousel-caption a h1 { color: black; background-color: white; width: 50%; margin-bottom: 0px; padding: 5px 20px 5px 20px; text-align: left; }
 figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; background-color: black; margin-top: 0px; padding: 20px; text-align: left; }
+
+/* Lastet Tweet */
+.latest-tweet p { margin-bottom: 15px; }
+.latest-tweet a { background-color: white; border: 1px solid #AAA; border-radius: 4px; color: #34AC98; padding: 8px 15px; margin-bottom: 15px; }
+.latest-tweet a:hover { background-color: #D9EFEC; }
+.latest-tweet i { padding-right: 10px; }
+
+.vertical-nav .container-fluid { padding: 0px; display: flex; flex-direction: column; }
+.vertical-nav .container-fluid navbar-nav { padding: 0px; width: 100%; display: flex; flex-direction: column; align-content: center; justify-content: space-between; }
 
 /*# sourceMappingURL=main.css.map */

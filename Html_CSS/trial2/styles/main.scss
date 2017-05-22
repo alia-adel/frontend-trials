@@ -1,8 +1,10 @@
 //Variables
 $primary-color: #111111;
 $secondary-color: #AAA;
+$minor-color: #34AC98;
 $href-color: #34AC98;
 $href-hover-color: #ec6635;
+$background-color-1: #D9EFEC;
 $font-large-size: 36px;
 $font-large-line-height: 45px;
 $font-medium-size: 14px;
@@ -42,8 +44,6 @@ a{
     color: $href-hover-color;
     text-decoration: none;
   }
-  &:active {
-  }
 }
 
 .font-xsmall-size {
@@ -67,6 +67,10 @@ a{
 }
 .underlined-href {
   border-bottom: 1px dashed #E5E5E5;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 /* Home Page Left Navigation Section */
@@ -138,5 +142,48 @@ figure {
           }
         }
       }
+  }
+}
+
+/* Lastet Tweet */
+.latest-tweet {
+  p {
+    @extend .text-uppercase;
+    @extend .underlined-href;
+    @extend .font-small-size;
+    margin-bottom: 15px;
+  }
+
+  a {
+    @extend .font-xsmall-size;
+    background-color: white;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    color: $minor-color;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+
+    &:hover {
+      background-color: $background-color-1;
+    }
+  }
+  i {
+     padding-right: 10px;
+  }
+}
+
+.vertical-nav {
+  .container-fluid {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    navbar-nav{
+      padding: 0px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-between;
+    }
   }
 }

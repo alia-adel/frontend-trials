@@ -7,15 +7,177 @@
     <link rel="shortcut icon" type="image/ico" href="./assets/images/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
     <!-- Syle Sheets -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col">
-          <a href="#" class="underlined-href"> Test Href color </a>
+        <div class="col-sm-2">
+          <!-- Site Logo -->
+          <Header>
+          </header>
+          <!-- Left Navigation -->
+          <nav class="left-nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/nav/nav-tastemakers.png"/>
+                  Tastemakers
+                </a>
+              </li>
+              <li>
+                <img src="./assets/images/nav/nav-blog.png"/>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <img src="./assets/images/nav/nav-alist.png"/>
+                <a href="#">The A-List</a>
+              </li>
+              <li>
+                <img src="./assets/images/nav/nav-contribute.png"/>
+                <a href="#">Contribute</a>
+              </li>
+              <li>
+                <img src="./assets/images/nav/nav-about.png"/>
+                <a href="#">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-10">
+          <!-- Image Slider -->
+          <figure>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner">
+                 <div class="item active">
+                   <img src="./assets/images/slide/0052_foodsense.jpg" alt="Los Angeles" style="width:100%;">
+                   <div class="carousel-caption">
+                     <a href="http://foodsense.is/blog">
+                    		<h1>Read, Learn, Share</h1>
+                    		<h2>Get daily how-tos, stories &amp; updates with the latest news. </h2>
+                		  </a>
+                   </div>
+                 </div>
+                 <div class="item">
+                   <img src="./assets/images/slide/0140_foodsense.jpg" alt="Los Angeles" style="width:100%;">
+                 </div>
+                 <div class="item">
+                   <img src="./assets/images/slide/0219_foodsense.jpg" alt="Los Angeles" style="width:100%;">
+                 </div>
+                 <div class="item">
+                   <img src="./assets/images/slide/0232_foodsense.jpg" alt="Los Angeles" style="width:100%;">
+                 </div>
+               </div>
+             </div>
+          </figure>
         </div>
       </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <section class="latest-tweet">
+            Latest Tweet
+          </section>
+        </div>
+        <div class="col-sm-10">
+          <nav class="horizontal-nav">
+            Horizontal Nav
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2">
+          <section class="lets-be-friends">
+            Let's be friends
+          </section>
+        </div>
+        <div class="col-sm-10">
+          <section class="signup-newsletter">
+            Sign up to news letter
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <section class="fb-community">
+            Join our Facebook community
+          </section>
+        </div>
+        <div class="col-sm-10">
+          <section class="homepage-news">
+            <article>
+              <a href="#">
+                <img src="http://placehold.it/252x168" alt="article">
+              </a>
+              <a href="#">Recipes from a Sunday Supper</a>
+              <p>
+                I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful Sunday supper - eat them slowly, a little bit at…
+              </p>
+              <div class="article-footer">
+                Date / <a href="#" class="underlined-href">Read >></a>
+              </div>
+            </article>
+            <article>
+              <a href="#">
+                <img src="http://placehold.it/252x168" alt="article">
+              </a>
+              <a href="#">Recipes from a Sunday Supper</a>
+              <p>
+                I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful Sunday supper - eat them slowly, a little bit at…
+              </p>
+              <div class="article-footer">
+                Date / <a href="#" class="underlined-href">Read >></a>
+              </div>
+            </article>
+            <article>
+              <a href="#">
+                <img src="http://placehold.it/252x168" alt="article">
+              </a>
+              <a href="#">Recipes from a Sunday Supper</a>
+              <p>
+                I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful Sunday supper - eat them slowly, a little bit at…
+              </p>
+              <div class="article-footer">
+                Date / <a href="#" class="underlined-href">Read >></a>
+              </div>
+            </article>
+            <article>
+              <a href="#">
+                <img src="http://placehold.it/252x168" alt="article">
+              </a>
+              <a href="#">Recipes from a Sunday Supper</a>
+              <p>
+                I could not figure out what to do with the delectable slices of Pear Cake that I brought home from this wonderful Sunday supper - eat them slowly, a little bit at…
+              </p>
+              <div class="article-footer">
+                Date / <a href="#" class="underlined-href">Read >></a>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <div class="col-sm-3">
+          <nav>
+            Privacy Policy | Terms of Use | Contact
+          </nav>
+          <div class="copyright font-small-size">
+            © 2017 Food Sense, all rights reserved.
+          </div>
+        </div>
+        <div class="col-sm-7">
+        </div>
+        <div class="col-sm-2">
+          <div class="social-media-icons">
+            Twitter Facebook RSS
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

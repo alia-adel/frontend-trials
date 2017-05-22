@@ -5,16 +5,16 @@ $href-color: #34AC98;
 $href-hover-color: #ec6635;
 $font-large-size: 36px;
 $font-large-line-height: 45px;
-$font-small-size: 14px;
-$font-small-line-height: 20px;
-$font-xsmall-size: 12px;
-$font-xsmall-line-height: 17px;
-$font-xxsmall-size: 11px;
-$font-xxsmall-line-height: 19px;
+$font-medium-size: 14px;
+$font-medium-line-height: 20px;
+$font-small-size: 12px;
+$font-small-line-height: 17px;
+$font-xsmall-size: 11px;
+$font-xsmall-line-height: 19px;
 
 *{
   box-sizing: border-box;
-  // border: 1px solid red;
+  /* border: 1px solid red;*/
 }
 
 body {
@@ -26,6 +26,7 @@ body {
   }
   line-height: 24px;
   color: $primary-color;
+  margin: 50px 86.5px 0px 86.5px;
 }
 
 img {
@@ -39,14 +40,103 @@ a{
 
   &:hover {
     color: $href-hover-color;
+    text-decoration: none;
   }
   &:active {
   }
-  // &:visited {
-  //   color: $href-color;
-  // }
 }
 
+.font-xsmall-size {
+  font-size: $font-xsmall-size;
+  line-height: $font-xsmall-line-height;
+}
+
+.font-small-size {
+  font-size: $font-small-size;
+  line-height: $font-small-line-height;
+}
+
+.font-medium-size {
+  font-size: $font-medium-size;
+  line-height: $font-medium-line-height;
+}
+
+.font-large-size {
+  font-size: $font-large-size;
+  line-height: $font-large-line-height;
+}
 .underlined-href {
   border-bottom: 1px dashed #E5E5E5;
+}
+
+/* Home Page Left Navigation Section */
+Header {
+  width: 122px;
+  height: 121px;
+  margin: 0px 10px 0px 25px;
+  background: url("../assets/images/food-sense.png") no-repeat 0 0;
+}
+
+/* Home Page Left Navigation */
+.left-nav {
+  ul{
+    list-style: none outside none;
+    margin-top: 20px;
+    padding: 0px 0px 0px 10px;
+    li{
+      margin: 20px 0px 20px 10px;
+      img {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        float: left;
+        cursor: pointer;
+        transition: left 1s ease;
+        &:hover {
+          left: 10px;
+        }
+      }
+      a{
+        font-style: italic;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+/* Images' Slide*/
+figure {
+  .carousel {
+      .carousel-inner {
+        .item {
+          .carousel-caption{
+            left: 0%;
+            text-shadow: none;
+            a {
+              display: flex;
+              flex-direction: column;
+              font-style: italic;
+              h1 {
+                @extend .font-large-size;
+                color: black;
+                background-color: white;
+                width: 50%;
+                margin-bottom: 0px;
+                padding: 5px 20px 5px 20px;
+                text-align: left;
+              }
+              h2 {
+                @extend .font-medium-size;
+                color: white;
+                background-color: black;
+                margin-top: 0px;
+                padding: 20px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+  }
 }

@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+
+body { font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: normal; font-variant: normal; line-height: 24px; color: #111111; }
+
+img { width: 100%; }
+
+a { color: #34AC98; cursor: pointer; text-decoration: none; }
+a:hover { color: #ec6635; }
+
+.underlined-href { border-bottom: 1px dashed #E5E5E5; }
+
+/*# sourceMappingURL=main.css.map */

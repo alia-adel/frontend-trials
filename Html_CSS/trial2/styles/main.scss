@@ -1,0 +1,52 @@
+//Variables
+$primary-color: #111111;
+$secondary-color: #AAA;
+$href-color: #34AC98;
+$href-hover-color: #ec6635;
+$font-large-size: 36px;
+$font-large-line-height: 45px;
+$font-small-size: 14px;
+$font-small-line-height: 20px;
+$font-xsmall-size: 12px;
+$font-xsmall-line-height: 17px;
+$font-xxsmall-size: 11px;
+$font-xxsmall-line-height: 19px;
+
+*{
+  box-sizing: border-box;
+  // border: 1px solid red;
+}
+
+body {
+  font: {
+    family: 'Roboto', sans-serif;
+    size: 16px;
+    weight: normal;
+    variant: normal;
+  }
+  line-height: 24px;
+  color: $primary-color;
+}
+
+img {
+  width: 100%;
+}
+
+a{
+  color: $href-color;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: $href-hover-color;
+  }
+  &:active {
+  }
+  // &:visited {
+  //   color: $href-color;
+  // }
+}
+
+.underlined-href {
+  border-bottom: 1px dashed #E5E5E5;
+}

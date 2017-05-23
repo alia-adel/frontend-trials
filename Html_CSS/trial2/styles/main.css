@@ -1,6 +1,17 @@
-* { box-sizing: border-box; /* border: 1px solid red;*/ }
+/**
+* AUTHOR ALIA ADEL
+* FOR DESIGN COPY RIGHTS, CHECK http://foodsense.is/
+* IMP! THIS IMPLEMENTATION IS NOT FOR PRODUCTION USE BUT RATHER FOR
+* PRACTICE & EDUCATIONAL PURPOSES.
+**/
+/*----------------------------------------------------------------*/
+/* VARIABLES */
+/*----------------------------------------------------------------*/
+/* GENERAL STYLES */
+/*----------------------------------------------------------------*/
+* { box-sizing: border-box; }
 
-body { font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: normal; font-variant: normal; line-height: 24px; color: #111111; margin: 50px 86.5px 0px 86.5px; }
+body { font-family: 'Times New Roman'; font-size: 16px; font-weight: normal; font-variant: normal; line-height: 24px; color: #111111; margin: 50px 86.5px 0px 86.5px; }
 
 img { width: 100%; }
 
@@ -9,7 +20,7 @@ a:hover { color: #ec6635; text-decoration: none; }
 
 .font-xsmall-size, .latest-tweet a { font-size: 11px; line-height: 19px; }
 
-.font-small-size, .latest-tweet p { font-size: 12px; line-height: 17px; }
+.font-small-size, .latest-tweet p, .horizontal-nav .h-nav-item a p { font-size: 12px; line-height: 17px; }
 
 .font-medium-size, figure .carousel .carousel-inner .item .carousel-caption a h2 { font-size: 14px; line-height: 20px; }
 
@@ -20,28 +31,43 @@ a:hover { color: #ec6635; text-decoration: none; }
 .text-uppercase, .latest-tweet p { text-transform: uppercase; }
 
 /* Home Page Left Navigation Section */
-Header { width: 122px; height: 121px; margin: 0px 10px 0px 25px; background: url("../assets/images/food-sense.png") no-repeat 0 0; }
+/*----------------------------------------------------------------*/
+Header { width: 122px; height: 121px; margin: 0px 20px 0px 25px; background: url("../assets/images/food-sense.png") no-repeat 0 0; }
 
 /* Home Page Left Navigation */
+/*----------------------------------------------------------------*/
+.left-nav { margin: 40px 0px; }
 .left-nav ul { list-style: none outside none; margin-top: 20px; padding: 0px 0px 0px 10px; }
-.left-nav ul li { margin: 20px 0px 20px 10px; }
-.left-nav ul li img { position: relative; width: 32px; height: 32px; margin-right: 10px; float: left; cursor: pointer; transition: left 1s ease; }
-.left-nav ul li img:hover { left: 10px; }
+.left-nav ul li { margin: 20px 0px 30px 10px; }
+.left-nav ul li img { position: relative; width: 32px; height: 32px; margin-right: 10px; float: left; cursor: pointer; transition: all .2s ease; }
+.left-nav ul li img:hover { left: 5px; }
 .left-nav ul li a { font-style: italic; padding: 0px; }
 
 /* Images' Slide*/
-figure .carousel .carousel-inner .item .carousel-caption { left: 0%; text-shadow: none; }
+/*----------------------------------------------------------------*/
+figure .carousel .carousel-inner .item .carousel-caption { left: 0%; right: 0%; text-shadow: none; }
 figure .carousel .carousel-inner .item .carousel-caption a { display: flex; flex-direction: column; font-style: italic; }
-figure .carousel .carousel-inner .item .carousel-caption a h1 { color: black; background-color: white; width: 50%; margin-bottom: 0px; padding: 5px 20px 5px 20px; text-align: left; }
-figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; background-color: black; margin-top: 0px; padding: 20px; text-align: left; }
+figure .carousel .carousel-inner .item .carousel-caption a:hover { opacity: 0.7; filter: alpha(opacity=70); }
+figure .carousel .carousel-inner .item .carousel-caption a h1 { color: black; background-color: white; margin-bottom: 0px; padding: 5px 20px 5px 20px; text-align: left; flex-wrap: wrap; max-width: 30%; }
+figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; background-color: black; margin-top: 0px; padding: 20px; text-align: left; max-width: 60%; flex-wrap: wrap; }
 
-/* Lastet Tweet */
+.carousel-caption-right { float: right; }
+
+/* Lastet Tweet SECTION*/
+/*----------------------------------------------------------------*/
 .latest-tweet p { margin-bottom: 15px; }
 .latest-tweet a { background-color: white; border: 1px solid #AAA; border-radius: 4px; color: #34AC98; padding: 8px 15px; margin-bottom: 15px; }
-.latest-tweet a:hover { background-color: #D9EFEC; }
+.latest-tweet a:hover { background-color: #D9EFEC; color: #ec6635; /* Need to be applied only on the href not the icon */ }
 .latest-tweet i { padding-right: 10px; }
 
-.vertical-nav .container-fluid { padding: 0px; display: flex; flex-direction: column; }
-.vertical-nav .container-fluid navbar-nav { padding: 0px; width: 100%; display: flex; flex-direction: column; align-content: center; justify-content: space-between; }
+/* HORIZONTAL NAVIGATION */
+/*----------------------------------------------------------------*/
+.horizontal-nav { display: flex; flex-wrap: wrap; }
+.horizontal-nav .h-nav-item { flex-grow: 1; color: #AAA; font-style: italic; background-color: #eff8f7; padding: 20px 15px; border-right: 1px solid #D9EFEC; }
+.horizontal-nav .h-nav-item a h4 { margin: 0px 15px 5px 15px; }
+.horizontal-nav .h-nav-item a p { margin: 0px 15px 0px 15px; }
+.horizontal-nav .first-slide { border-bottom-left-radius: 3px; }
+.horizontal-nav .last-slide { border-bottom-right-radius: 3px; }
+.horizontal-nav .active-slide { background-color: #D9EFEC; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,20 @@
-//Variables
+/**
+* AUTHOR ALIA ADEL
+* FOR DESIGN COPY RIGHTS, CHECK http://foodsense.is/
+* IMP! THIS IMPLEMENTATION IS NOT FOR PRODUCTION USE BUT RATHER FOR
+* PRACTICE & EDUCATIONAL PURPOSES.
+**/
+/*----------------------------------------------------------------*/
+
+/* VARIABLES */
+/*----------------------------------------------------------------*/
 $primary-color: #111111;
 $secondary-color: #AAA;
 $minor-color: #34AC98;
 $href-color: #34AC98;
 $href-hover-color: #ec6635;
-$background-color-1: #D9EFEC;
+$background-color-1: rgb(239,248,247);
+$background-color-2: #D9EFEC;
 $font-large-size: 36px;
 $font-large-line-height: 45px;
 $font-medium-size: 14px;
@@ -13,15 +23,19 @@ $font-small-size: 12px;
 $font-small-line-height: 17px;
 $font-xsmall-size: 11px;
 $font-xsmall-line-height: 19px;
+$horizontal-nav-corner-radius: 3px;
+
+/* GENERAL STYLES */
+/*----------------------------------------------------------------*/
 
 *{
   box-sizing: border-box;
-  /* border: 1px solid red;*/
+  // border: 1px solid red;
 }
 
 body {
   font: {
-    family: 'Roboto', sans-serif;
+    family: 'Times New Roman';
     size: 16px;
     weight: normal;
     variant: normal;
@@ -74,21 +88,25 @@ a{
 }
 
 /* Home Page Left Navigation Section */
+/*----------------------------------------------------------------*/
 Header {
   width: 122px;
   height: 121px;
-  margin: 0px 10px 0px 25px;
+  margin: 0px 20px 0px 25px;
   background: url("../assets/images/food-sense.png") no-repeat 0 0;
 }
 
 /* Home Page Left Navigation */
+/*----------------------------------------------------------------*/
 .left-nav {
+  margin: 40px 0px;
   ul{
     list-style: none outside none;
     margin-top: 20px;
     padding: 0px 0px 0px 10px;
     li{
-      margin: 20px 0px 20px 10px;
+      margin: 20px 0px 30px 10px;
+
       img {
         position: relative;
         width: 32px;
@@ -96,9 +114,9 @@ Header {
         margin-right: 10px;
         float: left;
         cursor: pointer;
-        transition: left 1s ease;
+        transition: all .2s ease;
         &:hover {
-          left: 10px;
+          left: 5px;
         }
       }
       a{
@@ -110,25 +128,32 @@ Header {
 }
 
 /* Images' Slide*/
+/*----------------------------------------------------------------*/
 figure {
   .carousel {
       .carousel-inner {
         .item {
           .carousel-caption{
             left: 0%;
+            right: 0%;
             text-shadow: none;
             a {
               display: flex;
               flex-direction: column;
               font-style: italic;
+              &:hover {
+                opacity: 0.7;
+                filter: alpha(opacity=70);
+              }
               h1 {
                 @extend .font-large-size;
                 color: black;
                 background-color: white;
-                width: 50%;
                 margin-bottom: 0px;
                 padding: 5px 20px 5px 20px;
                 text-align: left;
+                flex-wrap: wrap;
+                max-width: 30%;
               }
               h2 {
                 @extend .font-medium-size;
@@ -137,6 +162,8 @@ figure {
                 margin-top: 0px;
                 padding: 20px;
                 text-align: left;
+                max-width: 60%;
+                flex-wrap: wrap;
               }
             }
           }
@@ -145,7 +172,12 @@ figure {
   }
 }
 
-/* Lastet Tweet */
+.carousel-caption-right {
+      float: right;
+}
+
+/* Lastet Tweet SECTION*/
+/*----------------------------------------------------------------*/
 .latest-tweet {
   p {
     @extend .text-uppercase;
@@ -164,7 +196,8 @@ figure {
     margin-bottom: 15px;
 
     &:hover {
-      background-color: $background-color-1;
+      background-color: $background-color-2;
+      color: $href-hover-color; /* Need to be applied only on the href not the icon */
     }
   }
   i {
@@ -172,18 +205,36 @@ figure {
   }
 }
 
-.vertical-nav {
-  .container-fluid {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    navbar-nav{
-      padding: 0px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: space-between;
+/* HORIZONTAL NAVIGATION */
+/*----------------------------------------------------------------*/
+.horizontal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  .h-nav-item {
+    flex-grow: 1;
+    color: $secondary-color;
+    font-style: italic;
+    background-color: $background-color-1;
+    padding: 20px 15px;
+    border-right: 1px solid $background-color-2;
+    a {
+      h4 {
+        margin: 0px 15px 5px 15px;
+      }
+      p {
+        @extend .font-small-size;
+        margin: 0px 15px 0px 15px;
+      }
     }
+  }
+  .first-slide {
+    border-bottom-left-radius: $horizontal-nav-corner-radius;
+  }
+
+  .last-slide {
+    border-bottom-right-radius: $horizontal-nav-corner-radius;
+  }
+  .active-slide {
+    background-color: $background-color-2;
   }
 }

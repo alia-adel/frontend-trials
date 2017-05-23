@@ -18,9 +18,9 @@ img { width: 100%; }
 a { color: #34AC98; cursor: pointer; text-decoration: none; }
 a:hover { color: #ec6635; text-decoration: none; }
 
-.font-xsmall-size, figure .carousel .carousel-inner .item .credit, .latest-tweet a, .lets-be-friends a, .fb-community a, .signup-newsletter .signup-intro, .lets-be-friends section { font-size: 11px; line-height: 19px; }
+.font-xsmall-size, figure .carousel .carousel-inner .item .credit, .latest-tweet a, .lets-be-friends a, .fb-community a, .signup-newsletter .signup-intro, .lets-be-friends section, footer .col-sm-3 .copyright { font-size: 11px; line-height: 19px; }
 
-.font-small-size, .latest-tweet p, .lets-be-friends p, .fb-community p, .horizontal-nav .h-nav-item a p { font-size: 12px; line-height: 17px; }
+.font-small-size, .latest-tweet p, .lets-be-friends p, .fb-community p, .horizontal-nav .h-nav-item a p, footer .col-sm-3 .footer-nav a { font-size: 12px; line-height: 17px; }
 
 .font-medium-size, figure .carousel .carousel-inner .item .carousel-caption a h2, .homepage-news { font-size: 14px; line-height: 20px; }
 
@@ -60,7 +60,7 @@ figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; ba
 /* Lastet Tweet SECTION*/
 /*----------------------------------------------------------------*/
 .latest-tweet p, .lets-be-friends p, .fb-community p { border-bottom: 1px dashed #E5E5E5; margin-bottom: 15px; }
-.latest-tweet a, .lets-be-friends a, .fb-community a { background-color: white; border: 1px solid #AAA; border-radius: 4px; color: #34AC98; padding: 8px 15px; margin-bottom: 15px; width: 100%; }
+.latest-tweet a, .lets-be-friends a, .fb-community a { background-color: white; border: 1px solid #AAA; border-radius: 4px; color: #34AC98; padding: 8px 15px; margin-bottom: 15px; width: 160px; }
 .latest-tweet a:hover, .lets-be-friends a:hover, .fb-community a:hover { background-color: #D9EFEC; color: #ec6635; /* Need to be applied only on the href not the icon */ }
 .latest-tweet i, .lets-be-friends i, .fb-community i { padding-right: 10px; }
 
@@ -100,5 +100,14 @@ figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; ba
 .homepage-news article .article-footer .read-more { border-bottom: 1px dashed #E5E5E5; }
 .homepage-news article .article-footer .read-more:hover { background: #D9EFEC; }
 .homepage-news .last-article { margin-right: 0px; padding-right: 0px; }
+
+/* FOOTER */
+footer { display: flex; border-top: 2px solid #E5E5E5; margin: 40px 0px; padding: 20px 0px; color: #AAA; }
+footer .col-sm-3 { flex-direction: column; }
+footer .col-sm-3 .footer-nav { flex-direction: row; }
+footer .col-sm-2 { margin: auto; }
+footer .col-sm-2 .social-media-icons { display: flex; justify-content: space-around; }
+footer .col-sm-2 .social-media-icons a { opacity: 0.3; cursor: pointer; color: #111111; }
+footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

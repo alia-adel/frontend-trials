@@ -230,7 +230,7 @@ figure {
     color: $minor-color;
     padding: 8px 15px;
     margin-bottom: 15px;
-    width: 100%;
+    width: 160px;
 
     &:hover {
       background-color: $background-color-2;
@@ -383,5 +383,41 @@ figure {
   .last-article{
     margin-right: 0px;
     padding-right: 0px;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  border-top: 2px solid #E5E5E5;
+  margin: 40px 0px;
+  padding: 20px 0px;
+  color: $secondary-color;
+  .col-sm-3 {
+    flex-direction: column;
+    .footer-nav {
+      flex-direction: row;
+      a {
+        @extend .font-small-size;
+      }
+    }
+    .copyright {
+      @extend .font-xsmall-size;
+    }
+  }
+  .col-sm-2 {
+    margin: auto;
+    .social-media-icons{
+      display: flex;
+      justify-content: space-around;
+      a{
+        opacity: 0.3;
+        cursor: pointer;
+        color: $primary-color;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 }

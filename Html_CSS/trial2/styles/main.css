@@ -18,17 +18,15 @@ img { width: 100%; }
 a { color: #34AC98; cursor: pointer; text-decoration: none; }
 a:hover { color: #ec6635; text-decoration: none; }
 
-.font-xsmall-size, figure .carousel .carousel-inner .item .credit, .latest-tweet a { font-size: 11px; line-height: 19px; }
+.font-xsmall-size, figure .carousel .carousel-inner .item .credit, .latest-tweet a, .lets-be-friends a, .fb-community a, .signup-newsletter .signup-intro, .lets-be-friends section { font-size: 11px; line-height: 19px; }
 
-.font-small-size, .latest-tweet p, .horizontal-nav .h-nav-item a p { font-size: 12px; line-height: 17px; }
+.font-small-size, .latest-tweet p, .lets-be-friends p, .fb-community p, .horizontal-nav .h-nav-item a p { font-size: 12px; line-height: 17px; }
 
 .font-medium-size, figure .carousel .carousel-inner .item .carousel-caption a h2 { font-size: 14px; line-height: 20px; }
 
 .font-large-size { font-size: 36px; line-height: 45px; }
 
-.underlined-href, .latest-tweet p { border-bottom: 1px dashed #E5E5E5; }
-
-.text-uppercase, .latest-tweet p { text-transform: uppercase; }
+.text-uppercase, .latest-tweet p, .lets-be-friends p, .fb-community p { text-transform: uppercase; }
 
 /* Home Page Left Navigation Section */
 /*----------------------------------------------------------------*/
@@ -61,10 +59,10 @@ figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; ba
 
 /* Lastet Tweet SECTION*/
 /*----------------------------------------------------------------*/
-.latest-tweet p { margin-bottom: 15px; }
-.latest-tweet a { background-color: white; border: 1px solid #AAA; border-radius: 4px; color: #34AC98; padding: 8px 15px; margin-bottom: 15px; }
-.latest-tweet a:hover { background-color: #D9EFEC; color: #ec6635; /* Need to be applied only on the href not the icon */ }
-.latest-tweet i { padding-right: 10px; }
+.latest-tweet p, .lets-be-friends p, .fb-community p { border-bottom: 1px dashed #E5E5E5; margin-bottom: 15px; }
+.latest-tweet a, .lets-be-friends a, .fb-community a { background-color: white; border: 1px solid #AAA; border-radius: 4px; color: #34AC98; padding: 8px 15px; margin-bottom: 15px; width: 100%; }
+.latest-tweet a:hover, .lets-be-friends a:hover, .fb-community a:hover { background-color: #D9EFEC; color: #ec6635; /* Need to be applied only on the href not the icon */ }
+.latest-tweet i, .lets-be-friends i, .fb-community i { padding-right: 10px; }
 
 /* HORIZONTAL NAVIGATION */
 /*----------------------------------------------------------------*/
@@ -75,5 +73,27 @@ figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; ba
 .horizontal-nav .first-slide { border-bottom-left-radius: 3px; }
 .horizontal-nav .last-slide { border-bottom-right-radius: 3px; }
 .horizontal-nav .active-slide { background-color: #D9EFEC; }
+
+/* SIGN-UP SECTION */
+/*----------------------------------------------------------------*/
+.signup-newsletter { display: flex; justify-content: space-between; align-items: center; margin: 20px 0px; padding: 5px 20px; border-top: 1px dashed #E5E5E5; border-bottom: 1px dashed #E5E5E5; }
+.signup-newsletter img { width: 32px; height: 32px; }
+.signup-newsletter .signup-intro { font-style: italic; padding: 0px 16px; margin-bottom: 0px; }
+.signup-newsletter .sign-up-form { display: flex; justify-content: space-between; align-items: center; flex-direction: row; margin-bottom: 0px; }
+.signup-newsletter .sign-up-form .input-sm { padding: 0px 20px; min-width: 30%; }
+.signup-newsletter .sign-up-form .input-sm:focus { border: 2px solid #34AC98; }
+.signup-newsletter .sign-up-form .form-control { margin: 0px 13px; width: 200px; /*TODO Need to override the box-shadow color*/ }
+
+/* LET'S BE FRIENDS */
+/*----------------------------------------------------------------*/
+.lets-be-friends section { padding: 0px 0px 18px 0px; }
+
+/* JOIN FACEBOOK COMMUNITY SECTION */
+/*----------------------------------------------------------------*/
+/* HOME PAGE NEWS */
+/*----------------------------------------------------------------*/
+.homepage-news { display: flex; justify-content: space-between; }
+.homepage-news a img { width: 185px; height: 120px; margin-bottom: 20px; transition: all .2s ease; align-self: center; border: 1px solid rgba(202, 201, 201, 0.29); padding: 9px; -webkit-box-shadow: 10px 10px 5px 0px #f7f2f7; -moz-box-shadow: 10px 10px 5px 0px #f7f2f7; box-shadow: 10px 10px 5px 0px #f7f2f7; }
+.homepage-news a:hover img { opacity: 0.3; }
 
 /*# sourceMappingURL=main.css.map */

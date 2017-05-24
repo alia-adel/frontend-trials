@@ -31,15 +31,21 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
+
+  .body {
+    justify-content: center;
+  }
   .header-row {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
+    justify-content: center;
     .header-nav-section{
       order: 1;
       .site-logo {
         order:99;
+        margin: 0px;
+        padding: 0px;
         align-content: center;
       }
       .left-nav {
@@ -64,6 +70,31 @@
     }
     .carousel-section {
       order: 2;
+      figure {
+        .carousel {
+          .carousel-inner {
+            .item {
+              img {
+
+              }
+              .carousel-caption {
+
+              }
+              .credit {
+                display: relative;
+                top: 100px;
+                left: 100px;
+                opacity: 1;
+                filter: alpha(opacity=100);
+                background: none;
+                border: none;
+                text-shadow: none;
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -81,6 +112,20 @@
   .signup-newsletter {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    .sign-up-desc {
+      display: flex;
+    }
+    .sign-up-form {
+      .input-sm {
+        width: 100%;
+        min-width: 60%;
+      }
+      .form-control {
+        width: 100%;
+        min-width: 30%;
+      }
+    }
   }
 
   .homepage-news {

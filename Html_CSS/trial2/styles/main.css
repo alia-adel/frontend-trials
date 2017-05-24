@@ -18,7 +18,7 @@ img { width: 100%; }
 a { color: #34AC98; cursor: pointer; text-decoration: none; }
 a:hover { color: #ec6635; text-decoration: none; }
 
-.font-xsmall-size, figure .carousel .carousel-inner .item .credit, .latest-tweet a, .lets-be-friends a, .fb-community a, .signup-newsletter .signup-intro, .lets-be-friends section, footer .col-sm-3 .copyright { font-size: 11px; line-height: 19px; }
+.font-xsmall-size, figure .carousel .carousel-inner .item .credit, .latest-tweet a, .lets-be-friends a, .fb-community a, .signup-newsletter .sign-up-desc .signup-intro, .lets-be-friends section, footer .col-sm-3 .copyright { font-size: 11px; line-height: 19px; }
 
 .font-small-size, .latest-tweet p, .lets-be-friends p, .fb-community p, .horizontal-nav .h-nav-item a p, footer .col-sm-3 .footer-nav a { font-size: 12px; line-height: 17px; }
 
@@ -77,8 +77,9 @@ figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; ba
 /* SIGN-UP SECTION */
 /*----------------------------------------------------------------*/
 .signup-newsletter { display: flex; justify-content: space-between; align-items: center; margin: 20px 0px; padding: 5px 20px; border-top: 1px dashed #E5E5E5; border-bottom: 1px dashed #E5E5E5; }
-.signup-newsletter img { width: 32px; height: 32px; }
-.signup-newsletter .signup-intro { font-style: italic; padding: 0px 16px; margin-bottom: 0px; }
+.signup-newsletter .sign-up-desc { display: flex; }
+.signup-newsletter .sign-up-desc img { width: 32px; height: 32px; }
+.signup-newsletter .sign-up-desc .signup-intro { font-style: italic; padding: 0px 16px; margin-bottom: 0px; }
 .signup-newsletter .sign-up-form { display: flex; justify-content: space-between; align-items: center; flex-direction: row; margin-bottom: 0px; }
 .signup-newsletter .sign-up-form .input-sm { padding: 0px 20px; min-width: 30%; }
 .signup-newsletter .sign-up-form .input-sm:focus { border: 2px solid #34AC98; }
@@ -125,18 +126,23 @@ footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
 * FROM 0 TO 480
 **/
 /* MIXINS */
-@media screen and (min-width: 0px) and (max-width: 480px) { .header-row { display: flex; flex-direction: column; flex-wrap: wrap; }
+@media screen and (min-width: 0px) and (max-width: 480px) { .body { justify-content: center; }
+  .header-row { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; }
   .header-row .header-nav-section { order: 1; }
-  .header-row .header-nav-section .site-logo { order: 99; align-content: center; }
+  .header-row .header-nav-section .site-logo { order: 99; margin: 0px; padding: 0px; align-content: center; }
   .header-row .header-nav-section .left-nav { order: 1; font-size: 12; width: 100%; border-bottom: 2px solid #E5E5E5; /* Reset Padding & Margin */ }
   .header-row .header-nav-section .left-nav ul { display: flex; flex-direction: row; justify-content: space-around; }
   .header-row .header-nav-section .left-nav ul, .header-row .header-nav-section .left-nav li, .header-row .header-nav-section .left-nav a { padding: 0px; margin: 0px; }
   .header-row .header-nav-section .left-nav img { display: none; }
   .header-row .carousel-section { order: 2; }
+  .header-row .carousel-section figure .carousel .carousel-inner .item .credit { display: relative; top: 100px; left: 100px; opacity: 1; filter: alpha(opacity=100); background: none; border: none; text-shadow: none; color: #333333; }
   .latest-tweet, .lets-be-friends, .fb-community { display: none; }
   .horizontal-nav { display: none; }
   .lets-be-friends { display: none; }
-  .signup-newsletter { display: flex; flex-wrap: wrap; }
+  .signup-newsletter { display: flex; flex-wrap: wrap; width: 100%; }
+  .signup-newsletter .sign-up-desc { display: flex; }
+  .signup-newsletter .sign-up-form .input-sm { width: 100%; min-width: 60%; }
+  .signup-newsletter .sign-up-form .form-control { width: 100%; min-width: 30%; }
   .homepage-news { display: flex; flex-wrap: wrap; }
   footer { font-size: 10; } }
 

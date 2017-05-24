@@ -8,7 +8,7 @@
 
 /* VARIABLES */
 /*----------------------------------------------------------------*/
-$primary-color: #111111;
+$primary-color:  #333333;
 $secondary-color: #AAA;
 $minor-color: #34AC98;
 $href-color: #34AC98;
@@ -31,7 +31,7 @@ $dashed-single-side-border: 1px dashed #E5E5E5;
 
 *{
   box-sizing: border-box;
-  /*border: 1px solid red;*/
+  // border: 1px solid red;
 }
 
 body {
@@ -423,3 +423,8 @@ footer {
     }
   }
 }
+
+/* IMPORT RESPONSIVE STYLESHEETS */
+@import "main-tablet-large";
+@import "main-tablet";
+@import "main-mobile";

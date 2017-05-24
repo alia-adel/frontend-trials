@@ -1,0 +1,94 @@
+/** AUTHOR ALIA ADEL
+* THIS SASS FILE TARGET MOBILE DEVICES WITH DEVICE PIXELS
+* FROM 0 TO 480
+**/
+
+/* MIXINS */
+
+@mixin font-mob-lg-hight-lg() {
+  font-size: 14;
+  line-height: 20;
+}
+
+@mixin font-mob-lg-hight-sm() {
+  font-size: 14;
+  line-height: 16;
+}
+
+@mixin font-mob-md-hight-lg() {
+  font-size: 12;
+  // line-height: 16; /* Turned to be too high */
+}
+
+@mixin font-mob-md-hight-sm() {
+  font-size: 12;
+  line-height: 12;
+}
+
+@mixin font-mob-sm-hight-lg() {
+  font-size: 10;
+  // line-height: 15; /* Turned to be too high */
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .header-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .header-nav-section{
+      order: 1;
+      .site-logo {
+        order:99;
+        align-content: center;
+      }
+      .left-nav {
+        order: 1;
+        @include font-mob-md-hight-lg();
+        width: 100%;
+        border-bottom: 2px solid #E5E5E5;
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        /* Reset Padding & Margin */
+        ul, li, a{
+          padding: 0px;
+          margin: 0px;
+        }
+        img {
+          display: none;
+        }
+      }
+    }
+    .carousel-section {
+      order: 2;
+    }
+  }
+
+  .latest-tweet {
+    display: none;
+  }
+
+  .horizontal-nav {
+    display: none;
+  }
+
+  .lets-be-friends {
+    display: none;
+  }
+  .signup-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .homepage-news {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer {
+      @include font-mob-sm-hight-lg;
+  }
+}

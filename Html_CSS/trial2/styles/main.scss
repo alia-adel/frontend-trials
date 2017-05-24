@@ -140,6 +140,7 @@ figure {
             left: 800px;
             width: 15%;
             @extend .font-xsmall-size;
+            text-align: center;
             color: #555;
             background: rgba(255,255,255,.5);
             border: 1px solid $secondary-color;
@@ -148,7 +149,6 @@ figure {
             z-index: 1;
             opacity: 0.9;
             filter: alpha(opacity=90);
-            text-align: center;
             /*TODO text-shadow were copied as-is need to study text shadow more*/
             text-shadow: 0 1px 0 rgba(255,255,255,.5);
             a {
@@ -168,7 +168,6 @@ figure {
               flex-direction: column;
               font-style: italic;
               flex-wrap: wrap;
-
               &:hover {
                 opacity: 0.7;
                 filter: alpha(opacity=70);
@@ -357,14 +356,18 @@ figure {
         -moz-box-shadow: 1px 1px 3px #F5F5F5;
         box-shadow: 1px 1px 3px #F5F5F5;
       }
-      p {
-
-      }
       &:hover {
         img {
           opacity: 0.3;
         }
       }
+    }
+    .article-body {
+      width: 217px;
+      height: 100px;
+      // white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .article-footer {
       mark {
@@ -378,7 +381,6 @@ figure {
         }
       }
     }
-
   }
   .last-article{
     margin-right: 0px;

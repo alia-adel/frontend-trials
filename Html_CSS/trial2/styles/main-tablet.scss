@@ -2,6 +2,212 @@
 * THIS SASS FILE TARGET TABLETS DEVICES WITH DEVICE PIXELS
 * FROM 481 TO 767
 **/
-@media screen and (min-width: 481px) and (max-width: 767px) {
+/*TODO Issue exist for the site logo where it gets cut*/
 
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    @include reset-padding-margin;
+    margin-right: 15%;
+    margin-left: 15%;
+
+    .header-row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      .header-nav-section{
+        order: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 20px;
+        .site-logo {
+          order:1;
+          align-self: center;
+          width: 260px;
+          margin-right: 20px;
+          display: block;
+          @include reset-padding-margin;
+          a {
+              @include reset-padding-margin;
+              h1 {
+                @include reset-padding-margin;
+              }
+          }
+        }
+        .left-nav {
+          order: 2;
+          @include font-mob-md-hight-lg();
+          @include reset-padding-margin;
+          margin-left: 20px;
+          width: 100%;
+          align-self: center;
+          ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-self: center;
+            flex-wrap: wrap;
+          }
+          ul, li, a{
+            @include reset-padding-margin;
+          }
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .carousel-section {
+      order: 2;
+      figure {
+        .carousel {
+          .carousel-inner {
+            .item {
+              img {
+
+              }
+              .carousel-caption {
+                @include reset-padding-margin;
+                left: 0%;
+                right: 0%;
+                bottom: 0%;
+                display: flex;
+                flex-wrap: wrap;
+                a{
+                  text-align: left;
+                  h1 {
+                    @include reset-padding-margin;
+                    @include font-mob-lg-hight-sm;
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 0px 5px;
+                  }
+                  h2 {
+                    @include reset-padding-margin;
+                    @include font-mob-md-hight-sm;
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 5px 5px;
+                  }
+                }
+              }
+              .credit {
+                /* TODO TRY USING JAVASCRIPT TO REMOVE THE CRDIT TEXT & WRITE IT AFTER THE ITEM DIV*/
+              }
+            }
+          }
+        }
+      }
+    }
+    .latest-tweet {
+      display: none;
+    }
+
+    .horizontal-nav {
+      display: none;
+    }
+
+    .lets-be-friends {
+      display: none;
+    }
+    .signup-newsletter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+      @include reset-padding-margin;
+      padding: 10px 0px;
+      margin: 10px 0px;
+      .sign-up-desc {
+        display: flex;
+        @include reset-padding-margin;
+      }
+      .sign-up-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 10px;
+        .email-txt-box {
+          width: 60%;
+          margin-right: 20px;
+        }
+        .subscribe-btn {
+          @include reset-padding-margin;
+          text-align: center;
+          width: 30%;
+        }
+      }
+    }
+
+    .col-sm-10{
+      @include reset-padding-margin();
+      .homepage-news {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include reset-padding-margin();
+        article {
+          @include reset-padding-margin();
+          margin-bottom: 20px;
+          width: 45%;
+          a {
+            img {
+              width: 100%;
+            }
+            p {
+              width: 100%;
+            }
+          }
+          .article-body {
+            width: 100%;
+          }
+
+          .article-footer {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    footer {
+        @include font-mob-sm-hight-lg;
+        @include reset-padding-margin();
+        padding: 10px 0px;
+        justify-content: space-between;
+        .col-sm-3 {
+          @include reset-padding-margin();
+            .footer-nav {
+              @include reset-padding-margin();
+              display: flex;
+              flex-wrap: wrap;
+            }
+            .copyright {
+              @include reset-padding-margin();
+              flex-wrap: wrap;
+            }
+        }
+        .col-sm-7 {
+
+        }
+        .col-sm-2 {
+          @include reset-padding-margin();
+          align-self: center;
+          .social-media-icons {
+            @include reset-padding-margin();
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            a {
+              padding-right: 5px;
+              i {
+
+              }
+            }
+          }
+        }
+      }
+    }
 }

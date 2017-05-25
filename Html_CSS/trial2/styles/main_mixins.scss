@@ -33,3 +33,9 @@
   font-size: 10;
   // line-height: 15; /* Turned to be too high */
 }
+
+@mixin responsive-body-reset {
+  @include reset-padding-margin;
+  margin-right: 10%;
+  margin-left: 10%;
+}

@@ -1,6 +1,6 @@
 /*
-Error: Undefined mixin 'reset-padding-margin'.
-        on line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `reset-padding-margin'
+Error: Undefined mixin 'responsive-body-reset'.
+        on line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `responsive-body-reset'
         from line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss
 
 3: * FROM 0 TO 480
@@ -8,15 +8,15 @@ Error: Undefined mixin 'reset-padding-margin'.
 5: 
 6: @media screen and (max-width: 480px) {
 7:   body {
-8:     @include reset-padding-margin;
-9:     margin-right: 10%;
-10:     margin-left: 10%;
-11:   }
-12:   .header-row {
-13:     display: flex;
+8:     @include responsive-body-reset;
+9:   }
+10:   .header-row {
+11:     display: flex;
+12:     flex-direction: column;
+13:     flex-wrap: wrap;
 
 Backtrace:
-D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:8:in `reset-padding-margin'
+D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:8:in `responsive-body-reset'
 D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:8
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -83,4 +83,4 @@ C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/vendor/listen/lib/listen/ad
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'reset-padding-margin'.\A         on line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `reset-padding-margin'\A         from line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss\A \A 3: * FROM 0 TO 480\A 4: **/\A 5: \A 6: @media screen and (max-width: 480px) {\A 7:   body {\A 8:     @include reset-padding-margin;\A 9:     margin-right: 10%;\A 10:     margin-left: 10%;\A 11:   }\A 12:   .header-row {\A 13:     display: flex;"; }
+  content: "Error: Undefined mixin 'responsive-body-reset'.\A         on line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `responsive-body-reset'\A         from line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss\A \A 3: * FROM 0 TO 480\A 4: **/\A 5: \A 6: @media screen and (max-width: 480px) {\A 7:   body {\A 8:     @include responsive-body-reset;\A 9:   }\A 10:   .header-row {\A 11:     display: flex;\A 12:     flex-direction: column;\A 13:     flex-wrap: wrap;"; }

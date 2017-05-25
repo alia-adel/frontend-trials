@@ -5,9 +5,7 @@
 
 @media screen and (max-width: 480px) {
   body {
-    @include reset-padding-margin;
-    margin-right: 10%;
-    margin-left: 10%;
+    @include responsive-body-reset;
   }
   .header-row {
     display: flex;
@@ -62,7 +60,7 @@
           .carousel-inner {
             .item {
               img {
-            
+
               }
               .carousel-caption {
                 @include reset-padding-margin;
@@ -153,6 +151,7 @@
         }
         p {
           @include reset-padding-margin();
+          width: 100%;
         }
       }
       .article-body {

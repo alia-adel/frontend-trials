@@ -34,7 +34,7 @@ $dashed-single-side-border: 1px dashed #E5E5E5;
 
 *{
   box-sizing: border-box;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 body {
@@ -95,6 +95,11 @@ Header {
   height: 121px;
   margin: 0px 20px 0px 25px;
   background: url("../assets/images/food-sense.png") no-repeat 0 0;
+  h1 {
+    color: white;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
 }
 
 /* Home Page Left Navigation */

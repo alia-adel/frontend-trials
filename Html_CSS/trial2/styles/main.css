@@ -144,7 +144,11 @@ footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
   .header-row .header-nav-section .left-nav li { padding-bottom: 20px; }
   .header-row .header-nav-section .left-nav img { display: none; }
   .header-row .carousel-section { order: 2; }
-  .header-row .carousel-section figure .carousel .carousel-inner .item .credit { display: relative; top: 100px; left: 100px; opacity: 1; filter: alpha(opacity=100); background: none; border: none; text-shadow: none; color: #333333; }
+  .header-row .carousel-section figure .carousel .carousel-inner .item .carousel-caption { padding: 0px; margin: 0px; left: 0%; right: 0%; bottom: 0%; display: flex; flex-wrap: wrap; }
+  .header-row .carousel-section figure .carousel .carousel-inner .item .carousel-caption a { text-align: left; }
+  .header-row .carousel-section figure .carousel .carousel-inner .item .carousel-caption a h1 { padding: 0px; margin: 0px; font-size: 14; width: 100%; max-width: 100%; padding: 0px 5px; }
+  .header-row .carousel-section figure .carousel .carousel-inner .item .carousel-caption a h2 { padding: 0px; margin: 0px; font-size: 12; width: 100%; max-width: 100%; padding: 5px 5px; }
+  .header-row .carousel-section figure .carousel .carousel-inner .item .credit { top: 100px; left: 280px; opacity: 1; z-index: 30; filter: alpha(opacity=100); background: none; border: none; text-shadow: none; color: #333333; }
   .latest-tweet, .lets-be-friends, .fb-community { display: none; }
   .horizontal-nav { display: none; }
   .lets-be-friends { display: none; }

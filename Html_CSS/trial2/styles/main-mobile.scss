@@ -65,13 +65,35 @@
 
               }
               .carousel-caption {
-
+                @include reset-padding-margin;
+                left: 0%;
+                right: 0%;
+                bottom: 0%;
+                display: flex;
+                flex-wrap: wrap;
+                a{
+                  text-align: left;
+                  h1 {
+                    @include reset-padding-margin;
+                    @include font-mob-lg-hight-sm;
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 0px 5px;
+                  }
+                  h2 {
+                    @include reset-padding-margin;
+                    @include font-mob-md-hight-sm;
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 5px 5px;
+                  }
+                }
               }
               .credit {
-                display: relative;
                 top: 100px;
-                left: 100px;
+                left: 280px;
                 opacity: 1;
+                z-index: 30;
                 filter: alpha(opacity=100);
                 background: none;
                 border: none;

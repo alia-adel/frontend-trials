@@ -24,7 +24,8 @@
         .site-logo {
           order:1;
           align-self: center;
-          width: 260px;
+          // width: 260px;
+          width: 90%;
           margin-right: 20px;
           display: block;
           @include reset-padding-margin;
@@ -109,40 +110,49 @@
       display: none;
     }
 
-    .lets-be-friends {
+    .lets-be-friends-col {
       display: none;
     }
-    .signup-newsletter {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+
+    .fb-community-col {
+      display: none;
+    }
+
+    .signup-newsletter-col {
       width: 100%;
-      @include reset-padding-margin;
-      padding: 10px 0px;
-      margin: 10px 0px;
-      .sign-up-desc {
-        display: flex;
-        @include reset-padding-margin;
-      }
-      .sign-up-form {
+      .signup-newsletter {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
-        margin-top: 10px;
-        .email-txt-box {
-          width: 60%;
-          margin-right: 20px;
-        }
-        .subscribe-btn {
+        @include reset-padding-margin;
+        padding: 10px 0px;
+        margin: 10px 0px;
+        .sign-up-desc {
+          display: flex;
           @include reset-padding-margin;
-          text-align: center;
-          width: 30%;
+        }
+        .sign-up-form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          width: 100%;
+          margin-top: 10px;
+          .email-txt-box {
+            width: 60%;
+            margin-right: 20px;
+          }
+          .subscribe-btn {
+            @include reset-padding-margin;
+            text-align: center;
+            width: 30%;
+          }
         }
       }
     }
 
-    .col-sm-10{
+
+    .homepage-news-col {
       @include reset-padding-margin();
       .homepage-news {
         display: flex;

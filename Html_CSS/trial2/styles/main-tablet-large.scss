@@ -23,7 +23,8 @@
         .site-logo {
           order:1;
           align-self: center;
-          width: 170px;
+          // width: 170px;
+          width: 60%;
           margin-right: 20px;
           display: block;
           @include reset-padding-margin;
@@ -38,7 +39,6 @@
           order: 2;
           @include font-mob-md-hight-lg();
           @include reset-padding-margin;
-          margin-left: 20px;
           width: 100%;
           align-self: center;
           ul {
@@ -54,6 +54,7 @@
             li {
               display: flex;
               flex-direction: column;
+              align-items: center;
               a {
 
               }
@@ -70,6 +71,7 @@
     .carousel-section {
       order: 2;
       width: 100%;
+      @include reset-padding-margin;
       figure {
         .carousel {
           .carousel-inner {
@@ -112,41 +114,53 @@
       display: none;
     }
 
-    .lets-be-friends {
+    .lets-be-friends-div {
       display: none;
     }
-    .signup-newsletter {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+
+    .fb-community-div {
+      display: none;
+    }
+
+    .signup-newsletter-col {
       width: 100%;
       @include reset-padding-margin;
-      padding: 10px 0px;
-      margin: 10px 0px;
-      .sign-up-desc {
-        display: flex;
-        @include reset-padding-margin;
-      }
-      .sign-up-form {
+      .signup-newsletter {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
-        margin-top: 10px;
-        .email-txt-box {
-          width: 60%;
-          margin-right: 20px;
-        }
-        .subscribe-btn {
+        max-width: 100%;
+        @include reset-padding-margin;
+        padding: 10px 0px;
+        margin: 10px 0px;
+        .sign-up-desc {
+          display: flex;
           @include reset-padding-margin;
-          text-align: center;
-          width: 30%;
+        }
+        .sign-up-form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          width: 100%;
+          margin-top: 10px;
+          .email-txt-box {
+            width: 60%;
+            margin-right: 20px;
+          }
+          .subscribe-btn {
+            @include reset-padding-margin;
+            text-align: center;
+            width: 30%;
+          }
         }
       }
     }
 
-    .col-sm-10{
+
+    .homepage-news-col{
       @include reset-padding-margin();
+      width: 100%;
       .homepage-news {
         display: flex;
         flex-wrap: wrap;

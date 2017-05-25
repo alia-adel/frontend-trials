@@ -39,3 +39,33 @@
   margin-right: 10%;
   margin-left: 10%;
 }
+
+@mixin show-social-icon-size($normal: block, $medium: none, $large: none){
+  .twitter {
+    display: $normal;
+  }
+  .twitter-2x {
+    display: $medium;
+  }
+  .twitter-3x {
+    display: $large;
+  }
+  .facebook {
+    display: $normal;
+  }
+  .facebook-2x {
+    display: $medium;
+  }
+  .facebook-3x {
+    display: $large;
+  }
+  .rss {
+    display: $normal;
+  }
+  .rss-2x {
+    display: $medium;
+  }
+  .rss-3x {
+    display: $large;
+  }
+}

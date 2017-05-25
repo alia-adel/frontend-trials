@@ -90,6 +90,15 @@ body footer .col-sm-2 { margin: auto; }
 body footer .col-sm-2 .social-media-icons { display: flex; justify-content: space-around; }
 body footer .col-sm-2 .social-media-icons a { opacity: 0.3; cursor: pointer; color: #333333; }
 body footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
+body footer .col-sm-2 .social-media-icons a .twitter { display: block; }
+body footer .col-sm-2 .social-media-icons a .twitter-2x { display: none; }
+body footer .col-sm-2 .social-media-icons a .twitter-3x { display: none; }
+body footer .col-sm-2 .social-media-icons a .facebook { display: block; }
+body footer .col-sm-2 .social-media-icons a .facebook-2x { display: none; }
+body footer .col-sm-2 .social-media-icons a .facebook-3x { display: none; }
+body footer .col-sm-2 .social-media-icons a .rss { display: block; }
+body footer .col-sm-2 .social-media-icons a .rss-2x { display: none; }
+body footer .col-sm-2 .social-media-icons a .rss-3x { display: none; }
 
 /* IMPORT RESPONSIVE STYLESHEETS */
 /** AUTHOR ALIA ADEL
@@ -135,7 +144,16 @@ body footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
   body footer .col-sm-3 .copyright { padding: 0px; margin: 0px; flex-wrap: wrap; }
   body footer .col-sm-2 { padding: 0px; margin: 0px; align-self: center; }
   body footer .col-sm-2 .social-media-icons { padding: 0px; margin: 0px; display: flex; justify-content: space-between; flex-wrap: wrap; }
-  body footer .col-sm-2 .social-media-icons a { padding-right: 5px; } }
+  body footer .col-sm-2 .social-media-icons a { padding-right: 5px; }
+  body footer .col-sm-2 .social-media-icons a .twitter { display: none; }
+  body footer .col-sm-2 .social-media-icons a .twitter-2x { display: block; }
+  body footer .col-sm-2 .social-media-icons a .twitter-3x { display: none; }
+  body footer .col-sm-2 .social-media-icons a .facebook { display: none; }
+  body footer .col-sm-2 .social-media-icons a .facebook-2x { display: block; }
+  body footer .col-sm-2 .social-media-icons a .facebook-3x { display: none; }
+  body footer .col-sm-2 .social-media-icons a .rss { display: none; }
+  body footer .col-sm-2 .social-media-icons a .rss-2x { display: block; }
+  body footer .col-sm-2 .social-media-icons a .rss-3x { display: none; } }
 /** AUTHOR ALIA ADEL
 * THIS SASS FILE TARGET TABLETS DEVICES WITH DEVICE PIXELS
 * FROM 481 TO 767
@@ -180,7 +198,16 @@ body footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
   body footer .col-sm-3 .copyright { padding: 0px; margin: 0px; flex-wrap: wrap; }
   body footer .col-sm-2 { padding: 0px; margin: 0px; align-self: center; }
   body footer .col-sm-2 .social-media-icons { padding: 0px; margin: 0px; display: flex; justify-content: space-between; flex-wrap: wrap; }
-  body footer .col-sm-2 .social-media-icons a { padding-right: 5px; } }
+  body footer .col-sm-2 .social-media-icons a { padding-right: 5px; }
+  body footer .col-sm-2 .social-media-icons a .twitter { display: none; }
+  body footer .col-sm-2 .social-media-icons a .twitter-2x { display: none; }
+  body footer .col-sm-2 .social-media-icons a .twitter-3x { display: block; }
+  body footer .col-sm-2 .social-media-icons a .facebook { display: none; }
+  body footer .col-sm-2 .social-media-icons a .facebook-2x { display: none; }
+  body footer .col-sm-2 .social-media-icons a .facebook-3x { display: block; }
+  body footer .col-sm-2 .social-media-icons a .rss { display: none; }
+  body footer .col-sm-2 .social-media-icons a .rss-2x { display: none; }
+  body footer .col-sm-2 .social-media-icons a .rss-3x { display: block; } }
 /** AUTHOR ALIA ADEL
 * THIS SASS FILE TARGET MOBILE DEVICES WITH DEVICE PIXELS
 * FROM 0 TO 480
@@ -224,6 +251,15 @@ body footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
   body footer .col-sm-3 .copyright { padding: 0px; margin: 0px; flex-wrap: wrap; }
   body footer .col-sm-2 { padding: 0px; margin: 0px; align-self: center; }
   body footer .col-sm-2 .social-media-icons { padding: 0px; margin: 0px; display: flex; justify-content: space-between; flex-wrap: wrap; }
-  body footer .col-sm-2 .social-media-icons a { padding-right: 5px; } }
+  body footer .col-sm-2 .social-media-icons a { padding-right: 5px; }
+  body footer .col-sm-2 .social-media-icons a .twitter { display: none; }
+  body footer .col-sm-2 .social-media-icons a .twitter-2x { display: none; }
+  body footer .col-sm-2 .social-media-icons a .twitter-3x { display: block; }
+  body footer .col-sm-2 .social-media-icons a .facebook { display: none; }
+  body footer .col-sm-2 .social-media-icons a .facebook-2x { display: none; }
+  body footer .col-sm-2 .social-media-icons a .facebook-3x { display: block; }
+  body footer .col-sm-2 .social-media-icons a .rss { display: none; }
+  body footer .col-sm-2 .social-media-icons a .rss-2x { display: none; }
+  body footer .col-sm-2 .social-media-icons a .rss-3x { display: block; } }
 
 /*# sourceMappingURL=main.css.map */

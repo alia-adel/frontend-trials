@@ -219,9 +219,7 @@
             flex-wrap: wrap;
             a {
               padding-right: 5px;
-              i {
-
-              }
+              @include show-social-icon-size(none, block, none);
             }
           }
         }

@@ -440,6 +440,7 @@ body {
           &:hover {
             opacity: 1;
           }
+          @include show-social-icon-size(block, none, none);
         }
       }
     }

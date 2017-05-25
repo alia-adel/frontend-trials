@@ -96,17 +96,16 @@
     .sign-up-form {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
+      width: 100%;
       margin-top: 10px;
       .email-txt-box {
-        width: 100%;
+        width: 60%;
       }
       .subscribe-btn {
         @include reset-padding-margin;
-        padding: 3px 5px;
-        margin-left: 10px;
         text-align: center;
-        width: 100%;
+        width: 30%;
       }
     }
   }

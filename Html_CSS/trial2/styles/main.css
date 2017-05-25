@@ -146,9 +146,9 @@ footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
   .lets-be-friends { display: none; }
   .signup-newsletter { display: flex; flex-wrap: wrap; justify-content: flex-start; width: 100%; padding: 0px; margin: 0px; padding: 10px 0px; margin: 10px 0px; }
   .signup-newsletter .sign-up-desc { display: flex; padding: 0px; margin: 0px; }
-  .signup-newsletter .sign-up-form { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
-  .signup-newsletter .sign-up-form .email-txt-box { width: 100%; }
-  .signup-newsletter .sign-up-form .subscribe-btn { padding: 0px; margin: 0px; padding: 3px 5px; margin-left: 10px; text-align: center; width: 100%; }
+  .signup-newsletter .sign-up-form { display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; margin-top: 10px; }
+  .signup-newsletter .sign-up-form .email-txt-box { width: 60%; }
+  .signup-newsletter .sign-up-form .subscribe-btn { padding: 0px; margin: 0px; text-align: center; width: 30%; }
   .homepage-news { display: flex; flex-wrap: wrap; justify-content: center; padding: 0px; margin: 0px; }
   .homepage-news article { padding: 0px; margin: 0px; }
   .homepage-news article a { padding: 0px; margin: 0px; }

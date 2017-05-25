@@ -287,6 +287,7 @@ figure {
 /*----------------------------------------------------------------*/
 .signup-newsletter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0px;
@@ -348,6 +349,7 @@ figure {
 /*----------------------------------------------------------------*/
 .homepage-news {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin-right: 15px;
   @extend .font-medium-size;

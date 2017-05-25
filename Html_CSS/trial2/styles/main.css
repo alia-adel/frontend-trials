@@ -83,7 +83,7 @@ figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; ba
 
 /* SIGN-UP SECTION */
 /*----------------------------------------------------------------*/
-.signup-newsletter { display: flex; justify-content: space-between; align-items: center; margin: 20px 0px; padding: 5px 20px; border-top: 1px dashed #E5E5E5; border-bottom: 1px dashed #E5E5E5; }
+.signup-newsletter { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 20px 0px; padding: 5px 20px; border-top: 1px dashed #E5E5E5; border-bottom: 1px dashed #E5E5E5; }
 .signup-newsletter .sign-up-desc { display: flex; }
 .signup-newsletter .sign-up-desc img { width: 32px; height: 32px; }
 .signup-newsletter .sign-up-desc .signup-intro { font-style: italic; padding: 0px 16px; margin-bottom: 0px; }
@@ -100,7 +100,7 @@ figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; ba
 /*----------------------------------------------------------------*/
 /* HOME PAGE NEWS */
 /*----------------------------------------------------------------*/
-.homepage-news { display: flex; flex-direction: row; margin-right: 15px; }
+.homepage-news { display: flex; flex-wrap: wrap; flex-direction: row; margin-right: 15px; }
 .homepage-news article { display: flex; flex-direction: column; margin-right: 27px; }
 .homepage-news article a img { width: 217px; padding: 9px; margin-bottom: 20px; transition: all .2s ease; /*TODO both border & box-shadow were copied as-is need to study box shadow more*/ border: 1px solid #E5E5E5; -webkit-box-shadow: 1px 2px 3px #F5F5F5; -moz-box-shadow: 1px 1px 3px #F5F5F5; box-shadow: 1px 1px 3px #F5F5F5; }
 .homepage-news article a:hover img { opacity: 0.3; }

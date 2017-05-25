@@ -36,8 +36,8 @@ a:hover { color: #ec6635; text-decoration: none; }
 
 /* Home Page Left Navigation Section */
 /*----------------------------------------------------------------*/
-Header { width: 122px; height: 121px; margin: 0px 20px 0px 25px; background: url("../assets/images/food-sense.png") no-repeat 0 0; }
-Header h1 { color: white; opacity: 0; filter: alpha(opacity=0); }
+.site-logo { width: 122px; height: 121px; margin: 0px 20px 0px 25px; background: url("../assets/images/food-sense.png") no-repeat 0 0; }
+.site-logo h1 { color: white; opacity: 0; filter: alpha(opacity=0); }
 
 /* Home Page Left Navigation */
 /*----------------------------------------------------------------*/
@@ -124,6 +124,44 @@ footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
 * THIS SASS FILE TARGET LARGE TABLETS DEVICES WITH DEVICE PIXELS
 * FROM 768 to 998
 **/
+@media screen and (min-width: 768px) and (max-width: 998px) { body { padding: 0px; margin: 0px; margin-right: 15%; margin-left: 15%; }
+  body .header-row { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; }
+  body .header-row .header-nav-section { order: 1; display: flex; flex-direction: row; justify-content: center; margin: 20px 0px; width: 100%; }
+  body .header-row .header-nav-section .site-logo { order: 1; align-self: center; width: 170px; margin-right: 20px; display: block; padding: 0px; margin: 0px; }
+  body .header-row .header-nav-section .site-logo a { padding: 0px; margin: 0px; }
+  body .header-row .header-nav-section .site-logo a h1 { padding: 0px; margin: 0px; }
+  body .header-row .header-nav-section .left-nav { order: 2; font-size: 12; padding: 0px; margin: 0px; margin-left: 20px; width: 100%; align-self: center; }
+  body .header-row .header-nav-section .left-nav ul { display: flex; flex-direction: row; justify-content: space-between; align-self: flex-end; }
+  body .header-row .header-nav-section .left-nav ul ul, body .header-row .header-nav-section .left-nav ul li, body .header-row .header-nav-section .left-nav ul a { padding: 0px; margin: 0px; }
+  body .header-row .header-nav-section .left-nav ul li { display: flex; flex-direction: column; }
+  body .carousel-section { order: 2; width: 100%; }
+  body .carousel-section figure .carousel .carousel-inner .item .carousel-caption { padding: 0px; margin: 0px; bottom: 10%; display: flex; flex-wrap: wrap; }
+  body .carousel-section figure .carousel .carousel-inner .item .carousel-caption a { text-align: left; }
+  body .carousel-section figure .carousel .carousel-inner .item .carousel-caption a h1 { padding: 0px; margin: 0px; font-size: 14; padding: 0px 5px; }
+  body .carousel-section figure .carousel .carousel-inner .item .carousel-caption a h2 { padding: 0px; margin: 0px; font-size: 12; padding: 5px 5px; }
+  body .carousel-section figure .carousel .carousel-inner .item .credit { /* TODO TRY USING JAVASCRIPT TO REMOVE THE CRDIT TEXT & WRITE IT AFTER THE ITEM DIV*/ }
+  body .latest-tweet, body .lets-be-friends, body .fb-community { display: none; }
+  body .horizontal-nav { display: none; }
+  body .lets-be-friends { display: none; }
+  body .signup-newsletter { display: flex; flex-wrap: wrap; justify-content: flex-start; width: 100%; padding: 0px; margin: 0px; padding: 10px 0px; margin: 10px 0px; }
+  body .signup-newsletter .sign-up-desc { display: flex; padding: 0px; margin: 0px; }
+  body .signup-newsletter .sign-up-form { display: flex; flex-wrap: wrap; justify-content: flex-start; width: 100%; margin-top: 10px; }
+  body .signup-newsletter .sign-up-form .email-txt-box { width: 60%; margin-right: 20px; }
+  body .signup-newsletter .sign-up-form .subscribe-btn { padding: 0px; margin: 0px; text-align: center; width: 30%; }
+  body .col-sm-10 { padding: 0px; margin: 0px; }
+  body .col-sm-10 .homepage-news { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0px; margin: 0px; }
+  body .col-sm-10 .homepage-news article { padding: 0px; margin: 0px; margin-bottom: 20px; width: 45%; }
+  body .col-sm-10 .homepage-news article a img { width: 100%; }
+  body .col-sm-10 .homepage-news article a p { width: 100%; }
+  body .col-sm-10 .homepage-news article .article-body { width: 100%; }
+  body .col-sm-10 .homepage-news article .article-footer { width: 100%; }
+  body footer { font-size: 10; padding: 0px; margin: 0px; padding: 10px 0px; justify-content: space-between; }
+  body footer .col-sm-3 { padding: 0px; margin: 0px; }
+  body footer .col-sm-3 .footer-nav { padding: 0px; margin: 0px; display: flex; flex-wrap: wrap; }
+  body footer .col-sm-3 .copyright { padding: 0px; margin: 0px; flex-wrap: wrap; }
+  body footer .col-sm-2 { padding: 0px; margin: 0px; align-self: center; }
+  body footer .col-sm-2 .social-media-icons { padding: 0px; margin: 0px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+  body footer .col-sm-2 .social-media-icons a { padding-right: 5px; } }
 /** AUTHOR ALIA ADEL
 * THIS SASS FILE TARGET TABLETS DEVICES WITH DEVICE PIXELS
 * FROM 481 TO 767

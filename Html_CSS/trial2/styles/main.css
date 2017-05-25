@@ -5,6 +5,12 @@
 * PRACTICE & EDUCATIONAL PURPOSES.
 **/
 /*----------------------------------------------------------------*/
+/* MIXINS */
+/** AUTHOR ALIA ADEL
+* INCLUDES ALL MIXINS
+**/
+/* GENERAL MIXINS */
+/* MOBILE MIXINS */
 /* VARIABLES */
 /*----------------------------------------------------------------*/
 /* GENERAL STYLES */
@@ -125,11 +131,9 @@ footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
 * THIS SASS FILE TARGET MOBILE DEVICES WITH DEVICE PIXELS
 * FROM 0 TO 480
 **/
-/* MIXINS */
-@media screen and (min-width: 0px) and (max-width: 480px) { .body { justify-content: center; }
-  .header-row { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; }
+@media screen and (min-width: 0px) and (max-width: 480px) { .header-row { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; }
   .header-row .header-nav-section { order: 1; }
-  .header-row .header-nav-section .site-logo { order: 99; margin: 0px; padding: 0px; align-content: center; }
+  .header-row .header-nav-section .site-logo { order: 2; margin: 0px; padding: 0px; align-content: center; }
   .header-row .header-nav-section .left-nav { order: 1; font-size: 12; width: 100%; border-bottom: 2px solid #E5E5E5; /* Reset Padding & Margin */ }
   .header-row .header-nav-section .left-nav ul { display: flex; flex-direction: row; justify-content: space-around; }
   .header-row .header-nav-section .left-nav ul, .header-row .header-nav-section .left-nav li, .header-row .header-nav-section .left-nav a { padding: 0px; margin: 0px; }
@@ -143,7 +147,18 @@ footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
   .signup-newsletter .sign-up-desc { display: flex; }
   .signup-newsletter .sign-up-form .input-sm { width: 100%; min-width: 60%; }
   .signup-newsletter .sign-up-form .form-control { width: 100%; min-width: 30%; }
-  .homepage-news { display: flex; flex-wrap: wrap; }
-  footer { font-size: 10; } }
+  .homepage-news { display: flex; flex-wrap: wrap; justify-content: center; padding: 0px; margin: 0px; }
+  .homepage-news article { padding: 0px; margin: 0px; }
+  .homepage-news article a { padding: 0px; margin: 0px; }
+  .homepage-news article a img { width: 100%; }
+  .homepage-news article a p { padding: 0px; margin: 0px; }
+  .homepage-news article .article-body { padding: 0px; margin: 0px; margin: 10px 0px; width: 100%; }
+  .homepage-news article .article-footer { padding: 0px; margin: 0px; margin: 0px 0px 20px 0px; width: 100%; }
+  footer { font-size: 10; padding: 0px; margin: 0px; }
+  footer .col-sm-3 { padding: 0px; margin: 0px; }
+  footer .col-sm-3 .footer-nav { display: flex; flex-direction: row; flex-wrap: nowrap; padding: 0px; margin: 0px; }
+  footer .col-sm-3 .copyright { padding: 0px; margin: 0px; }
+  footer .col-sm-2 { padding: 0px; margin: 0px; align-self: center; }
+  footer .col-sm-2 .social-media-icons { padding: 0px; margin: 0px; } }
 
 /*# sourceMappingURL=main.css.map */

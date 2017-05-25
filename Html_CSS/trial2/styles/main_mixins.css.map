@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;GAEG;AACH,oBAAoB;AAMpB,mBAAmB",
+"sources": ["main_mixins.scss"],
+"names": [],
+"file": "main_mixins.css"
+}

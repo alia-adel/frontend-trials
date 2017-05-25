@@ -1,0 +1,35 @@
+/** AUTHOR ALIA ADEL
+* INCLUDES ALL MIXINS
+**/
+/* GENERAL MIXINS */
+
+@mixin reset-padding-margin() {
+  padding: 0px;
+  margin: 0px;
+}
+/* MOBILE MIXINS */
+
+@mixin font-mob-lg-hight-lg() {
+  font-size: 14;
+  line-height: 20;
+}
+
+@mixin font-mob-lg-hight-sm() {
+  font-size: 14;
+  line-height: 16;
+}
+
+@mixin font-mob-md-hight-lg() {
+  font-size: 12;
+  // line-height: 16; /* Turned to be too high */
+}
+
+@mixin font-mob-md-hight-sm() {
+  font-size: 12;
+  line-height: 12;
+}
+
+@mixin font-mob-sm-hight-lg() {
+  font-size: 10;
+  // line-height: 15; /* Turned to be too high */
+}

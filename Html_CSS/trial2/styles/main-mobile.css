@@ -1,68 +1,28 @@
 /*
-Error: Undefined variable: "$primary-color".
-        on line 92 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss
+Error: Undefined mixin 'font-mob-md-hight-lg'.
+        on line 26 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `font-mob-md-hight-lg'
+        from line 26 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss
 
-87:                 opacity: 1;
-88:                 filter: alpha(opacity=100);
-89:                 background: none;
-90:                 border: none;
-91:                 text-shadow: none;
-92:                 color: $primary-color;
-93:               }
-94:             }
-95:           }
-96:         }
-97:       }
+21:         padding: 0px;
+22:         align-content: center;
+23:       }
+24:       .left-nav {
+25:         order: 1;
+26:         @include font-mob-md-hight-lg();
+27:         width: 100%;
+28:         border-bottom: 2px solid #E5E5E5;
+29:         ul {
+30:           display: flex;
+31:           flex-direction: row;
 
 Backtrace:
-D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:92
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:26:in `font-mob-md-hight-lg'
+D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:26
+C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
+C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
@@ -145,4 +105,4 @@ C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/vendor/listen/lib/listen/ad
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-color\".\A         on line 92 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss\A \A 87:                 opacity: 1;\A 88:                 filter: alpha(opacity=100);\A 89:                 background: none;\A 90:                 border: none;\A 91:                 text-shadow: none;\A 92:                 color: $primary-color;\A 93:               }\A 94:             }\A 95:           }\A 96:         }\A 97:       }"; }
+  content: "Error: Undefined mixin 'font-mob-md-hight-lg'.\A         on line 26 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `font-mob-md-hight-lg'\A         from line 26 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss\A \A 21:         padding: 0px;\A 22:         align-content: center;\A 23:       }\A 24:       .left-nav {\A 25:         order: 1;\A 26:         @include font-mob-md-hight-lg();\A 27:         width: 100%;\A 28:         border-bottom: 2px solid #E5E5E5;\A 29:         ul {\A 30:           display: flex;\A 31:           flex-direction: row;"; }

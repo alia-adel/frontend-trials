@@ -3,38 +3,11 @@
 * FROM 0 TO 480
 **/
 
-/* MIXINS */
-
-@mixin font-mob-lg-hight-lg() {
-  font-size: 14;
-  line-height: 20;
-}
-
-@mixin font-mob-lg-hight-sm() {
-  font-size: 14;
-  line-height: 16;
-}
-
-@mixin font-mob-md-hight-lg() {
-  font-size: 12;
-  // line-height: 16; /* Turned to be too high */
-}
-
-@mixin font-mob-md-hight-sm() {
-  font-size: 12;
-  line-height: 12;
-}
-
-@mixin font-mob-sm-hight-lg() {
-  font-size: 10;
-  // line-height: 15; /* Turned to be too high */
-}
-
 @media screen and (min-width: 0px) and (max-width: 480px) {
-
-  .body {
-    justify-content: center;
-  }
+  //
+  // .body {
+  //   justify-content: center;
+  // }
   .header-row {
     display: flex;
     flex-direction: column;
@@ -43,7 +16,7 @@
     .header-nav-section{
       order: 1;
       .site-logo {
-        order:99;
+        order:2;
         margin: 0px;
         padding: 0px;
         align-content: center;
@@ -131,9 +104,61 @@
   .homepage-news {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    @include reset-padding-margin();
+    article {
+      @include reset-padding-margin();
+      a {
+        @include reset-padding-margin();
+        img {
+          width: 100%;
+        }
+        p {
+          @include reset-padding-margin();
+        }
+      }
+      .article-body {
+        @include reset-padding-margin();
+        margin: 10px 0px;
+        width: 100%;
+      }
+      .article-footer {
+        @include reset-padding-margin();
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+      }
+    }
   }
 
   footer {
       @include font-mob-sm-hight-lg;
+      @include reset-padding-margin();
+      .col-sm-3 {
+        @include reset-padding-margin();
+          .footer-nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            @include reset-padding-margin();
+          }
+          .copyright {
+            @include reset-padding-margin();
+          }
+      }
+      .col-sm-7 {
+
+      }
+      .col-sm-2 {
+        @include reset-padding-margin();
+        align-self: center;
+        .social-media-icons {
+          @include reset-padding-margin();
+          a {
+            i {
+
+            }
+          }
+        }
+      }
   }
 }

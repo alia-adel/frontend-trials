@@ -3,11 +3,7 @@
 * FROM 0 TO 480
 **/
 
-@media screen and (min-width: 0px) and (max-width: 480px) {
-  //
-  // .body {
-  //   justify-content: center;
-  // }
+@media screen and (max-width: 480px) {
   .header-row {
     display: flex;
     flex-direction: column;
@@ -17,8 +13,7 @@
       order: 1;
       .site-logo {
         order:2;
-        margin: 0px;
-        padding: 0px;
+        @include reset-padding-margin;
         align-content: center;
       }
       .left-nav {
@@ -30,11 +25,10 @@
           display: flex;
           flex-direction: row;
           justify-content: space-around;
+          flex-wrap: wrap;
         }
-        /* Reset Padding & Margin */
         ul, li, a{
-          padding: 0px;
-          margin: 0px;
+          @include reset-padding-margin;
         }
         img {
           display: none;
@@ -85,18 +79,29 @@
   .signup-newsletter {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
+    @include reset-padding-margin;
+    padding: 10px 0px;
+    margin: 10px 0px;
     .sign-up-desc {
       display: flex;
+      @include reset-padding-margin;
     }
     .sign-up-form {
-      .input-sm {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+      .email-txt-box {
         width: 100%;
-        min-width: 60%;
       }
-      .form-control {
+      .subscribe-btn {
+        @include reset-padding-margin;
+        padding: 3px 5px;
+        margin-left: 10px;
+        text-align: center;
         width: 100%;
-        min-width: 30%;
       }
     }
   }
@@ -133,16 +138,17 @@
   footer {
       @include font-mob-sm-hight-lg;
       @include reset-padding-margin();
+      padding: 10px 0px;
       .col-sm-3 {
         @include reset-padding-margin();
           .footer-nav {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
             @include reset-padding-margin();
+            display: flex;
+            flex-wrap: wrap;
           }
           .copyright {
             @include reset-padding-margin();
+            flex-wrap: wrap;
           }
       }
       .col-sm-7 {
@@ -153,6 +159,9 @@
         align-self: center;
         .social-media-icons {
           @include reset-padding-margin();
+          justify-content: flex-end;
+          float: right;
+          flex-wrap: wrap;
           a {
             i {
 

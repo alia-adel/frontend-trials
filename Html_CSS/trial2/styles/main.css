@@ -15,7 +15,7 @@
 /*----------------------------------------------------------------*/
 /* GENERAL STYLES */
 /*----------------------------------------------------------------*/
-* { box-sizing: border-box; }
+* { box-sizing: border-box; border: 1px solid red; }
 
 body { font-family: 'Times New Roman'; font-size: 16px; font-weight: normal; font-variant: normal; line-height: 24px; color: #333333; margin: 50px 86.5px 0px 86.5px; }
 
@@ -87,9 +87,9 @@ figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; ba
 .signup-newsletter .sign-up-desc img { width: 32px; height: 32px; }
 .signup-newsletter .sign-up-desc .signup-intro { font-style: italic; padding: 0px 16px; margin-bottom: 0px; }
 .signup-newsletter .sign-up-form { display: flex; justify-content: space-between; align-items: center; flex-direction: row; margin-bottom: 0px; }
-.signup-newsletter .sign-up-form .input-sm { padding: 0px 20px; min-width: 30%; }
-.signup-newsletter .sign-up-form .input-sm:focus { border: 2px solid #34AC98; }
-.signup-newsletter .sign-up-form .form-control { margin: 0px 13px; width: 200px; /*TODO Need to override the box-shadow color*/ }
+.signup-newsletter .sign-up-form .email-txt-box { padding: 0px 20px; min-width: 60%; }
+.signup-newsletter .sign-up-form .email-txt-box:focus { border: 2px solid #34AC98; }
+.signup-newsletter .sign-up-form .subscribe-btn { margin: 0px 13px; min-width: 30%; width: 100%; /*TODO Need to override the box-shadow color*/ }
 
 /* LET'S BE FRIENDS */
 /*----------------------------------------------------------------*/
@@ -131,11 +131,11 @@ footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
 * THIS SASS FILE TARGET MOBILE DEVICES WITH DEVICE PIXELS
 * FROM 0 TO 480
 **/
-@media screen and (min-width: 0px) and (max-width: 480px) { .header-row { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; }
+@media screen and (max-width: 480px) { .header-row { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; }
   .header-row .header-nav-section { order: 1; }
-  .header-row .header-nav-section .site-logo { order: 2; margin: 0px; padding: 0px; align-content: center; }
-  .header-row .header-nav-section .left-nav { order: 1; font-size: 12; width: 100%; border-bottom: 2px solid #E5E5E5; /* Reset Padding & Margin */ }
-  .header-row .header-nav-section .left-nav ul { display: flex; flex-direction: row; justify-content: space-around; }
+  .header-row .header-nav-section .site-logo { order: 2; padding: 0px; margin: 0px; align-content: center; }
+  .header-row .header-nav-section .left-nav { order: 1; font-size: 12; width: 100%; border-bottom: 2px solid #E5E5E5; }
+  .header-row .header-nav-section .left-nav ul { display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; }
   .header-row .header-nav-section .left-nav ul, .header-row .header-nav-section .left-nav li, .header-row .header-nav-section .left-nav a { padding: 0px; margin: 0px; }
   .header-row .header-nav-section .left-nav img { display: none; }
   .header-row .carousel-section { order: 2; }
@@ -143,10 +143,11 @@ footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
   .latest-tweet, .lets-be-friends, .fb-community { display: none; }
   .horizontal-nav { display: none; }
   .lets-be-friends { display: none; }
-  .signup-newsletter { display: flex; flex-wrap: wrap; width: 100%; }
-  .signup-newsletter .sign-up-desc { display: flex; }
-  .signup-newsletter .sign-up-form .input-sm { width: 100%; min-width: 60%; }
-  .signup-newsletter .sign-up-form .form-control { width: 100%; min-width: 30%; }
+  .signup-newsletter { display: flex; flex-wrap: wrap; justify-content: flex-start; width: 100%; padding: 0px; margin: 0px; padding: 10px 0px; margin: 10px 0px; }
+  .signup-newsletter .sign-up-desc { display: flex; padding: 0px; margin: 0px; }
+  .signup-newsletter .sign-up-form { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+  .signup-newsletter .sign-up-form .email-txt-box { width: 100%; }
+  .signup-newsletter .sign-up-form .subscribe-btn { padding: 0px; margin: 0px; padding: 3px 5px; margin-left: 10px; text-align: center; width: 100%; }
   .homepage-news { display: flex; flex-wrap: wrap; justify-content: center; padding: 0px; margin: 0px; }
   .homepage-news article { padding: 0px; margin: 0px; }
   .homepage-news article a { padding: 0px; margin: 0px; }
@@ -154,11 +155,11 @@ footer .col-sm-2 .social-media-icons a:hover { opacity: 1; }
   .homepage-news article a p { padding: 0px; margin: 0px; }
   .homepage-news article .article-body { padding: 0px; margin: 0px; margin: 10px 0px; width: 100%; }
   .homepage-news article .article-footer { padding: 0px; margin: 0px; margin: 0px 0px 20px 0px; width: 100%; }
-  footer { font-size: 10; padding: 0px; margin: 0px; }
+  footer { font-size: 10; padding: 0px; margin: 0px; padding: 10px 0px; }
   footer .col-sm-3 { padding: 0px; margin: 0px; }
-  footer .col-sm-3 .footer-nav { display: flex; flex-direction: row; flex-wrap: nowrap; padding: 0px; margin: 0px; }
-  footer .col-sm-3 .copyright { padding: 0px; margin: 0px; }
+  footer .col-sm-3 .footer-nav { padding: 0px; margin: 0px; display: flex; flex-wrap: wrap; }
+  footer .col-sm-3 .copyright { padding: 0px; margin: 0px; flex-wrap: wrap; }
   footer .col-sm-2 { padding: 0px; margin: 0px; align-self: center; }
-  footer .col-sm-2 .social-media-icons { padding: 0px; margin: 0px; } }
+  footer .col-sm-2 .social-media-icons { padding: 0px; margin: 0px; justify-content: flex-end; float: right; flex-wrap: wrap; } }
 
 /*# sourceMappingURL=main.css.map */

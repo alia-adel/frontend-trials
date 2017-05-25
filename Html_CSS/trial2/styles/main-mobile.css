@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'font-mob-md-hight-lg'.
-        on line 26 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `font-mob-md-hight-lg'
-        from line 26 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss
+Error: Undefined mixin 'reset-padding-margin'.
+        on line 16 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `reset-padding-margin'
+        from line 16 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss
 
-21:         padding: 0px;
-22:         align-content: center;
-23:       }
-24:       .left-nav {
-25:         order: 1;
-26:         @include font-mob-md-hight-lg();
-27:         width: 100%;
-28:         border-bottom: 2px solid #E5E5E5;
-29:         ul {
-30:           display: flex;
-31:           flex-direction: row;
+11:     justify-content: center;
+12:     .header-nav-section{
+13:       order: 1;
+14:       .site-logo {
+15:         order:2;
+16:         @include reset-padding-margin;
+17:         align-content: center;
+18:       }
+19:       .left-nav {
+20:         order: 1;
+21:         @include font-mob-md-hight-lg();
 
 Backtrace:
-D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:26:in `font-mob-md-hight-lg'
-D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:26
+D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:16:in `reset-padding-margin'
+D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:16
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
@@ -105,4 +105,4 @@ C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/vendor/listen/lib/listen/ad
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-mob-md-hight-lg'.\A         on line 26 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `font-mob-md-hight-lg'\A         from line 26 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss\A \A 21:         padding: 0px;\A 22:         align-content: center;\A 23:       }\A 24:       .left-nav {\A 25:         order: 1;\A 26:         @include font-mob-md-hight-lg();\A 27:         width: 100%;\A 28:         border-bottom: 2px solid #E5E5E5;\A 29:         ul {\A 30:           display: flex;\A 31:           flex-direction: row;"; }
+  content: "Error: Undefined mixin 'reset-padding-margin'.\A         on line 16 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `reset-padding-margin'\A         from line 16 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss\A \A 11:     justify-content: center;\A 12:     .header-nav-section{\A 13:       order: 1;\A 14:       .site-logo {\A 15:         order:2;\A 16:         @include reset-padding-margin;\A 17:         align-content: center;\A 18:       }\A 19:       .left-nav {\A 20:         order: 1;\A 21:         @include font-mob-md-hight-lg();"; }

@@ -1,50 +1,28 @@
 /*
 Error: Undefined mixin 'reset-padding-margin'.
-        on line 16 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `reset-padding-margin'
-        from line 16 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss
+        on line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `reset-padding-margin'
+        from line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss
 
-11:     justify-content: center;
-12:     .header-nav-section{
-13:       order: 1;
-14:       .site-logo {
-15:         order:2;
-16:         @include reset-padding-margin;
-17:         align-content: center;
-18:       }
-19:       .left-nav {
-20:         order: 1;
-21:         @include font-mob-md-hight-lg();
+3: * FROM 0 TO 480
+4: **\/
+5: 
+6: @media screen and (max-width: 480px) {
+7:   body {
+8:     @include reset-padding-margin;
+9:     margin-right: 10%;
+10:     margin-left: 10%;
+11:   }
+12:   .header-row {
+13:     display: flex;
 
 Backtrace:
-D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:16:in `reset-padding-margin'
-D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:16
+D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:8:in `reset-padding-margin'
+D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss:8
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
@@ -105,4 +83,4 @@ C:/tools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/vendor/listen/lib/listen/ad
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'reset-padding-margin'.\A         on line 16 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `reset-padding-margin'\A         from line 16 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss\A \A 11:     justify-content: center;\A 12:     .header-nav-section{\A 13:       order: 1;\A 14:       .site-logo {\A 15:         order:2;\A 16:         @include reset-padding-margin;\A 17:         align-content: center;\A 18:       }\A 19:       .left-nav {\A 20:         order: 1;\A 21:         @include font-mob-md-hight-lg();"; }
+  content: "Error: Undefined mixin 'reset-padding-margin'.\A         on line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss, in `reset-padding-margin'\A         from line 8 of D:/Tutorials & Books/Web Development/GIT/Html_CSS/trial2/styles/main-mobile.scss\A \A 3: * FROM 0 TO 480\A 4: **/\A 5: \A 6: @media screen and (max-width: 480px) {\A 7:   body {\A 8:     @include reset-padding-margin;\A 9:     margin-right: 10%;\A 10:     margin-left: 10%;\A 11:   }\A 12:   .header-row {\A 13:     display: flex;"; }

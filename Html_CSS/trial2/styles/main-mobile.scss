@@ -4,6 +4,11 @@
 **/
 
 @media screen and (max-width: 480px) {
+  body {
+    @include reset-padding-margin;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
   .header-row {
     display: flex;
     flex-direction: column;
@@ -139,6 +144,7 @@
       @include font-mob-sm-hight-lg;
       @include reset-padding-margin();
       padding: 10px 0px;
+      justify-content: space-between;
       .col-sm-3 {
         @include reset-padding-margin();
           .footer-nav {
@@ -159,7 +165,6 @@
         align-self: center;
         .social-media-icons {
           @include reset-padding-margin();
-          justify-content: flex-end;
           float: right;
           flex-wrap: wrap;
           a {

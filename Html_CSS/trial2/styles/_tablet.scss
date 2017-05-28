@@ -1,10 +1,12 @@
 /** AUTHOR ALIA ADEL
-* THIS SASS FILE TARGET LARGE TABLETS DEVICES WITH DEVICE PIXELS
-* FROM 768 to 998
+* THIS SASS FILE TARGET TABLETS DEVICES WITH DEVICE PIXELS
+* FROM 481 TO 767
 **/
-@media screen and (min-width: 768px) and (max-width: 998px) {
+/*TODO Issue exist for the site logo where it gets cut*/
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
   body {
-    @include reset-padding-margin;
+    @include reset-padding-margin();
     margin-right: 15%;
     margin-left: 15%;
 
@@ -18,60 +20,47 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 20px 0px;
-        width: 100%;
+        margin: 20px 20px;
         .site-logo {
           order:1;
           align-self: center;
-          // width: 170px;
-          width: 60%;
+          width: 90%;
           margin-right: 20px;
           display: block;
-          @include reset-padding-margin;
+          @include reset-padding-margin();
           a {
-              @include reset-padding-margin;
+              @include reset-padding-margin();
               h1 {
-                @include reset-padding-margin;
+                @include reset-padding-margin();
               }
           }
         }
         .left-nav {
           order: 2;
           @include font-mob-md-hight-lg();
-          @include reset-padding-margin;
+          @include reset-padding-margin();
+          margin-left: 20px;
           width: 100%;
           align-self: center;
           ul {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            align-self: flex-end;
-
-            ul, li, a{
-              @include reset-padding-margin;
-            }
-
-            li {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              a {
-
-              }
-              img {
-
-              }
-            }
+            justify-content: space-around;
+            align-self: center;
+            flex-wrap: wrap;
           }
-
+          ul, li, a{
+            @include reset-padding-margin();
+          }
+          img {
+            display: none;
+          }
         }
       }
     }
 
     .carousel-section {
       order: 2;
-      width: 100%;
-      @include reset-padding-margin;
       figure {
         .carousel {
           .carousel-inner {
@@ -80,20 +69,26 @@
 
               }
               .carousel-caption {
-                @include reset-padding-margin;
-                bottom: 10%;
+                @include reset-padding-margin();
+                left: 0%;
+                right: 0%;
+                bottom: 0%;
                 display: flex;
                 flex-wrap: wrap;
                 a{
                   text-align: left;
                   h1 {
-                    @include reset-padding-margin;
-                    @include font-mob-lg-hight-sm;
+                    @include reset-padding-margin();
+                    @include font-mob-lg-hight-sm();
+                    width: 100%;
+                    max-width: 100%;
                     padding: 0px 5px;
                   }
                   h2 {
-                    @include reset-padding-margin;
-                    @include font-mob-md-hight-sm;
+                    @include reset-padding-margin();
+                    @include font-mob-md-hight-sm();
+                    width: 100%;
+                    max-width: 100%;
                     padding: 5px 5px;
                   }
                 }
@@ -114,29 +109,27 @@
       display: none;
     }
 
-    .lets-be-friends-div {
+    .lets-be-friends-col {
       display: none;
     }
 
-    .fb-community-div {
+    .fb-community-col {
       display: none;
     }
 
     .signup-newsletter-col {
       width: 100%;
-      @include reset-padding-margin;
       .signup-newsletter {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
-        max-width: 100%;
-        @include reset-padding-margin;
+        @include reset-padding-margin();
         padding: 10px 0px;
         margin: 10px 0px;
         .sign-up-desc {
           display: flex;
-          @include reset-padding-margin;
+          @include reset-padding-margin();
         }
         .sign-up-form {
           display: flex;
@@ -149,7 +142,7 @@
             margin-right: 20px;
           }
           .subscribe-btn {
-            @include reset-padding-margin;
+            @include reset-padding-margin();
             text-align: center;
             width: 30%;
           }
@@ -158,9 +151,8 @@
     }
 
 
-    .homepage-news-col{
+    .homepage-news-col {
       @include reset-padding-margin();
-      width: 100%;
       .homepage-news {
         display: flex;
         flex-wrap: wrap;
@@ -190,7 +182,7 @@
     }
 
     footer {
-        @include font-mob-sm-hight-lg;
+        @include font-mob-sm-hight-lg();
         @include reset-padding-margin();
         padding: 10px 0px;
         justify-content: space-between;
@@ -219,7 +211,7 @@
             flex-wrap: wrap;
             a {
               padding-right: 5px;
-              @include show-social-icon-size(none, block, none);
+              @include show-social-icon-size(none, none, block);
             }
           }
         }

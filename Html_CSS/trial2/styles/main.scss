@@ -6,28 +6,16 @@
 **/
 /*----------------------------------------------------------------*/
 
-/* MIXINS */
-@import "main_mixins";
-
 /* VARIABLES */
 /*----------------------------------------------------------------*/
-$primary-color:  #333333;
-$secondary-color: #AAA;
-$minor-color: #34AC98;
-$href-color: #34AC98;
-$href-hover-color: #ec6635;
-$background-color-1: rgb(239,248,247);
-$background-color-2: #D9EFEC;
-$font-large-size: 36px;
-$font-large-line-height: 45px;
-$font-medium-size: 14px;
-$font-medium-line-height: 20px;
-$font-small-size: 12px;
-$font-small-line-height: 17px;
-$font-xsmall-size: 11px;
-$font-xsmall-line-height: 19px;
-$horizontal-nav-corner-radius: 3px;
-$dashed-single-side-border: 1px dashed #E5E5E5;
+@import "_variables";
+
+/* PLACEHOLDERS */
+/*----------------------------------------------------------------*/
+@import "_placeholders";
+
+/* MIXINS */
+@import "_mixins";
 
 /* GENERAL STYLES */
 /*----------------------------------------------------------------*/
@@ -51,30 +39,6 @@ a{
     color: $href-hover-color;
     text-decoration: none;
   }
-}
-
-.font-xsmall-size {
-  font-size: $font-xsmall-size;
-  line-height: $font-xsmall-line-height;
-}
-
-.font-small-size {
-  font-size: $font-small-size;
-  line-height: $font-small-line-height;
-}
-
-.font-medium-size {
-  font-size: $font-medium-size;
-  line-height: $font-medium-line-height;
-}
-
-.font-large-size {
-  font-size: $font-large-size;
-  line-height: $font-large-line-height;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
 }
 
 /* Home Page Left Navigation Section */
@@ -150,7 +114,7 @@ body {
               right: 1%;
               bottom: 1%;
               width: 15%;
-              @extend .font-xsmall-size;
+              @include font-xsmall-size();
               text-align: center;
               color: #555;
               background: rgba(255,255,255,.5);
@@ -193,7 +157,7 @@ body {
                   max-width: 30%;
                 }
                 h2 {
-                  @extend .font-medium-size;
+                  @include font-medium-size();
                   color: white;
                   background-color: black;
                   margin-top: 0px;
@@ -226,15 +190,15 @@ body {
   /*----------------------------------------------------------------*/
   .latest-tweet {
     p {
-      @extend .text-uppercase;
-      @extend .font-small-size;
+      @include text-uppercase();
+      @include font-small-size();
       border-bottom: $dashed-single-side-border;
       margin-bottom: 15px;
       text-overflow: ellipsis;
     }
 
     a {
-      @extend .font-xsmall-size;
+      @include font-xsmall-size();
       background-color: white;
       border: 1px solid $secondary-color;
       border-radius: 4px;
@@ -271,7 +235,7 @@ body {
           margin: 0px 15px 5px 15px;
         }
         p {
-          @extend .font-small-size;
+          @include font-small-size();
           margin: 0px 15px 0px 15px;
         }
       }
@@ -307,7 +271,7 @@ body {
         height: 32px;
       }
       .signup-intro {
-        @extend .font-xsmall-size;
+        @include font-xsmall-size();
         font-style: italic;
         padding: 0px 16px;
         margin-bottom: 0px;
@@ -341,7 +305,7 @@ body {
   .lets-be-friends {
     @extend .latest-tweet;
     section {
-      @extend .font-xsmall-size;
+      @include font-xsmall-size();
       padding: 0px 0px 18px 0px;
     }
   }
@@ -360,7 +324,7 @@ body {
     justify-content: space-between;
     flex-direction: row;
     margin-right: 15px;
-    @extend .font-medium-size;
+    @include font-medium-size();
 
     article {
       display: flex;
@@ -421,11 +385,11 @@ body {
       .footer-nav {
         flex-direction: row;
         a {
-          @extend .font-small-size;
+          @include font-small-size();
         }
       }
       .copyright {
-        @extend .font-xsmall-size;
+        @include font-xsmall-size();
       }
     }
     .col-sm-2 {
@@ -448,6 +412,6 @@ body {
 }
 
 /* IMPORT RESPONSIVE STYLESHEETS */
-@import "main-tablet-large";
-@import "main-tablet";
-@import "main-mobile";
+@import "_tablet-large";
+@import "_tablet";
+@import "_mobile";

@@ -5,14 +5,27 @@
 * PRACTICE & EDUCATIONAL PURPOSES.
 **/
 /*----------------------------------------------------------------*/
+/* VARIABLES */
+/*----------------------------------------------------------------*/
+/** AUTHOR ALIA ADEL
+* INCLUDES ALL VARIABLES
+**/
+/* PLACEHOLDERS */
+/*----------------------------------------------------------------*/
+/** AUTHOR ALIA ADEL
+* INCLUDES ALL PLACEHOLDERS
+**/
+/* GENERAL PLACEHOLDERS */
 /* MIXINS */
 /** AUTHOR ALIA ADEL
 * INCLUDES ALL MIXINS
 **/
-/* GENERAL MIXINS */
-/* MOBILE MIXINS */
-/* VARIABLES */
-/*----------------------------------------------------------------*/
+/**
+* The following as per the best practices should be placeholders not mixins but
+* an error was thrown that mixins can't be used within @media
+*
+*/
+/* MOBILE PLACEHOLDERS */
 /* GENERAL STYLES */
 /*----------------------------------------------------------------*/
 * { box-sizing: border-box; }
@@ -21,16 +34,6 @@ img { width: 100%; }
 
 a { color: #34AC98; cursor: pointer; text-decoration: none; }
 a:hover { color: #ec6635; text-decoration: none; }
-
-.font-xsmall-size, body figure .carousel .carousel-inner .item .credit, body .latest-tweet a, body .lets-be-friends a, body .fb-community a, body .signup-newsletter .sign-up-desc .signup-intro, body .lets-be-friends section, body footer .col-sm-3 .copyright { font-size: 11px; line-height: 19px; }
-
-.font-small-size, body .latest-tweet p, body .lets-be-friends p, body .fb-community p, body .horizontal-nav .h-nav-item a p, body footer .col-sm-3 .footer-nav a { font-size: 12px; line-height: 17px; }
-
-.font-medium-size, body figure .carousel .carousel-inner .item .carousel-caption a h2, body .homepage-news { font-size: 14px; line-height: 20px; }
-
-.font-large-size { font-size: 36px; line-height: 45px; }
-
-.text-uppercase, body .latest-tweet p, body .lets-be-friends p, body .fb-community p { text-transform: uppercase; }
 
 /* Home Page Left Navigation Section */
 /*----------------------------------------------------------------*/
@@ -44,37 +47,37 @@ body .left-nav ul li img { position: relative; width: 32px; height: 32px; margin
 body .left-nav ul li img:hover { left: 5px; }
 body .left-nav ul li a { font-style: italic; padding: 0px; }
 body figure .carousel .carousel-inner .item img { width: 100%; }
-body figure .carousel .carousel-inner .item .credit { position: absolute; right: 1%; bottom: 1%; width: 15%; text-align: center; color: #555; background: rgba(255, 255, 255, 0.5); border: 1px solid #AAA; border-radius: 3px; padding: 0px 2px; z-index: 1; opacity: 0.9; filter: alpha(opacity=90); /*TODO text-shadow were copied as-is need to study text shadow more*/ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+body figure .carousel .carousel-inner .item .credit { position: absolute; right: 1%; bottom: 1%; width: 15%; font-size: 11px; line-height: 19px; text-align: center; color: #555; background: rgba(255, 255, 255, 0.5); border: 1px solid #AAA; border-radius: 3px; padding: 0px 2px; z-index: 1; opacity: 0.9; filter: alpha(opacity=90); /*TODO text-shadow were copied as-is need to study text shadow more*/ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
 body figure .carousel .carousel-inner .item .credit a { color: #555; }
 body figure .carousel .carousel-inner .item .credit a:hover { color: #ec6635; }
 body figure .carousel .carousel-inner .item .carousel-caption { left: 0%; right: 0%; text-shadow: none; }
 body figure .carousel .carousel-inner .item .carousel-caption a { width: 100%; display: flex; flex-direction: column; font-style: italic; flex-wrap: wrap; }
 body figure .carousel .carousel-inner .item .carousel-caption a:hover { opacity: 0.7; filter: alpha(opacity=70); }
 body figure .carousel .carousel-inner .item .carousel-caption a h1 { font-size: 30px; line-height: 36px; color: black; background-color: white; margin-bottom: 0px; padding: 5px 20px 5px 20px; max-width: 30%; }
-body figure .carousel .carousel-inner .item .carousel-caption a h2 { color: white; background-color: black; margin-top: 0px; padding: 20px; max-width: 60%; }
+body figure .carousel .carousel-inner .item .carousel-caption a h2 { font-size: 14px; line-height: 20px; color: white; background-color: black; margin-top: 0px; padding: 20px; max-width: 60%; }
 body .carousel-caption-right h1, body .carousel-caption-right h2 { align-self: flex-end; }
 body .carousel-caption-left h1, body .carousel-caption-left h2 { align-self: flex-start; }
-body .latest-tweet p, body .lets-be-friends p, body .fb-community p { border-bottom: 1px dashed #E5E5E5; margin-bottom: 15px; text-overflow: ellipsis; }
-body .latest-tweet a, body .lets-be-friends a, body .fb-community a { background-color: white; border: 1px solid #AAA; border-radius: 4px; color: #34AC98; padding: 8px 15px; margin-bottom: 15px; width: 160px; text-overflow: ellipsis; }
+body .latest-tweet p, body .lets-be-friends p, body .fb-community p { text-transform: uppercase; font-size: 12px; line-height: 17px; border-bottom: 1px dashed #E5E5E5; margin-bottom: 15px; text-overflow: ellipsis; }
+body .latest-tweet a, body .lets-be-friends a, body .fb-community a { font-size: 11px; line-height: 19px; background-color: white; border: 1px solid #AAA; border-radius: 4px; color: #34AC98; padding: 8px 15px; margin-bottom: 15px; width: 160px; text-overflow: ellipsis; }
 body .latest-tweet a:hover, body .lets-be-friends a:hover, body .fb-community a:hover { background-color: #D9EFEC; color: #ec6635; /* Need to be applied only on the href not the icon */ }
 body .latest-tweet i, body .lets-be-friends i, body .fb-community i { padding-right: 10px; }
 body .horizontal-nav { display: flex; flex-wrap: wrap; }
 body .horizontal-nav .h-nav-item { flex-grow: 1; color: #AAA; font-style: italic; background-color: #eff8f7; padding: 20px 15px; border-right: 1px solid #D9EFEC; }
 body .horizontal-nav .h-nav-item a h4 { margin: 0px 15px 5px 15px; }
-body .horizontal-nav .h-nav-item a p { margin: 0px 15px 0px 15px; }
+body .horizontal-nav .h-nav-item a p { font-size: 12px; line-height: 17px; margin: 0px 15px 0px 15px; }
 body .horizontal-nav .first-slide { border-bottom-left-radius: 3px; }
 body .horizontal-nav .last-slide { border-bottom-right-radius: 3px; }
 body .horizontal-nav .active-slide { background-color: #D9EFEC; }
 body .signup-newsletter { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 20px 0px; padding: 5px 20px; border-top: 1px dashed #E5E5E5; border-bottom: 1px dashed #E5E5E5; }
 body .signup-newsletter .sign-up-desc { display: flex; width: 60%; }
 body .signup-newsletter .sign-up-desc img { width: 32px; height: 32px; }
-body .signup-newsletter .sign-up-desc .signup-intro { font-style: italic; padding: 0px 16px; margin-bottom: 0px; }
+body .signup-newsletter .sign-up-desc .signup-intro { font-size: 11px; line-height: 19px; font-style: italic; padding: 0px 16px; margin-bottom: 0px; }
 body .signup-newsletter .sign-up-form { display: flex; justify-content: flex-start; align-items: center; flex-direction: row; margin-bottom: 0px; width: 40%; }
 body .signup-newsletter .sign-up-form .email-txt-box { padding: 0px 20px; min-width: 60%; }
 body .signup-newsletter .sign-up-form .email-txt-box:focus { border: 2px solid #34AC98; }
 body .signup-newsletter .sign-up-form .subscribe-btn { margin: 0px 13px; min-width: 30%; width: 100%; /*TODO Need to override the box-shadow color*/ }
-body .lets-be-friends section { padding: 0px 0px 18px 0px; }
-body .homepage-news { display: flex; flex-wrap: wrap; justify-content: space-between; flex-direction: row; margin-right: 15px; }
+body .lets-be-friends section { font-size: 11px; line-height: 19px; padding: 0px 0px 18px 0px; }
+body .homepage-news { display: flex; flex-wrap: wrap; justify-content: space-between; flex-direction: row; margin-right: 15px; font-size: 14px; line-height: 20px; }
 body .homepage-news article { display: flex; flex-direction: column; }
 body .homepage-news article a img { width: 217px; padding: 9px; margin-bottom: 20px; transition: all .2s ease; /*TODO both border & box-shadow were copied as-is need to study box shadow more*/ border: 1px solid #E5E5E5; -webkit-box-shadow: 1px 2px 3px #F5F5F5; -moz-box-shadow: 1px 1px 3px #F5F5F5; box-shadow: 1px 1px 3px #F5F5F5; }
 body .homepage-news article a:hover img { opacity: 0.3; }
@@ -86,6 +89,8 @@ body .homepage-news .last-article { margin-right: 0px; padding-right: 0px; }
 body footer { display: flex; border-top: 2px solid #E5E5E5; margin: 40px 0px; padding: 20px 0px; color: #AAA; }
 body footer .col-sm-3 { flex-direction: column; }
 body footer .col-sm-3 .footer-nav { flex-direction: row; }
+body footer .col-sm-3 .footer-nav a { font-size: 12px; line-height: 17px; }
+body footer .col-sm-3 .copyright { font-size: 11px; line-height: 19px; }
 body footer .col-sm-2 { margin: auto; }
 body footer .col-sm-2 .social-media-icons { display: flex; justify-content: space-around; }
 body footer .col-sm-2 .social-media-icons a { opacity: 0.3; cursor: pointer; color: #333333; }

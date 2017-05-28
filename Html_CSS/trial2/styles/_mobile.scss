@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 480px) {
   body {
-    @include responsive-body-reset;
+    @include responsive-body-reset();
     .header-row {
       display: flex;
       flex-direction: column;
@@ -21,18 +21,18 @@
           order:2;
           align-self: center;
           width: 40%;
-          @include reset-padding-margin;
+          @include reset-padding-margin();
           a {
-              @include reset-padding-margin;
+              @include reset-padding-margin();
               h1 {
-                @include reset-padding-margin;
+                @include reset-padding-margin();
               }
           }
         }
         .left-nav {
           order: 1;
           @include font-mob-md-hight-lg();
-          @include reset-padding-margin;
+          @include reset-padding-margin();
           margin-bottom: 20px;
           width: 100%;
           border-bottom: 2px solid #E5E5E5;
@@ -43,7 +43,7 @@
             flex-wrap: wrap;
           }
           ul, li, a{
-            @include reset-padding-margin;
+            @include reset-padding-margin();
           }
           li {
             padding-bottom: 20px;
@@ -63,7 +63,7 @@
 
                 }
                 .carousel-caption {
-                  @include reset-padding-margin;
+                  @include reset-padding-margin();
                   left: 0%;
                   right: 0%;
                   bottom: 0%;
@@ -72,15 +72,15 @@
                   a{
                     text-align: left;
                     h1 {
-                      @include reset-padding-margin;
-                      @include font-mob-lg-hight-sm;
+                      @include reset-padding-margin();
+                      @include font-mob-lg-hight-sm();
                       width: 100%;
                       max-width: 100%;
                       padding: 0px 5px;
                     }
                     h2 {
-                      @include reset-padding-margin;
-                      @include font-mob-md-hight-sm;
+                      @include reset-padding-margin();
+                      @include font-mob-md-hight-sm();
                       width: 100%;
                       max-width: 100%;
                       padding: 5px 5px;
@@ -118,12 +118,12 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       width: 100%;
-      @include reset-padding-margin;
+      @include reset-padding-margin();
       padding: 10px 0px;
       margin: 10px 0px;
       .sign-up-desc {
         display: flex;
-        @include reset-padding-margin;
+        @include reset-padding-margin();
       }
       .sign-up-form {
         display: flex;
@@ -135,7 +135,7 @@
           width: 60%;
         }
         .subscribe-btn {
-          @include reset-padding-margin;
+          @include reset-padding-margin();
           text-align: center;
           width: 30%;
         }
@@ -173,7 +173,7 @@
     }
 
     footer {
-        @include font-mob-sm-hight-lg;
+        @include font-mob-sm-hight-lg();
         @include reset-padding-margin();
         padding: 10px 0px;
         justify-content: space-between;

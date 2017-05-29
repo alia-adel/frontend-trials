@@ -1,0 +1,54 @@
+.homepage-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 15px;
+  @include font-medium-size();
+
+  article {
+    display: flex;
+    flex-direction: column;
+    a {
+      img {
+        width: 217px;
+        padding: 9px;
+        margin-bottom: 20px;
+        transition: all .2s ease;
+        /*TODO both border & box-shadow were copied as-is need to study box shadow more*/
+        border: 1px solid #E5E5E5;
+        -webkit-box-shadow: 1px 2px 3px #F5F5F5;
+        -moz-box-shadow: 1px 1px 3px #F5F5F5;
+        box-shadow: 1px 1px 3px #F5F5F5;
+      }
+      &:hover {
+        img {
+          opacity: 0.3;
+        }
+      }
+    }
+    .article-body {
+      width: 217px;
+      height: 100px;
+      // white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .article-footer {
+      mark {
+        background-color: white;
+        color: rgba(179,174,174,.68);
+      }
+      .read-more {
+        border-bottom: $dashed-single-side-border;
+        &:hover {
+          background: $background-color-2;
+        }
+      }
+    }
+  }
+  .last-article{
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+}

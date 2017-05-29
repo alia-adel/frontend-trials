@@ -1,14 +1,12 @@
 /** AUTHOR ALIA ADEL
-* THIS SASS FILE TARGET TABLETS DEVICES WITH DEVICE PIXELS
-* FROM 481 TO 767
+* THIS SASS FILE TARGET LARGE TABLETS DEVICES WITH DEVICE PIXELS
+* FROM 768 to 998
 **/
-/*TODO Issue exist for the site logo where it gets cut*/
-
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 998px) {
   body {
     @include reset-padding-margin();
-    // margin-right: 15%;
-    // margin-left: 15%;
+    margin-right: 5%;
+    margin-left: 5%;
 
     .header-row {
       display: flex;
@@ -20,11 +18,12 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 20px 20px;
+        margin: 20px 0px;
+        width: 100%;
         .site-logo {
           order:1;
           align-self: center;
-          width: 90%;
+          width: 60%;
           margin-right: 20px;
           display: block;
           @include reset-padding-margin();
@@ -39,28 +38,39 @@
           order: 2;
           @include font-mob-md-hight-lg();
           @include reset-padding-margin();
-          margin-left: 20px;
           width: 100%;
           align-self: center;
           ul {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            align-self: center;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-self: flex-end;
+
+            ul, li, a{
+              @include reset-padding-margin();
+            }
+
+            li {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              a {
+
+              }
+              img {
+
+              }
+            }
           }
-          ul, li, a{
-            @include reset-padding-margin();
-          }
-          img {
-            display: none;
-          }
+
         }
       }
     }
 
     .carousel-section {
       order: 2;
+      width: 100%;
+      @include reset-padding-margin();
       figure {
         .carousel {
           .carousel-inner {
@@ -70,9 +80,7 @@
               }
               .carousel-caption {
                 @include reset-padding-margin();
-                left: 0%;
-                right: 0%;
-                bottom: 0%;
+                bottom: 10%;
                 display: flex;
                 flex-wrap: wrap;
                 a{
@@ -80,15 +88,11 @@
                   h1 {
                     @include reset-padding-margin();
                     @include font-mob-lg-hight-sm();
-                    width: 100%;
-                    max-width: 100%;
                     padding: 0px 5px;
                   }
                   h2 {
                     @include reset-padding-margin();
                     @include font-mob-md-hight-sm();
-                    width: 100%;
-                    max-width: 100%;
                     padding: 5px 5px;
                   }
                 }
@@ -109,21 +113,23 @@
       display: none;
     }
 
-    .lets-be-friends-col {
+    .lets-be-friends-div {
       display: none;
     }
 
-    .fb-community-col {
+    .fb-community-div {
       display: none;
     }
 
     .signup-newsletter-col {
       width: 100%;
+      @include reset-padding-margin();
       .signup-newsletter {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
+        max-width: 100%;
         @include reset-padding-margin();
         padding: 10px 0px;
         margin: 10px 0px;
@@ -151,8 +157,9 @@
     }
 
 
-    .homepage-news-col {
+    .homepage-news-col{
       @include reset-padding-margin();
+      width: 100%;
       .homepage-news {
         display: flex;
         flex-wrap: wrap;
@@ -211,7 +218,7 @@
             flex-wrap: wrap;
             a {
               padding-right: 5px;
-              @include show-social-icon-size(none, none, block);
+              @include show-social-icon-size(none, block, none);
             }
           }
         }

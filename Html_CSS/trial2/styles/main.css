@@ -5,27 +5,30 @@
 * PRACTICE & EDUCATIONAL PURPOSES.
 **/
 /*----------------------------------------------------------------*/
+/* Vendor */
+/*----------------------------------------------------------------*/
 /* VARIABLES */
 /*----------------------------------------------------------------*/
-/** AUTHOR ALIA ADEL
-* INCLUDES ALL VARIABLES
-**/
-/* PLACEHOLDERS */
-/*----------------------------------------------------------------*/
-/** AUTHOR ALIA ADEL
-* INCLUDES ALL PLACEHOLDERS
-**/
-/* GENERAL PLACEHOLDERS */
+/**
+* @author: Alia
+*/
 /* MIXINS */
-/** AUTHOR ALIA ADEL
-* INCLUDES ALL MIXINS
-**/
+/*----------------------------------------------------------------*/
 /**
 * The following as per the best practices should be placeholders not mixins but
 * an error was thrown that mixins can't be used within @media
 *
 */
 /* MOBILE PLACEHOLDERS */
+/* Includes almost all styles */
+/*----------------------------------------------------------------*/
+/**
+* AUTHOR ALIA ADEL
+* FOR DESIGN COPY RIGHTS, CHECK http://foodsense.is/
+* IMP! THIS IMPLEMENTATION IS NOT FOR PRODUCTION USE BUT RATHER FOR
+* PRACTICE & EDUCATIONAL PURPOSES.
+**/
+/*----------------------------------------------------------------*/
 /* GENERAL STYLES */
 /*----------------------------------------------------------------*/
 * { box-sizing: border-box; }
@@ -33,7 +36,7 @@
 img { width: 100%; }
 
 a { color: #34AC98; cursor: pointer; text-decoration: none; }
-a:hover { color: #ec6635; text-decoration: none; }
+a:hover, a:active, a:focus { color: #ec6635; text-decoration: none; }
 
 /* Home Page Left Navigation Section */
 /*----------------------------------------------------------------*/
@@ -105,12 +108,14 @@ body footer .col-sm-2 .social-media-icons a .rss { display: block; }
 body footer .col-sm-2 .social-media-icons a .rss-2x { display: none; }
 body footer .col-sm-2 .social-media-icons a .rss-3x { display: none; }
 
+/* layouts*/
+/*----------------------------------------------------------------*/
 /* IMPORT RESPONSIVE STYLESHEETS */
 /** AUTHOR ALIA ADEL
 * THIS SASS FILE TARGET LARGE TABLETS DEVICES WITH DEVICE PIXELS
 * FROM 768 to 998
 **/
-@media screen and (min-width: 768px) and (max-width: 998px) { body { padding: 0px; margin: 0px; }
+@media screen and (min-width: 768px) and (max-width: 998px) { body { padding: 0px; margin: 0px; margin-right: 5%; margin-left: 5%; }
   body .header-row { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; }
   body .header-row .header-nav-section { order: 1; display: flex; flex-direction: row; justify-content: center; margin: 20px 0px; width: 100%; }
   body .header-row .header-nav-section .site-logo { order: 1; align-self: center; width: 60%; margin-right: 20px; display: block; padding: 0px; margin: 0px; }
@@ -164,7 +169,7 @@ body footer .col-sm-2 .social-media-icons a .rss-3x { display: none; }
 * FROM 481 TO 767
 **/
 /*TODO Issue exist for the site logo where it gets cut*/
-@media screen and (min-width: 481px) and (max-width: 767px) { body { padding: 0px; margin: 0px; }
+@media screen and (min-width: 481px) and (max-width: 767px) { body { padding: 0px; margin: 0px; margin-right: 5%; margin-left: 5%; }
   body .header-row { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; }
   body .header-row .header-nav-section { order: 1; display: flex; flex-direction: row; justify-content: center; margin: 20px 20px; }
   body .header-row .header-nav-section .site-logo { order: 1; align-self: center; width: 90%; margin-right: 20px; display: block; padding: 0px; margin: 0px; }

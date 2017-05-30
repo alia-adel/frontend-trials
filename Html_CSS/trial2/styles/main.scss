@@ -31,12 +31,15 @@
   'layout/left-nav',
   'layout/footer';
 
-/* IMPORT COMPONENETS & RESPONSIVE STYLESHEETS */
+/* IMPORT COMPONENETS STYLESHEETS */
 @import
-  'components/tablet-large',
-  'components/tablet',
-  'components/mobile',
   'components/carousel',
   'components/carousel-nav',
   'components/signup',
   'components/homepage-news';
+
+/* IMPORT RESPONSIVE STYLESHEETS */
+@import
+  'components/tablet-large',
+  'components/tablet',
+  'components/mobile';

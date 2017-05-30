@@ -1,0 +1,49 @@
+/* SIGN-UP SECTION */
+/*----------------------------------------------------------------*/
+%signup-section {
+  .signup-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 5px 20px;
+    border-top: $dashed-single-side-border;
+    border-bottom: $dashed-single-side-border;
+    .sign-up-desc {
+      display: flex;
+      width: 60%;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+      .signup-intro {
+        @include font-xsmall-size();
+        font-style: italic;
+        padding: 0px 16px;
+        margin-bottom: 0px;
+      }
+    }
+    .sign-up-form {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 0px;
+      width: 40%;
+      .email-txt-box {
+        padding: 0px 20px;
+        min-width:60%;
+        &:focus {
+          border: 2px solid $href-color;
+        }
+      }
+      .subscribe-btn {
+        margin: 0px 13px;
+        min-width: 30%;
+        width: 100%;
+        /*TODO Need to override the box-shadow color*/
+      }
+    }
+  }
+}

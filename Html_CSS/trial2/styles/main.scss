@@ -27,14 +27,16 @@
 
 /* layouts*/
 /*----------------------------------------------------------------*/
-// @import
-//   'layout/left-nav',
-//   'layout/footer';
+@import
+  'layout/left-nav',
+  'layout/footer';
 
-/* IMPORT RESPONSIVE STYLESHEETS */
+/* IMPORT COMPONENETS & RESPONSIVE STYLESHEETS */
 @import
   'components/tablet-large',
   'components/tablet',
-  'components/mobile';
-  // 'components/carousel',
-  // 'components/homepage-news';
+  'components/mobile',
+  'components/carousel',
+  'components/carousel-nav',
+  'components/signup',
+  'components/homepage-news';

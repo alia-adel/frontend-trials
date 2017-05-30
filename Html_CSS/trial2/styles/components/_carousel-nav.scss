@@ -1,0 +1,35 @@
+/* HORIZONTAL NAVIGATION */
+/*----------------------------------------------------------------*/
+%horizontal-nav {
+  .horizontal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    .h-nav-item {
+      flex-grow: 1;
+      color: $secondary-color;
+      font-style: italic;
+      background-color: $background-color-1;
+      padding: 20px 15px;
+      border-right: 1px solid $background-color-2;
+      a {
+        h4 {
+          margin: 0px 15px 5px 15px;
+        }
+        p {
+          @include font-small-size();
+          margin: 0px 15px 0px 15px;
+        }
+      }
+    }
+    .first-slide {
+      border-bottom-left-radius: $horizontal-nav-corner-radius;
+    }
+
+    .last-slide {
+      border-bottom-right-radius: $horizontal-nav-corner-radius;
+    }
+    .active-slide {
+      background-color: $background-color-2;
+    }
+  }
+}

@@ -120,7 +120,7 @@ body .homepage-news { display: flex; flex-wrap: wrap; justify-content: space-bet
 body .homepage-news article { display: flex; flex-direction: column; }
 body .homepage-news article a img { width: 217px; padding: 9px; margin-bottom: 20px; transition: all .2s ease; /*TODO both border & box-shadow were copied as-is need to study box shadow more*/ border: 1px solid #E5E5E5; -webkit-box-shadow: 1px 2px 3px #F5F5F5; -moz-box-shadow: 1px 1px 3px #F5F5F5; box-shadow: 1px 1px 3px #F5F5F5; }
 body .homepage-news article a:hover img { opacity: 0.3; }
-body .homepage-news article .article-body { width: 217px; height: 100px; overflow: hidden; text-overflow: ellipsis; }
+body .homepage-news article .article-body { width: 217px; height: 100px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; }
 body .homepage-news article .article-footer mark { background-color: white; color: rgba(179, 174, 174, 0.68); }
 body .homepage-news article .article-footer .read-more { border-bottom: 1px dashed #E5E5E5; }
 body .homepage-news article .article-footer .read-more:hover { background: #D9EFEC; }

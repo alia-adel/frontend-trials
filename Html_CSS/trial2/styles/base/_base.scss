@@ -25,10 +25,14 @@ a{
   cursor: pointer;
   text-decoration: none;
 
-  @include on-event {
+  &:hover , &:active , &:focus {
     color: $href-hover-color;
     text-decoration: none;
   }
+  // @include on-event {
+  //   color: $href-hover-color;
+  //   text-decoration: none;
+  // }
 }
 
 /* Home Page Left Navigation Section */

@@ -37,8 +37,26 @@ a {
 
 
  body {
-   /**
-    * Foodsense left navigation
-    */
-    @extend %fs-left-nav;
+   margin: 50px 0px;
+ }
+
+/**
+ * Aside Uppercase header
+ */
+ .fs-aside-caps-header {
+    font-size: .75em;
+    text-transform: uppercase;
+    margin: none;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px dashed $fs-third-text-color;
+ }
+
+ .fs-aside-details {
+    font: {
+        size: 0.75em;
+        style: italic;
+    }
+    margin-bottom: 20px;
  }

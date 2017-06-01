@@ -2,30 +2,30 @@
 // This file contains all styles related to the left navigation component.
 // -----------------------------------------------------------------------------
 
-%fs-left-nav {
-  ul.left-nav {
-    list-style-type: none;
-    padding: 0px;
-    li.left-nav-item {
-      margin-top: 0.8 * $fs-text-font-size;
-      margin-bottom: 0.8 * $fs-text-font-size;
-      a.left-nav-href {
-        display: flex;
-        .left-nav-img {
-          width: 32px;
-          height: 32px;
-          padding-right: 5px;
-          @include element-transition(all 0.1s linear 0.1s);
-        }
-        .left-nav-txt {
-          font-style: italic;
-          margin: auto 0px auto 8px;
-        }
+ul.fs-left-nav {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 50px;
+  
+  li.fs-left-nav-item {
+    margin-top: 0.8 * $fs-text-font-size;
+    margin-bottom: 0.8 * $fs-text-font-size;
+    a.fs-left-nav-href {
+      display: flex;
+      .fs-left-nav-img {
+        width: 32px;
+        height: 32px;
+        padding-right: 5px;
+        @include element-transition(all 0.1s linear 0.1s);
+      }
+      .fs-left-nav-txt {
+        font-style: italic;
+        margin: auto 0px auto 8px;
+      }
 
-        &:hover > .left-nav-img {
-          padding-right: 0px;
-          padding-left: 5px;
-        }
+      &:hover > .fs-left-nav-img {
+        padding-right: 0px;
+        padding-left: 5px;
       }
     }
   }

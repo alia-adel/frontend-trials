@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the Social connect button component.
+// -----------------------------------------------------------------------------
+
+.fs-social-btn {
+  color: $fs-href-color;
+  font: {
+    size: 0.75em;
+    style: italic;
+  }
+
+  width: 150px;
+  border: 1px solid $fs-third-text-color;
+  border-radius: 5px;
+  padding: 5px 10px;
+  .fs-social-btn-img {
+    padding-right: 5px;
+  }
+
+  &:hover {
+    @extend a;
+    background-color: $fs-href-hover-2-color;
+  }
+}

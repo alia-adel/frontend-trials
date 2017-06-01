@@ -43,6 +43,8 @@ $dark-grey: rgb(68, 68, 68) !default;
 
 $fs-secondary-text-color: rgba(51, 51, 51, 1);
 
+$fs-third-text-color: rgba(229, 229, 229, 1);
+
 /// Dark terqoise
 /// @type Color
 $fs-href-color: rgba(52, 172, 152, 1);
@@ -50,6 +52,10 @@ $fs-href-color: rgba(52, 172, 152, 1);
 /// Dark orange
 /// @type Color
 $fs-href-hover-color: rgba(236, 102, 53, 1);
+
+/// Light green
+/// @type Color
+$fs-href-hover-2-color: rgba(239, 248, 247, 1);
 
 
 
@@ -79,5 +85,5 @@ $breakpoints: (
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+/// $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;

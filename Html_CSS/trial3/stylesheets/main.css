@@ -5,10 +5,15 @@ html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
 /** Basic styles for links */
-a { color: #34ac98; text-decoration: none; }
-a:hover, a:active, a:focus { color: #ec6635; text-decoration: none; }
+a, .fs-social-btn:hover { color: #34ac98; text-decoration: none; }
+a:hover, .fs-social-btn:hover, a:active, .fs-social-btn:active:hover, a:focus, .fs-social-btn:focus:hover { color: #ec6635; text-decoration: none; }
 
-body { /** Foodsense left navigation */ }
+body { margin: 50px 0px; }
+
+/** Aside Uppercase header */
+.fs-aside-caps-header { font-size: .75em; text-transform: uppercase; margin: none; margin-top: 20px; padding-bottom: 5px; border: none; border-bottom: 1px dashed #e5e5e5; }
+
+.fs-aside-details { font-size: 0.75em; font-style: italic; margin-bottom: 20px; }
 
 /** Basic typography style for copy text */
 body { color: #222222; font: normal 16px "Times New Roman"; }
@@ -23,11 +28,19 @@ body { color: #222222; font: normal 16px "Times New Roman"; }
 /** Hide element while making it readable for screen readers Shamelessly borrowed from HTML5Boilerplate: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133 */
 .visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
-body ul.left-nav { list-style-type: none; padding: 0px; }
-body ul.left-nav li.left-nav-item { margin-top: 12.8px; margin-bottom: 12.8px; }
-body ul.left-nav li.left-nav-item a.left-nav-href { display: flex; }
-body ul.left-nav li.left-nav-item a.left-nav-href .left-nav-img { width: 32px; height: 32px; padding-right: 5px; -moz-transition: all 0.1s linear 0.1s; -webkit-transition: all 0.1s linear 0.1s; -o-transition: all 0.1s linear 0.1s; transition: all 0.1s linear 0.1s; }
-body ul.left-nav li.left-nav-item a.left-nav-href .left-nav-txt { font-style: italic; margin: auto 0px auto 8px; }
-body ul.left-nav li.left-nav-item a.left-nav-href:hover > .left-nav-img { padding-right: 0px; padding-left: 5px; }
+a.fs-header-logo-link .fs-header-logo, .fs-header-logo-link.fs-social-btn:hover .fs-header-logo { background: url("../assets/images/food-sense.png") no-repeat; width: 120px; height: 120px; margin-bottom: 30px; }
+
+ul.fs-left-nav { list-style-type: none; padding: 0px; margin-top: 50px; }
+ul.fs-left-nav li.fs-left-nav-item { margin-top: 12.8px; margin-bottom: 12.8px; }
+ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover { display: flex; }
+ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-img { width: 32px; height: 32px; padding-right: 5px; -moz-transition: all 0.1s linear 0.1s; -webkit-transition: all 0.1s linear 0.1s; -o-transition: all 0.1s linear 0.1s; transition: all 0.1s linear 0.1s; }
+ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-txt { font-style: italic; margin: auto 0px auto 8px; }
+ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover > .fs-left-nav-img { padding-right: 0px; padding-left: 5px; }
+
+.fs-social-btn { color: #34ac98; font-size: 0.75em; font-style: italic; width: 150px; border: 1px solid #e5e5e5; border-radius: 5px; padding: 5px 10px; }
+.fs-social-btn .fs-social-btn-img { padding-right: 5px; }
+.fs-social-btn:hover { background-color: #eff8f7; }
+
+.fs-home-hero { height: 445px; }
 
 /*# sourceMappingURL=main.css.map */

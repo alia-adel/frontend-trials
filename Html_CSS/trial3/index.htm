@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="stylesheets/vendor/font-awesome/styles/font-awesome.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/carousel.js"></script>
+
   </head>
   <body>
     <div class="container">
@@ -70,6 +74,65 @@
           </aside>
         </div>
         <div class="col-sm-10 fs-col-2">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner fs-home-hero carousel-img">
+              <div class="item active">
+                <img src="assets/images/slide/0140_foodsense.jpg">
+                 <div class="carousel-caption fs-carousel-caption">
+                  <a href="http://foodsense.is/tastemakers">
+                 		<h1>What's Cooking? </h1><h2>Browse our gallery for dependably delicious recipes. </h2>
+               		</a>
+               		<p class="credit">photo by <a href="http://clarebarboza.com/">Clare Barboza</a></p>
+
+                </div>
+              </div><!-- End Item -->
+               <div class="item">
+                <img src="assets/images/slide/0219_foodsense.jpg">
+                 <div class="carousel-caption fs-carousel-caption">
+                  <h3>Headline</h3>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+                </div>
+              </div><!-- End Item -->
+              <div class="item">
+                <img src="assets/images/slide/0052_foodsense.jpg">
+                 <div class="carousel-caption fs-carousel-caption">
+                  <h3>Headline</h3>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+                </div>
+              </div><!-- End Item -->
+              <div class="item">
+                <img src="assets/images/slide/0232_foodsense.jpg">
+                 <div class="carousel-caption fs-carousel-caption">
+                  <h3>Headline</h3>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+              </div><!-- End Item -->
+
+            </div><!-- End Carousel Inner -->
+
+
+          	<ul class="nav nav-pills nav-justified fs-carousel-nav">
+              <li data-target="#myCarousel" data-slide-to="0" class="active carousel-nav-first">
+                <a href="#">TasteMakers<small>Feast your eyes & get receipes!</small>
+                </a>
+              </li>
+              <li data-target="#myCarousel" data-slide-to="1">
+                <a href="#">Blog<small>News, how-tos, stories, and more</small>
+                </a>
+              </li>
+              <li data-target="#myCarousel" data-slide-to="2">
+                <a href="#">The A-List<small>Handpicked, absolute favorites</small>
+                </a>
+              </li>
+              <li data-target="#myCarousel" data-slide-to="3" class="carousel-nav-last">
+                <a href="#">Contribute<small>We want to hear from you!</small>
+                </a>
+              </li>
+            </ul>
+
+
+          </div><!-- End Carousel -->
         </div>
       </div>
       <div class="row fs-row-2">

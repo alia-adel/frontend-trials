@@ -53,10 +53,18 @@ $fs-href-color: rgba(52, 172, 152, 1);
 /// @type Color
 $fs-href-hover-color: rgba(236, 102, 53, 1);
 
+
 /// Light green
 /// @type Color
 $fs-href-hover-2-color: rgba(239, 248, 247, 1);
 
+/// Light green (Lighter than $fs-href-hover-2-color)
+/// @type Color
+$fs-border-green-color: rgba(211, 237, 233, 1);
+
+/// Light green (darker than $fs-href-hover-2-color)
+/// @type Color
+$fs-href-bg-nav-color: rgba(184, 224, 219, 1);
 
 
 

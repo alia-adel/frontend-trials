@@ -27,7 +27,7 @@ body ul.left-nav { list-style-type: none; padding: 0px; }
 body ul.left-nav li.left-nav-item { margin-top: 12.8px; margin-bottom: 12.8px; }
 body ul.left-nav li.left-nav-item a.left-nav-href { display: flex; }
 body ul.left-nav li.left-nav-item a.left-nav-href .left-nav-img { width: 32px; height: 32px; padding-right: 5px; -moz-transition: all 0.1s linear 0.1s; -webkit-transition: all 0.1s linear 0.1s; -o-transition: all 0.1s linear 0.1s; transition: all 0.1s linear 0.1s; }
-body ul.left-nav li.left-nav-item a.left-nav-href .left-nav-txt { font-style: italic; margin: auto 0px; }
+body ul.left-nav li.left-nav-item a.left-nav-href .left-nav-txt { font-style: italic; margin: auto 0px auto 8px; }
 body ul.left-nav li.left-nav-item a.left-nav-href:hover > .left-nav-img { padding-right: 0px; padding-left: 5px; }
 
 /*# sourceMappingURL=main.css.map */

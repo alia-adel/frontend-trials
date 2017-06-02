@@ -2,44 +2,53 @@
 // This file contains updated style on the used carousel
 // -----------------------------------------------------------------------------
 
-.carousel-img {
-  img {
-    width: 100%;
+
+#myCarousel {
+  .carousel-img {
+    img {
+      width: 100%;
+    }
   }
-}
-.fs-carousel-nav {
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-  li, li.active {
-    border-right: 1px solid $fs-border-green-color;
-    a {
-      @extend a;
-      color: $fs-href-color;
-      background-color: $fs-href-hover-2-color;
-      padding: 25px 18px;
-      text-align: left;
-      small {
-        font: {
-          style: italic;
-          size: 0.75em;
+  .nav {
+    background: none;
+
+    li {
+      a {
+        @extend a;
+        color: $fs-href-color;
+        background-color: $fs-href-hover-2-color;
+        padding: 25px 18px;
+        text-align: left;
+        border-right: 1px solid $fs-border-green-color;
+
+        small {
+          font: {
+            style: italic;
+            size: 0.75em;
+          }
+        }
+        @include on-event {
+          background-color: $fs-href-hover-2-color;
+          text-decoration: none;
         }
       }
-      @include on-event {
-        background-color: $fs-href-hover-2-color;
-        text-decoration: none;
-      }
     }
-  }
-  li.active {
-    a{
-      background-color: $fs-href-bg-nav-color;
-      @include on-event {
-        color: $fs-href-color;
+
+    li.active {
+      a{
         background-color: $fs-href-bg-nav-color;
+        @include on-event {
+          color: $fs-href-color;
+          background-color: $fs-href-bg-nav-color;
+        }
       }
     }
-  }
-  li.carousel-nav-last {
-    border: none;
+    a.carousel-nav-first {
+      border-bottom-left-radius: 4px;
+    }
+    a.carousel-nav-last {
+      border-right: none;
+      border-bottom-right-radius: 4px;
+    }
   }
 }

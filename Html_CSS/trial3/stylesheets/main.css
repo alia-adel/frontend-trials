@@ -5,8 +5,8 @@ html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
 /** Basic styles for links */
-a, .fs-social-btn:hover, .fs-carousel-nav li a, .fs-carousel-nav li.active a { color: #34ac98; text-decoration: none; }
-a:hover, .fs-social-btn:hover, .fs-carousel-nav li a:hover, a:active, .fs-social-btn:active:hover, .fs-carousel-nav li a:active, a:focus, .fs-social-btn:focus:hover, .fs-carousel-nav li a:focus { color: #ec6635; text-decoration: none; }
+a, .fs-social-btn:hover, #myCarousel .nav li a { color: #34ac98; text-decoration: none; }
+a:hover, .fs-social-btn:hover, #myCarousel .nav li a:hover, a:active, .fs-social-btn:active:hover, #myCarousel .nav li a:active, a:focus, .fs-social-btn:focus:hover, #myCarousel .nav li a:focus { color: #ec6635; text-decoration: none; }
 
 body { margin: 50px 0px; }
 
@@ -28,14 +28,14 @@ body { color: #222222; font: normal 16px "Times New Roman"; }
 /** Hide element while making it readable for screen readers Shamelessly borrowed from HTML5Boilerplate: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133 */
 .visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
-a.fs-header-logo-link .fs-header-logo, .fs-header-logo-link.fs-social-btn:hover .fs-header-logo, .fs-carousel-nav li.active a.fs-header-logo-link .fs-header-logo { background: url("../assets/images/food-sense.png") no-repeat; width: 120px; height: 120px; margin-bottom: 30px; }
+a.fs-header-logo-link .fs-header-logo, .fs-header-logo-link.fs-social-btn:hover .fs-header-logo, #myCarousel .nav li a.fs-header-logo-link .fs-header-logo { background: url("../assets/images/food-sense.png") no-repeat; width: 120px; height: 120px; margin-bottom: 30px; }
 
 ul.fs-left-nav { list-style-type: none; padding: 0px; margin-top: 50px; }
 ul.fs-left-nav li.fs-left-nav-item { margin-top: 12.8px; margin-bottom: 12.8px; }
-ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover { display: flex; }
-ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-img { width: 32px; height: 32px; padding-right: 5px; -moz-transition: all 0.1s linear 0.1s; -webkit-transition: all 0.1s linear 0.1s; -o-transition: all 0.1s linear 0.1s; transition: all 0.1s linear 0.1s; }
-ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-txt { font-style: italic; margin: auto 0px auto 8px; }
-ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover > .fs-left-nav-img, ul.fs-left-nav li.fs-left-nav-item .fs-carousel-nav li.active a.fs-left-nav-href:hover > .fs-left-nav-img { padding-right: 0px; padding-left: 5px; }
+ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover, ul.fs-left-nav #myCarousel .nav li.fs-left-nav-item a.fs-left-nav-href, #myCarousel .nav ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href { display: flex; }
+ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-img, ul.fs-left-nav #myCarousel .nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img, #myCarousel .nav ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img { width: 32px; height: 32px; padding-right: 5px; -moz-transition: all 0.1s linear 0.1s; -webkit-transition: all 0.1s linear 0.1s; -o-transition: all 0.1s linear 0.1s; transition: all 0.1s linear 0.1s; }
+ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-txt, ul.fs-left-nav #myCarousel .nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt, #myCarousel .nav ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt { font-style: italic; margin: auto 0px auto 8px; }
+ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover > .fs-left-nav-img, ul.fs-left-nav #myCarousel .nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, #myCarousel .nav ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img { padding-right: 0px; padding-left: 5px; }
 
 .fs-social-btn { color: #34ac98; font-size: 0.75em; font-style: italic; width: 150px; border: 1px solid #e5e5e5; border-radius: 5px; padding: 5px 10px; }
 .fs-social-btn .fs-social-btn-img { padding-right: 5px; }
@@ -46,18 +46,17 @@ ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, 
 
 #myCarousel .nav { background: #eee; }
 
-#myCarousel .nav a, #myCarousel .nav .fs-social-btn:hover { border-radius: 0px; }
+#myCarousel .nav a, #myCarousel .nav .fs-social-btn:hover, #myCarousel .nav li a { border-radius: 0px; }
 
-.carousel-img img { width: 100%; }
-
-.fs-carousel-nav { border-bottom-left-radius: 1em; border-bottom-right-radius: 1em; }
-.fs-carousel-nav li, .fs-carousel-nav li.active { border-right: 1px solid #d3ede9; }
-.fs-carousel-nav li .fs-social-btn:hover, .fs-carousel-nav li a, .fs-carousel-nav li.active a, .fs-carousel-nav li.active .fs-social-btn:hover, .fs-carousel-nav li.active a { color: #34ac98; background-color: #eff8f7; padding: 25px 18px; text-align: left; }
-.fs-carousel-nav li .fs-social-btn:hover small, .fs-carousel-nav li a small, .fs-carousel-nav li.active a small, .fs-carousel-nav li.active .fs-social-btn:hover small, .fs-carousel-nav li.active a small { font-style: italic; font-size: 0.75em; }
-.fs-carousel-nav li .fs-social-btn:hover, .fs-carousel-nav li a:hover, .fs-carousel-nav li .fs-social-btn:active:hover, .fs-carousel-nav li a:active, .fs-carousel-nav li .fs-social-btn:focus:hover, .fs-carousel-nav li a:focus, .fs-carousel-nav li.active .fs-social-btn:hover, .fs-carousel-nav li.active a:hover, .fs-carousel-nav li.active .fs-social-btn:active:hover, .fs-carousel-nav li.active a:active, .fs-carousel-nav li.active .fs-social-btn:focus:hover, .fs-carousel-nav li.active a:focus { background-color: #eff8f7; text-decoration: none; }
-.fs-carousel-nav li.active .fs-social-btn:hover, .fs-carousel-nav li.active a { background-color: #b8e0db; }
-.fs-carousel-nav li.active .fs-social-btn:hover, .fs-carousel-nav li.active a:hover, .fs-carousel-nav li.active .fs-social-btn:active:hover, .fs-carousel-nav li.active a:active, .fs-carousel-nav li.active .fs-social-btn:focus:hover, .fs-carousel-nav li.active a:focus { color: #34ac98; background-color: #b8e0db; }
-.fs-carousel-nav li.carousel-nav-last { border: none; }
+#myCarousel .carousel-img img { width: 100%; }
+#myCarousel .nav { background: none; }
+#myCarousel .nav li .fs-social-btn:hover, #myCarousel .nav li a { color: #34ac98; background-color: #eff8f7; padding: 25px 18px; text-align: left; border-right: 1px solid #d3ede9; }
+#myCarousel .nav li .fs-social-btn:hover small, #myCarousel .nav li a small { font-style: italic; font-size: 0.75em; }
+#myCarousel .nav li .fs-social-btn:hover, #myCarousel .nav li a:hover, #myCarousel .nav li .fs-social-btn:active:hover, #myCarousel .nav li a:active, #myCarousel .nav li .fs-social-btn:focus:hover, #myCarousel .nav li a:focus { background-color: #eff8f7; text-decoration: none; }
+#myCarousel .nav li.active .fs-social-btn:hover, #myCarousel .nav li.active a { background-color: #b8e0db; }
+#myCarousel .nav li.active .fs-social-btn:hover, #myCarousel .nav li.active a:hover, #myCarousel .nav li.active .fs-social-btn:active:hover, #myCarousel .nav li.active a:active, #myCarousel .nav li.active .fs-social-btn:focus:hover, #myCarousel .nav li.active a:focus { color: #34ac98; background-color: #b8e0db; }
+#myCarousel .nav a.carousel-nav-first, #myCarousel .nav .carousel-nav-first.fs-social-btn:hover { border-bottom-left-radius: 4px; }
+#myCarousel .nav a.carousel-nav-last, #myCarousel .nav .carousel-nav-last.fs-social-btn:hover { border-right: none; border-bottom-right-radius: 4px; }
 
 .fs-home-hero { height: 445px; }
 

@@ -3,10 +3,9 @@
 // -----------------------------------------------------------------------------
 
 ul.fs-left-nav {
-  list-style-type: none;
-  padding: 0px;
+  @extend.fs-clear-list-style;
   margin-top: 50px;
-  
+
   li.fs-left-nav-item {
     margin-top: 0.8 * $fs-text-font-size;
     margin-bottom: 0.8 * $fs-text-font-size;

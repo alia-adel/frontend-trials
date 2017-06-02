@@ -1,3 +1,43 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.fs-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 2px solid #E5E5E5;
+  margin: 50px 0px;
+  padding: 20px 0px;
+  .fs-footer-left {
+    .fs-footer-nav {
+      @extend .fs-clear-list-style;
+      font-size: 0.75em;
+      display: flex;
+      padding-right: 5px;
+      li.fs-list::after{
+        content: " | ";
+      }
+    }
+    .fs-footer-copyrights {
+      font-size: 0.75em;
+      color: #AAA;
+      margin-top: 5px;
+    }
+  }
+  .fs-footer-right {
+    .fs-footer-social {
+      @extend .fs-clear-list-style;
+      display: flex;
+      li {
+        padding-left: 10px;
+      }
+      .fs-social-link {
+        color: $fs-secondary-text-color;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

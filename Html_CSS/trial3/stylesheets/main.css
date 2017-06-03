@@ -82,7 +82,7 @@ ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, 
 
 .fs-food-article { width: 23%; padding: 15px 0px; }
 .fs-food-article .fs-article-item-link:hover > .fs-article-item-img { opacity: 0.5; }
-.fs-food-article .fs-article-item-link .fs-article-item-img { width: 100%; border: 1px solid lightgrey; padding: 10px; box-shadow: 0px 0px 6px 1px #F7F7F7; transition: all 0.1s ease 0.1s; }
+.fs-food-article .fs-article-item-link .fs-article-item-img { width: 100%; border: 1px solid lightgrey; padding: 10px; box-shadow: 0px 0px 6px 1px #F7F7F7; transition: all 0.1s ease-in-out 0.1s; }
 .fs-food-article .fs-article-item-link .fs-article-item-title { font-size: 1em; }
 .fs-food-article .fs-article-item-desc { /* BOTH of the following are required for text-overflow */ white-space: normal; overflow: hidden; text-overflow: ellipsis; text-overflow: -o-ellipsis-lastline; /* WebKit, Opera */ -ms-word-break: break-all; word-break: break-all; /* Non standard for WebKit */ word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; margin: 15px 0px; }
 .fs-food-article .fs-article-footer { display: flex; }

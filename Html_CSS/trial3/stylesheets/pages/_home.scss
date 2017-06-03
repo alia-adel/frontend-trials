@@ -5,3 +5,10 @@
 .fs-home-hero {
   height: 445px;
 }
+
+.fs-food-articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px 0px;
+}

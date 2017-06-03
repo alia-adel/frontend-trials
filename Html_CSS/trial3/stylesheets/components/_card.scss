@@ -1,3 +1,41 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the card component.
 // -----------------------------------------------------------------------------
+.fs-food-article {
+  width: 23%;
+  padding: 15px 0px;
+  // margin-right: 10px;
+
+  .fs-article-item-link {
+    &:hover > .fs-article-item-img {
+      opacity: 0.5;
+    }
+    .fs-article-item-img {
+      width: 100%;
+      border: 1px solid lightgrey;
+      padding: 10px;
+      box-shadow: 0px 0px 6px 1px #F7F7F7;
+      transition: all 0.1s ease 0.1s;
+    }
+    .fs-article-item-title {
+      font-size: 1em;
+    }
+  }
+  .fs-article-item-desc {
+    @include text-overflow-ellipsis;
+    margin: 15px 0px;
+  }
+  .fs-article-footer {
+    display: flex;
+    .fs-article-date {
+      font-size: 0.9em;
+      color: #AAA;
+    }
+    .fs-article-nav {
+      border-bottom: 1px dashed $fs-third-text-color;
+      &:hover {
+        background-color: $fs-href-hover-2-color;
+      }
+    }
+  }
+}

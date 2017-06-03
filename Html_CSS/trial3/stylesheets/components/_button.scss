@@ -1,3 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.fs-btn-normal {
+  font-size: 0.9em;
+  width: 100px;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: $fs-href-color;
+  color: #ffffff;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+
+  @include on-event(){
+    background-color: $fs-href-bg-nav-color;
+    color: $fs-href-hover-color;
+  };
+}

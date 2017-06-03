@@ -60,3 +60,24 @@
   -moz-hyphens: auto;
    hyphens: auto;
 }
+
+/// Add text field placeholder browser fallback
+/// @author: Alia Adel
+/// @param {String} $padding-value - css property value
+@mixin textfield-placeholder-padding ($padding-value: 0px) {
+  &::placeholder {
+    padding: $padding-value;
+  }
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    padding: $padding-value;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    padding: $padding-value;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    padding: $padding-value;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    padding: $padding-value;
+  }
+}

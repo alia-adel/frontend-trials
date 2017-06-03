@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the text boxes/area component.
+// -----------------------------------------------------------------------------
+ .fs-txt-normal {
+  width: 13em;
+  height: 2em;
+  border: 1px solid $fs-third-text-color;
+  border-radius: 4px;
+  padding-left: 10px;
+
+  @include on-event {
+    border: none;
+    box-shadow: 0px 0px 6px 1px $fs-href-bg-nav-color;
+  }
+}

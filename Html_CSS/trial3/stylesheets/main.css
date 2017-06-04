@@ -67,7 +67,7 @@ ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, 
 #myCarousel .nav a, #myCarousel .nav .fs-social-btn:hover, #myCarousel .nav .fs-carousel-nav li a, #myCarousel .fs-carousel-nav li .nav a { border-radius: 0px; }
 
 #myCarousel .carousel-img img { width: 100%; }
-#myCarousel .carousel-img .carousel-caption { width: 100%; left: 0%; bottom: 0%; }
+#myCarousel .carousel-img .carousel-caption { width: 100%; left: 0%; bottom: 10%; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption { font-style: italic; -moz-transition: opacity 0.2s ease 0.1s; -webkit-transition: opacity 0.2s ease 0.1s; -o-transition: opacity 0.2s ease 0.1s; transition: opacity 0.2s ease 0.1s; text-align: left; overflow: visible; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h1 { color: #222; background: #FFF; font-size: 1.5em; margin: 0px; padding: 10px 25px; max-width: 35%; text-align: center; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h1:hover { opacity: 0.7; }
@@ -75,7 +75,9 @@ ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, 
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h2 { color: #E9E9E9; font-size: 1em; background: #111; margin: 0px; padding: 15px 25px; max-width: 60%; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h2:hover { opacity: 0.7; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h2:hover ~ h1 { opacity: 0.7; }
-#myCarousel .carousel-img .carousel-caption .fs-credit { right: 0%; bottom: 5%; }
+#myCarousel .carousel-img .fs-credit { position: absolute; right: 1%; bottom: 5%; opacity: 0.75; z-index: 99; color: #555; font-size: 0.5em; background: rgba(255, 255, 255, 0.5); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); border-radius: 3px; padding: 5px 10px; }
+#myCarousel .carousel-img .fs-credit a, #myCarousel .carousel-img .fs-credit .fs-social-btn:hover { color: #555; }
+#myCarousel .carousel-img .fs-credit a:hover, #myCarousel .carousel-img .fs-credit .fs-social-btn:hover, #myCarousel .carousel-img .fs-credit a:active, #myCarousel .carousel-img .fs-credit .fs-social-btn:active:hover, #myCarousel .carousel-img .fs-credit a:focus, #myCarousel .carousel-img .fs-credit .fs-social-btn:focus:hover { color: #ec6635; text-decoration: none; }
 #myCarousel .carousel-img .carousel-caption-right { right: 0%; float: right; }
 #myCarousel .fs-carousel-nav { background: none; }
 #myCarousel .fs-carousel-nav li .fs-social-btn:hover, #myCarousel .fs-carousel-nav li a { color: #34ac98; text-align: left; text-shadow: 0 1px 0 #FAFDFC; background-color: #eff8f7; padding: 25px 18px; border-right: 1px solid #d3ede9; }

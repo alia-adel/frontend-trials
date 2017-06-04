@@ -1,8 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains updated style on the used carousel
 // -----------------------------------------------------------------------------
-
-
 #myCarousel {
   .carousel-img {
     img {
@@ -11,7 +9,7 @@
     .carousel-caption {
       width: 100%;
       left: 0%;
-      bottom: 0%;
+      bottom: 10%;
       .fs-carousel-caption {
         font-style: italic;
         @include element-transition(opacity 0.2s ease 0.1s);
@@ -48,9 +46,25 @@
           }
         }
       }
-      .fs-credit {
-        right: 0%;
-        bottom: 5%;
+    }
+    .fs-credit {
+      position: absolute;
+      right: 1%;
+      bottom: 5%;
+      opacity: 0.75;
+      z-index: 99;
+      color: #555;
+      font-size: 0.5em;
+      background: rgba(255,255,255,.5);
+      text-shadow: 0 1px 0 rgba(255,255,255,.5);
+      border-radius: 3px;
+      padding: 5px 10px;
+      a{
+        color: #555;
+        @include on-event {
+          color: $fs-href-hover-color;
+          text-decoration: none;
+        }
       }
     }
 

@@ -1,0 +1,6 @@
+// -----------------------------------------------------------------------------
+// This file contains all style adjustments made to fit onto the large tablets.
+// -----------------------------------------------------------------------------
+@include respond-to(large, map_get($breakpoints, medium)+1){
+
+}

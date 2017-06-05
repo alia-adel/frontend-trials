@@ -22,3 +22,13 @@
     background-color: $fs-href-hover-2-color;
   }
 }
+
+/* Changes needed for adapting on small screens*/
+@include respond-to(small){
+  .fs-aside-twitter {
+    display: none;
+  }
+  .fs-aside-fb {
+    display: none;
+  }
+}

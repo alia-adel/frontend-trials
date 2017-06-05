@@ -9,7 +9,7 @@
     .carousel-caption {
       width: 100%;
       left: 0%;
-      bottom: 10%;
+      bottom: 7%;
       .fs-carousel-caption {
         font-style: italic;
         @include element-transition(opacity 0.2s ease 0.1s);
@@ -50,7 +50,7 @@
     .fs-credit {
       position: absolute;
       right: 1%;
-      bottom: 5%;
+      bottom: 1%;
       opacity: 0.75;
       z-index: 99;
       color: #555;
@@ -121,5 +121,38 @@
       }
     }
   }
+}
 
+/* Changes needed for adapting on small screens*/
+@include respond-to(small){
+  #myCarousel {
+    .fs-home-hero {
+      margin-top: 0px;
+      .item {
+        .carousel-caption {
+          bottom: 0%;
+          padding-bottom: 0px;
+          .fs-carousel-caption {
+            h1, h2 {
+              width: 100%;
+              max-width: 100%;
+              text-align: left;
+            }
+          }
+        }
+        .fs-credit {
+          position: relative;
+          float: right;
+          border: none;
+          text-shadow: none;
+        }
+        .fs-credit:before {
+          content: "* ";
+        }
+      }
+    }
+    .fs-carousel-nav {
+      display: none;
+    }
+  }
 }

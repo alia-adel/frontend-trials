@@ -1,5 +1,5 @@
 /* Clear order & un ordered list style, margin & padding*/
-.fs-clear-list-style, ul.fs-left-nav, .fs-footer .fs-footer-left .fs-footer-nav, .fs-footer .fs-footer-right .fs-footer-social { list-style: none; margin: 0px; padding: 0px; }
+.fs-clear-list-style, ul.fs-left-nav-list, .fs-footer .fs-footer-left .fs-footer-nav, .fs-footer .fs-footer-right .fs-footer-social { list-style: none; margin: 0px; padding: 0px; }
 
 /** Set up a decent box model on the root element */
 html { box-sizing: border-box; }
@@ -33,13 +33,21 @@ body { color: #222222; font: normal 16px "Times New Roman"; }
 
 a.fs-header-logo-link .fs-header-logo, .fs-header-logo-link.fs-social-btn:hover .fs-header-logo, #myCarousel .fs-carousel-nav li a.fs-header-logo-link .fs-header-logo { background: url("../assets/images/food-sense.png") no-repeat; width: 120px; height: 120px; margin-bottom: 30px; }
 
-ul.fs-left-nav { margin-top: 50px; }
-ul.fs-left-nav li.fs-left-nav-item { margin-top: 12.8px; margin-bottom: 12.8px; }
-ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover, ul.fs-left-nav #myCarousel .fs-carousel-nav li.fs-left-nav-item a.fs-left-nav-href, #myCarousel .fs-carousel-nav ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href { display: flex; }
-ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-img, ul.fs-left-nav #myCarousel .fs-carousel-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img, #myCarousel .fs-carousel-nav ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img { width: 32px; height: 32px; padding-right: 5px; -moz-transition: all 0.1s linear 0.1s; -webkit-transition: all 0.1s linear 0.1s; -o-transition: all 0.1s linear 0.1s; transition: all 0.1s linear 0.1s; }
-ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-txt, ul.fs-left-nav #myCarousel .fs-carousel-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt, #myCarousel .fs-carousel-nav ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt { font-style: italic; margin: auto 0px auto 8px; }
-ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, ul.fs-left-nav li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover > .fs-left-nav-img, ul.fs-left-nav #myCarousel .fs-carousel-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, #myCarousel .fs-carousel-nav ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img { padding-right: 0px; padding-left: 5px; }
+ul.fs-left-nav-list { margin-top: 50px; }
+ul.fs-left-nav-list li.fs-left-nav-item { margin-top: 12.8px; margin-bottom: 12.8px; }
+ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href, ul.fs-left-nav-list li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover, ul.fs-left-nav-list #myCarousel .fs-carousel-nav li.fs-left-nav-item a.fs-left-nav-href, #myCarousel .fs-carousel-nav ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href { display: flex; }
+ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img, ul.fs-left-nav-list li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-img, ul.fs-left-nav-list #myCarousel .fs-carousel-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img, #myCarousel .fs-carousel-nav ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-img { width: 32px; height: 32px; padding-right: 5px; -moz-transition: all 0.1s linear 0.1s; -webkit-transition: all 0.1s linear 0.1s; -o-transition: all 0.1s linear 0.1s; transition: all 0.1s linear 0.1s; }
+ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt, ul.fs-left-nav-list li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover .fs-left-nav-txt, ul.fs-left-nav-list #myCarousel .fs-carousel-nav li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt, #myCarousel .fs-carousel-nav ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href .fs-left-nav-txt { font-style: italic; margin: auto 0px auto 8px; }
+ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, ul.fs-left-nav-list li.fs-left-nav-item .fs-left-nav-href.fs-social-btn:hover > .fs-left-nav-img, ul.fs-left-nav-list #myCarousel .fs-carousel-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, #myCarousel .fs-carousel-nav ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img { padding-right: 0px; padding-left: 5px; }
 
+.fs-left-side { height: 445px; }
+
+/* Changes needed for adapting on small screens*/
+@media screen and (min-width: 0px) and (max-width: 479px) { .fs-left-side { height: auto; display: flex; flex-direction: column; align-items: center; }
+  .fs-left-side .fs-header-logo-link { order: 2; }
+  .fs-left-side .fs-left-nav { order: 1; border-bottom: 2px solid #E5E5E5; margin-bottom: 20px; }
+  .fs-left-side .fs-left-nav .fs-left-nav-list { display: flex; flex-direction: row; margin: auto; font-size: 0.9em; }
+  .fs-left-side .fs-left-nav .fs-left-nav-list .fs-left-nav-img { display: none; } }
 .fs-footer { display: flex; justify-content: space-between; flex-wrap: wrap; border-top: 2px solid #E5E5E5; margin: 50px 0px; padding: 20px 0px; }
 .fs-footer .fs-footer-left .fs-footer-nav { font-size: 0.75em; display: flex; padding-right: 5px; }
 .fs-footer .fs-footer-left .fs-footer-nav li.fs-list::after { content: " | "; }
@@ -59,6 +67,9 @@ ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, 
 .fs-social-btn .fs-social-btn-img { padding-right: 5px; }
 .fs-social-btn:hover { background-color: #eff8f7; }
 
+/* Changes needed for adapting on small screens*/
+@media screen and (min-width: 0px) and (max-width: 479px) { .fs-aside-twitter { display: none; }
+  .fs-aside-fb { display: none; } }
 /** Bootstrap 3.0.3 Snippet by sevenx.de https://bootsnipp.com/snippets/featured/tabbed-slider-carousel */
 #myCarousel .nav a small, #myCarousel .nav .fs-social-btn:hover small { display: block; }
 
@@ -67,7 +78,7 @@ ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, 
 #myCarousel .nav a, #myCarousel .nav .fs-social-btn:hover, #myCarousel .nav .fs-carousel-nav li a, #myCarousel .fs-carousel-nav li .nav a { border-radius: 0px; }
 
 #myCarousel .carousel-img img { width: 100%; }
-#myCarousel .carousel-img .carousel-caption { width: 100%; left: 0%; bottom: 10%; }
+#myCarousel .carousel-img .carousel-caption { width: 100%; left: 0%; bottom: 7%; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption { font-style: italic; -moz-transition: opacity 0.2s ease 0.1s; -webkit-transition: opacity 0.2s ease 0.1s; -o-transition: opacity 0.2s ease 0.1s; transition: opacity 0.2s ease 0.1s; text-align: left; overflow: visible; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h1 { color: #222; background: #FFF; font-size: 1.5em; margin: 0px; padding: 10px 25px; max-width: 35%; text-align: center; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h1:hover { opacity: 0.7; }
@@ -75,7 +86,7 @@ ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, 
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h2 { color: #E9E9E9; font-size: 1em; background: #111; margin: 0px; padding: 15px 25px; max-width: 60%; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h2:hover { opacity: 0.7; }
 #myCarousel .carousel-img .carousel-caption .fs-carousel-caption h2:hover ~ h1 { opacity: 0.7; }
-#myCarousel .carousel-img .fs-credit { position: absolute; right: 1%; bottom: 5%; opacity: 0.75; z-index: 99; color: #555; font-size: 0.5em; background: rgba(255, 255, 255, 0.5); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); border-radius: 3px; padding: 5px 10px; }
+#myCarousel .carousel-img .fs-credit { position: absolute; right: 1%; bottom: 1%; opacity: 0.75; z-index: 99; color: #555; font-size: 0.5em; background: rgba(255, 255, 255, 0.5); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); border-radius: 3px; padding: 5px 10px; }
 #myCarousel .carousel-img .fs-credit a, #myCarousel .carousel-img .fs-credit .fs-social-btn:hover { color: #555; }
 #myCarousel .carousel-img .fs-credit a:hover, #myCarousel .carousel-img .fs-credit .fs-social-btn:hover, #myCarousel .carousel-img .fs-credit a:active, #myCarousel .carousel-img .fs-credit .fs-social-btn:active:hover, #myCarousel .carousel-img .fs-credit a:focus, #myCarousel .carousel-img .fs-credit .fs-social-btn:focus:hover { color: #ec6635; text-decoration: none; }
 #myCarousel .carousel-img .carousel-caption-right { right: 0%; float: right; }
@@ -88,11 +99,23 @@ ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, 
 #myCarousel .fs-carousel-nav li:first-child .fs-social-btn:hover, #myCarousel .fs-carousel-nav li:first-child a { border-bottom-left-radius: 4px; }
 #myCarousel .fs-carousel-nav li:last-child .fs-social-btn:hover, #myCarousel .fs-carousel-nav li:last-child a { border-right: none; border-bottom-right-radius: 4px; }
 
+/* Changes needed for adapting on small screens*/
+@media screen and (min-width: 0px) and (max-width: 479px) { #myCarousel .fs-home-hero { margin-top: 0px; }
+  #myCarousel .fs-home-hero .item .carousel-caption { bottom: 0%; padding-bottom: 0px; }
+  #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h1, #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h2 { width: 100%; max-width: 100%; text-align: left; }
+  #myCarousel .fs-home-hero .item .fs-credit { position: relative; float: right; border: none; text-shadow: none; }
+  #myCarousel .fs-home-hero .item .fs-credit:before { content: "* "; }
+  #myCarousel .fs-carousel-nav { display: none; } }
 .fs-signup { display: flex; align-items: center; border-top: 1px dashed #AAA; border-bottom: 1px dashed #AAA; padding: 5px 0px; margin: 15px 0px; }
 .fs-signup .fs-signup-intro { width: 60%; display: flex; align-items: center; margin-right: 20px; }
 .fs-signup .fs-signup-intro .fs-signup-img { margin-left: 20px; margin-right: 15px; }
 .fs-signup .fs-signup-intro .fs-signup-desc { width: 90%; padding: 5px 10px 0px 10px; font-size: 0.75em; font-style: italic; align-self: center; }
 
+/* Changes needed for adapting on small screens*/
+@media screen and (min-width: 0px) and (max-width: 479px) { .fs-signup { flex-direction: column; align-items: stretch; }
+  .fs-signup .fs-signup-intro { width: auto; max-width: 100%; margin: auto; margin-bottom: 10px; }
+  .fs-signup .fs-signup-intro .fs-signup-img, .fs-signup .fs-signup-intro .fs-signup-desc { max-width: 100%; }
+  .fs-signup .fs-signup-form { max-width: 100%; margin-left: 20px; } }
 .fs-food-article { width: 23%; padding: 15px 0px; }
 .fs-food-article .fs-article-item-link:hover > .fs-article-item-img { opacity: 0.5; }
 .fs-food-article .fs-article-item-link .fs-article-item-img { width: 100%; border: 1px solid lightgrey; padding: 10px; box-shadow: 0px 0px 6px 1px #F7F7F7; transition: all 0.1s ease-in-out 0.1s; }
@@ -103,8 +126,8 @@ ul.fs-left-nav li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-img, 
 .fs-food-article .fs-article-footer .fs-article-nav { border-bottom: 1px dashed #e5e5e5; }
 .fs-food-article .fs-article-footer .fs-article-nav:hover { background-color: #eff8f7; }
 
-.fs-home-hero { height: 445px; }
-
+/* Changes needed for adapting on small screens*/
+@media screen and (min-width: 0px) and (max-width: 479px) { .fs-food-article { width: auto; } }
 .fs-food-articles { display: flex; justify-content: space-between; flex-wrap: wrap; margin: 10px 0px; }
 
 /*# sourceMappingURL=main.css.map */

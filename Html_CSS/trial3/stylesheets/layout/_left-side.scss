@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the general left side that includes
+// the app logo plus left navigation
+// -----------------------------------------------------------------------------
+
+@import
+  'header',
+  'left-nav';
+
+.fs-left-side {
+  height: 445px;
+}
+
+/* Changes needed for adapting on small screens*/
+@include respond-to(small){
+  .fs-left-side {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .fs-header-logo-link {
+      order: 2;
+    }
+    .fs-left-nav {
+      order: 1;
+      .fs-left-nav-list{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        font-size: 0.9em;
+        .fs-left-nav-img {
+          display: none;
+        }
+      }
+      border-bottom: 2px solid #E5E5E5;
+      margin-bottom: 20px;
+    }
+  }
+}

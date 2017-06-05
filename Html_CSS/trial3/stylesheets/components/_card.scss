@@ -39,3 +39,10 @@
     }
   }
 }
+
+/* Changes needed for adapting on small screens*/
+@include respond-to(small){
+  .fs-food-article {
+    width: auto;
+  }
+}

@@ -60,3 +60,10 @@ a {
     }
     margin-bottom: 20px;
  }
+
+ /* Changes needed for adapting on large tablet's screens*/
+ @include respond-to(large, map_get($breakpoints, medium)+1){
+   .fs-main-content-col {
+     width: 100%;
+   }
+ }

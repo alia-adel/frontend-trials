@@ -65,12 +65,18 @@
 
 /* Changes needed for adapting on large tablet's screens*/
 @include respond-to(large, map_get($breakpoints, medium)+1){
+  .fs-left-nav-col {
+    width: 100%;
+  }
   .fs-left-side {
+    width: auto;
     height: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     .fs-left-nav {
       margin: 0px 20px;
+      flex-grow: 2;
       .fs-left-nav-list{
         display: flex;
         flex-direction: row;
@@ -89,5 +95,8 @@
       }
       margin-bottom: 20px;
     }
+  }
+  .fs-aside-fb-col {
+    display: none;
   }
 }

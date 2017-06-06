@@ -206,6 +206,9 @@
 
 /* Changes needed for adapting on large tablet's screens*/
 @include respond-to(large, map_get($breakpoints, medium)+1){
+  .fs-carousel-col {
+    width: 100%;
+  }
   #myCarousel {
     .fs-home-hero {
       margin-top: 0px;

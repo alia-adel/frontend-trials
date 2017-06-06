@@ -18,6 +18,8 @@ body { margin: 50px 0px; }
 
 .fs-aside-details { font-size: 0.75em; font-style: italic; margin-bottom: 20px; }
 
+/* Changes needed for adapting on large tablet's screens*/
+@media screen and (min-width: 768px) and (max-width: 991px) { .fs-main-content-col { width: 100%; } }
 /** Basic typography style for copy text */
 body { color: #222222; font: normal 16px "Times New Roman"; }
 
@@ -54,11 +56,13 @@ ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-
   .fs-left-side .fs-left-nav .fs-left-nav-list { display: flex; flex-direction: row; justify-content: space-between; margin: auto; font-size: 1em; }
   .fs-left-side .fs-left-nav .fs-left-nav-list .fs-left-nav-img { display: none; } }
 /* Changes needed for adapting on large tablet's screens*/
-@media screen and (min-width: 768px) and (max-width: 991px) { .fs-left-side { height: auto; display: flex; align-items: center; }
-  .fs-left-side .fs-left-nav { margin: 0px 20px; margin-bottom: 20px; }
+@media screen and (min-width: 768px) and (max-width: 991px) { .fs-left-nav-col { width: 100%; }
+  .fs-left-side { width: auto; height: auto; display: flex; align-items: center; justify-content: space-between; }
+  .fs-left-side .fs-left-nav { margin: 0px 20px; flex-grow: 2; margin-bottom: 20px; }
   .fs-left-side .fs-left-nav .fs-left-nav-list { display: flex; flex-direction: row; justify-content: space-between; margin: auto; font-size: 1em; }
   .fs-left-side .fs-left-nav .fs-left-nav-list .fs-left-nav-href { display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
-  .fs-left-side .fs-left-nav .fs-left-nav-list .fs-left-nav-href .fs-left-nav-img { display: block; } }
+  .fs-left-side .fs-left-nav .fs-left-nav-list .fs-left-nav-href .fs-left-nav-img { display: block; }
+  .fs-aside-fb-col { display: none; } }
 .fs-footer { display: flex; justify-content: space-between; flex-wrap: wrap; border-top: 2px solid #E5E5E5; margin: 50px 0px; padding: 20px 0px; }
 .fs-footer .fs-footer-left .fs-footer-nav { font-size: 0.75em; display: flex; padding-right: 5px; }
 .fs-footer .fs-footer-left .fs-footer-nav li.fs-list::after { content: " | "; }
@@ -135,7 +139,8 @@ ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-
   #myCarousel .fs-home-hero .item .fs-credit:before { content: "* "; }
   #myCarousel .fs-carousel-nav { display: none; } }
 /* Changes needed for adapting on large tablet's screens*/
-@media screen and (min-width: 768px) and (max-width: 991px) { #myCarousel .fs-home-hero { margin-top: 0px; }
+@media screen and (min-width: 768px) and (max-width: 991px) { .fs-carousel-col { width: 100%; }
+  #myCarousel .fs-home-hero { margin-top: 0px; }
   #myCarousel .fs-home-hero .item .carousel-caption { left: 0%; bottom: 10%; padding-bottom: 0px; }
   #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h1, #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h2 { text-align: left; padding: 10px 7px; }
   #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h1 { font-size: 0.9em; }
@@ -180,6 +185,6 @@ ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-
 .fs-food-articles { display: flex; justify-content: space-between; flex-wrap: wrap; margin: 10px 0px; }
 
 /* Changes needed for adapting on large tablet's screens*/
-@media screen and (min-width: 768px) and (max-width: 991px) { .fs-col-1 { display: flex; flex-direction: column; } }
+@media screen and (min-width: 768px) and (max-width: 991px) { .fs-row-1 { display: flex; flex-direction: column; } }
 
 /*# sourceMappingURL=main.css.map */

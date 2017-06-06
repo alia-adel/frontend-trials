@@ -27,12 +27,66 @@
         display: flex;
         flex-direction: row;
         margin: auto;
-        font-size: 0.9em;
+        padding: 5px;
+        font-size: 0.8em;
         .fs-left-nav-img {
           display: none;
         }
       }
       border-bottom: 2px solid #E5E5E5;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* Changes needed for adapting on tablet's screens*/
+@include respond-to(medium, map_get($breakpoints, small)+1){
+  .fs-left-side {
+    height: auto;
+    display: flex;
+    align-items: center;
+    .fs-left-nav {
+      margin: 0px 20px;
+      flex-grow: 3;
+      .fs-left-nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        font-size: 1em;
+        .fs-left-nav-img {
+          display: none;
+        }
+      }
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* Changes needed for adapting on large tablet's screens*/
+@include respond-to(large, map_get($breakpoints, medium)+1){
+  .fs-left-side {
+    height: auto;
+    display: flex;
+    align-items: center;
+    .fs-left-nav {
+      margin: 0px 20px;
+      .fs-left-nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        font-size: 1em;
+        .fs-left-nav-href {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .fs-left-nav-img {
+            display: block;
+          }
+        }
+      }
       margin-bottom: 20px;
     }
   }

@@ -1,6 +1,0 @@
-// -----------------------------------------------------------------------------
-// This file contains all style adjustments made to fit onto the tablet.
-// -----------------------------------------------------------------------------
-@include respond-to(medium, map_get($breakpoints, small)+1){
-
-}

@@ -32,3 +32,24 @@
     display: none;
   }
 }
+
+
+/* Changes needed for adapting on tablet's screens*/
+@include respond-to(medium, map_get($breakpoints, small)+1){
+  .fs-aside-twitter {
+    display: none;
+  }
+  .fs-aside-fb {
+    display: none;
+  }
+}
+
+/* Changes needed for adapting on large tablet's screens*/
+@include respond-to(large, map_get($breakpoints, medium)+1){
+  .fs-aside-twitter {
+    display: none;
+  }
+  .fs-aside-fb {
+    display: none;
+  }
+}

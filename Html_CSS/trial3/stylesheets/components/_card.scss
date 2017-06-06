@@ -2,9 +2,8 @@
 // This file contains all styles related to the card component.
 // -----------------------------------------------------------------------------
 .fs-food-article {
-  width: 23%;
+  width: 205px;
   padding: 15px 0px;
-  // margin-right: 10px;
 
   .fs-article-item-link {
     &:hover > .fs-article-item-img {
@@ -43,18 +42,20 @@
 /* Changes needed for adapting on small screens*/
 @include respond-to(small){
   .fs-food-article {
-    width: auto;
+    width: 220px;
   }
 }
 
 /* Changes needed for adapting on tablet's screens*/
 @include respond-to(medium, map_get($breakpoints, small)+1){
   .fs-food-article {
-    width: auto;
+    // width: auto;
   }
 }
 
 /* Changes needed for adapting on large tablet's screens*/
 @include respond-to(large, map_get($breakpoints, medium)+1){
-
+  .fs-food-article {
+    // width: auto;
+  }
 }

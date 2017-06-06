@@ -70,7 +70,6 @@
 
     .carousel-caption-right {
       right: 0%;
-      // left: 50%;
       float: right;
     }
   }
@@ -86,7 +85,7 @@
         background-color: $fs-href-hover-2-color;
         padding: 25px 18px;
         border-right: 1px solid $fs-border-green-color;
-
+        height: 80px;
         small {
           font: {
             style: italic;
@@ -212,12 +211,11 @@
       margin-top: 0px;
       .item {
         .carousel-caption {
-          bottom: 0%;
+          left: 0%;
+          bottom: 10%;
           padding-bottom: 0px;
           .fs-carousel-caption {
             h1, h2 {
-              width: 100%;
-              max-width: 100%;
               text-align: left;
               padding: 10px 7px;
             }
@@ -230,18 +228,19 @@
           }
         }
         .fs-credit {
-          position: relative;
-          float: right;
-          border: none;
-          text-shadow: none;
-        }
-        .fs-credit:before {
-          content: "* ";
+          bottom: 1%;
         }
       }
     }
     .fs-carousel-nav {
-      display: none;
+      a {
+          small {
+          display: none;
+        }
+        padding: 10px 20px;
+        height: auto;
+        text-align: center;
+      }
     }
   }
 }

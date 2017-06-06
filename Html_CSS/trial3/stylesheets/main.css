@@ -108,7 +108,7 @@ ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-
 #myCarousel .carousel-img .fs-credit a:hover, #myCarousel .carousel-img .fs-credit .fs-social-btn:hover, #myCarousel .carousel-img .fs-credit a:active, #myCarousel .carousel-img .fs-credit .fs-social-btn:active:hover, #myCarousel .carousel-img .fs-credit a:focus, #myCarousel .carousel-img .fs-credit .fs-social-btn:focus:hover { color: #ec6635; text-decoration: none; }
 #myCarousel .carousel-img .carousel-caption-right { right: 0%; float: right; }
 #myCarousel .fs-carousel-nav { background: none; }
-#myCarousel .fs-carousel-nav li .fs-social-btn:hover, #myCarousel .fs-carousel-nav li a { color: #34ac98; text-align: left; text-shadow: 0 1px 0 #FAFDFC; background-color: #eff8f7; padding: 25px 18px; border-right: 1px solid #d3ede9; }
+#myCarousel .fs-carousel-nav li .fs-social-btn:hover, #myCarousel .fs-carousel-nav li a { color: #34ac98; text-align: left; text-shadow: 0 1px 0 #FAFDFC; background-color: #eff8f7; padding: 25px 18px; border-right: 1px solid #d3ede9; height: 80px; }
 #myCarousel .fs-carousel-nav li .fs-social-btn:hover small, #myCarousel .fs-carousel-nav li a small { font-style: italic; font-size: 0.75em; }
 #myCarousel .fs-carousel-nav li .fs-social-btn:hover, #myCarousel .fs-carousel-nav li a:hover, #myCarousel .fs-carousel-nav li .fs-social-btn:active:hover, #myCarousel .fs-carousel-nav li a:active, #myCarousel .fs-carousel-nav li .fs-social-btn:focus:hover, #myCarousel .fs-carousel-nav li a:focus { background-color: #eff8f7; text-decoration: none; }
 #myCarousel .fs-carousel-nav li.active .fs-social-btn:hover, #myCarousel .fs-carousel-nav li.active a { background-color: #b8e0db; }
@@ -136,13 +136,13 @@ ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-
   #myCarousel .fs-carousel-nav { display: none; } }
 /* Changes needed for adapting on large tablet's screens*/
 @media screen and (min-width: 768px) and (max-width: 991px) { #myCarousel .fs-home-hero { margin-top: 0px; }
-  #myCarousel .fs-home-hero .item .carousel-caption { bottom: 0%; padding-bottom: 0px; }
-  #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h1, #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h2 { width: 100%; max-width: 100%; text-align: left; padding: 10px 7px; }
+  #myCarousel .fs-home-hero .item .carousel-caption { left: 0%; bottom: 10%; padding-bottom: 0px; }
+  #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h1, #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h2 { text-align: left; padding: 10px 7px; }
   #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h1 { font-size: 0.9em; }
   #myCarousel .fs-home-hero .item .carousel-caption .fs-carousel-caption h2 { font-size: 0.6em; }
-  #myCarousel .fs-home-hero .item .fs-credit { position: relative; float: right; border: none; text-shadow: none; }
-  #myCarousel .fs-home-hero .item .fs-credit:before { content: "* "; }
-  #myCarousel .fs-carousel-nav { display: none; } }
+  #myCarousel .fs-home-hero .item .fs-credit { bottom: 1%; }
+  #myCarousel .fs-carousel-nav a, #myCarousel .fs-carousel-nav .fs-social-btn:hover, #myCarousel .fs-carousel-nav li a { padding: 10px 20px; height: auto; text-align: center; }
+  #myCarousel .fs-carousel-nav a small, #myCarousel .fs-carousel-nav .fs-social-btn:hover small { display: none; } }
 .fs-signup { display: flex; align-items: center; border-top: 1px dashed #AAA; border-bottom: 1px dashed #AAA; padding: 5px 0px; margin: 15px 0px; }
 .fs-signup .fs-signup-intro { width: 60%; display: flex; align-items: center; margin-right: 20px; }
 .fs-signup .fs-signup-intro .fs-signup-img { margin-left: 20px; margin-right: 15px; }
@@ -163,7 +163,7 @@ ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-
   .fs-signup .fs-signup-intro { width: auto; max-width: 100%; margin: auto; margin-bottom: 10px; }
   .fs-signup .fs-signup-intro .fs-signup-img, .fs-signup .fs-signup-intro .fs-signup-desc { max-width: 100%; }
   .fs-signup .fs-signup-form { max-width: 100%; margin-left: 20px; } }
-.fs-food-article { width: 23%; padding: 15px 0px; }
+.fs-food-article { width: 205px; padding: 15px 0px; }
 .fs-food-article .fs-article-item-link:hover > .fs-article-item-img { opacity: 0.5; }
 .fs-food-article .fs-article-item-link .fs-article-item-img { width: 100%; border: 1px solid lightgrey; padding: 10px; box-shadow: 0px 0px 6px 1px #F7F7F7; transition: all 0.1s ease-in-out 0.1s; }
 .fs-food-article .fs-article-item-link .fs-article-item-title { font-size: 1em; }
@@ -174,9 +174,8 @@ ul.fs-left-nav-list li.fs-left-nav-item a.fs-left-nav-href:hover > .fs-left-nav-
 .fs-food-article .fs-article-footer .fs-article-nav:hover { background-color: #eff8f7; }
 
 /* Changes needed for adapting on small screens*/
-@media screen and (min-width: 0px) and (max-width: 479px) { .fs-food-article { width: auto; } }
+@media screen and (min-width: 0px) and (max-width: 479px) { .fs-food-article { width: 220px; } }
 /* Changes needed for adapting on tablet's screens*/
-@media screen and (min-width: 480px) and (max-width: 767px) { .fs-food-article { width: auto; } }
 /* Changes needed for adapting on large tablet's screens*/
 .fs-food-articles { display: flex; justify-content: space-between; flex-wrap: wrap; margin: 10px 0px; }
 

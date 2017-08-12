@@ -1,7 +1,6 @@
 
 * {
   box-sizing: border-box;
-/*  border: 1px solid red;*/
 }
 
 body {
@@ -26,7 +25,6 @@ a:focus {
 }
 
 /*Header*/
-
 .site-header {
 	background-color: #fff;
 	display: flex;
@@ -53,7 +51,7 @@ a:focus {
 .site-hero {
 	width: 100%;
 	max-width: 100%;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 	border-radius: 3px;
 }
 /*end of Hero Image*/
@@ -71,10 +69,9 @@ a:focus {
 	padding: 10px;
 	z-index: 9999;
 }
-
 /*end of Site Qoute*/
 
-/*Featured Work*/ 
+/*Featured Work*/
 .work-section-header {
 	background-color: #fff;
 	color: #7d97ad;
@@ -89,19 +86,16 @@ a:focus {
 	margin-top: 20px;
 }
 
-.work-card {	
+.work-card {
 	display: flex;
-	flex-direction: column;	
-	justify-content: space-between;	
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 350px;
+	padding: 10px;
+	text-align: center;
 	border: 1px solid #d3d3d3;
 	box-shadow: 3px 3px 3px 0 rgba(211,211,211,0.41);
 	border-radius: 4px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-	width: calc(100%/3 - 10px);
-	max-width: 350px;
-	padding: 10px;
 }
 
 .project-logo-link:hover {
@@ -109,7 +103,7 @@ a:focus {
 	box-shadow: 3px 3px 3px 0 rgba(211,211,211,0.41);
 }
 
-.project-logo { 	
+.project-logo {
 	margin: 10px;
 	width: 80%;
 }
@@ -127,12 +121,11 @@ a:focus {
 .project-link:hover {
 	font-weight: bold;
 }
-
 /*end of Work Section*/
 
 @media screen and (max-width: 800px) {
 	body {
-		margin-right: 10px; 
+		margin-right: 10px;
 		margin-left: 10px;
 	}
 
@@ -157,7 +150,7 @@ a:focus {
 		top: 0;
 		margin: auto;
 		background: none;
-		border: 1px solid #D3D3D3;
+		border: 1px solid #d3d3d3;
 		box-shadow: 3px 3px 3px 0 rgba(211,211,211,0.41);
 	}
 
@@ -173,8 +166,7 @@ a:focus {
 	}
 
 	.work-card {
-		width: 100% !important; 
+		width: 100% !important;
 		margin-bottom: 10px;
 	}
-
 }

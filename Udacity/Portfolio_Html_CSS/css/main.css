@@ -132,8 +132,8 @@ a:focus {
 
 @media screen and (max-width: 800px) {
 	body {
-		/*margin-right: 10px; 
-		margin-left: 10px;*/
+		margin-right: 10px; 
+		margin-left: 10px;
 	}
 
 	.site-header {
@@ -162,8 +162,8 @@ a:focus {
 	}
 
 	.work-section-header {
-		margin: 20px 0;
-		text-align: center;
+		margin: auto;
+		padding: 20px 0 10px 0;
 	}
 
 	.work-section {
